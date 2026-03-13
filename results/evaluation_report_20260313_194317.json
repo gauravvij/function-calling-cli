@@ -1,0 +1,1364 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-13T19:43:17.805214",
+    "total_tests": 30,
+    "models_evaluated": 1,
+    "trials_per_test": 3,
+    "evaluation_method": "Best of N (pass if at least one trial succeeds)"
+  },
+  "summary": {
+    "leaderboard": [
+      {
+        "rank": 1,
+        "model": "qwen3.5:9b",
+        "accuracy": 0.2,
+        "reliability_percent": 20.0,
+        "passed_tests": 6,
+        "total_tests": 30,
+        "avg_latency_ms": 10668.73,
+        "total_tokens": 46815
+      }
+    ]
+  },
+  "model_scores": [
+    {
+      "model": "qwen3.5:9b",
+      "overall_accuracy": 0.2,
+      "overall_reliability": 20.0,
+      "category_scores": {
+        "agentic": 0.0,
+        "multi_turn": 0.6666666666666666,
+        "single_turn": 0.1111111111111111
+      },
+      "category_reliability": {
+        "agentic": 0.0,
+        "multi_turn": 66.66666666666667,
+        "single_turn": 11.11111111111111
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "memory": 0.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 0.0,
+        "parallel": 0.0,
+        "parallel_multiple": 0.0,
+        "relevance": 0.5,
+        "simple": 0.0,
+        "web_search": 0.0
+      },
+      "subcategory_reliability": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "memory": 0.0,
+        "missing_functions": 100.0,
+        "missing_params": 100.0,
+        "multiple": 0.0,
+        "parallel": 0.0,
+        "parallel_multiple": 0.0,
+        "relevance": 50.0,
+        "simple": 0.0,
+        "web_search": 0.0
+      },
+      "total_tests": 30,
+      "passed_tests": 6,
+      "avg_latency_ms": 10668.729922506545,
+      "total_tokens": 46815
+    }
+  ],
+  "detailed_results": [
+    {
+      "test_id": "single_simple_004",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 2036.73,
+          "tokens_used": 429,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 7465.67,
+          "tokens_used": 429,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 7507.0,
+          "tokens_used": 429,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "San Francisco"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 5669.8,
+      "total_tokens": 1287
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 3383.74,
+          "tokens_used": 509,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 7475.64,
+          "tokens_used": 509,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 7504.07,
+          "tokens_used": 509,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "order_id": "ORD-12345"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 6121.15,
+      "total_tokens": 1527
+    },
+    {
+      "test_id": "single_simple_003",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 4780.87,
+          "tokens_used": 408,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 7489.78,
+          "tokens_used": 408,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 7519.03,
+          "tokens_used": 408,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "New York",
+            "unit": "fahrenheit"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 6596.56,
+      "total_tokens": 1224
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 6724.74,
+          "tokens_used": 447,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 7516.05,
+          "tokens_used": 447,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 7512.25,
+          "tokens_used": 447,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 7251.01,
+      "total_tokens": 1341
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 8091.2,
+          "tokens_used": 404,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 7515.71,
+          "tokens_used": 404,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 7523.5,
+          "tokens_used": 404,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London",
+            "unit": "celsius"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 7710.14,
+      "total_tokens": 1212
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 7821.07,
+          "tokens_used": 525,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 9911.86,
+          "tokens_used": 525,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 9853.35,
+          "tokens_used": 525,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "search_products",
+          "arguments": {
+            "query": "wireless headphones"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 9195.43,
+      "total_tokens": 1575
+    },
+    {
+      "test_id": "single_multiple_003",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 8484.38,
+          "tokens_used": 560,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 9934.75,
+          "tokens_used": 560,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 9799.48,
+          "tokens_used": 560,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "cancel_order",
+          "arguments": {
+            "order_id": "ORD-67890",
+            "reason": "I changed my mind"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 9406.21,
+      "total_tokens": 1680
+    },
+    {
+      "test_id": "single_multiple_004",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 8408.92,
+          "tokens_used": 503,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 9936.72,
+          "tokens_used": 503,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 9811.55,
+          "tokens_used": 503,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "search_products",
+          "arguments": {
+            "query": "laptops",
+            "category": "electronics"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 9385.73,
+      "total_tokens": 1509
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 9366.2,
+          "tokens_used": 523,
+          "error": "Expected 3 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 9856.27,
+          "tokens_used": 523,
+          "error": "Expected 3 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 9852.35,
+          "tokens_used": 523,
+          "error": "Expected 3 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "New York"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 3 call(s), got 0",
+      "avg_latency_ms": 9691.61,
+      "total_tokens": 1569
+    },
+    {
+      "test_id": "single_parallel_002",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 10218.2,
+          "tokens_used": 470,
+          "error": "Expected 2 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 9883.11,
+          "tokens_used": 470,
+          "error": "Expected 2 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 9843.4,
+          "tokens_used": 470,
+          "error": "Expected 2 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Paris"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Berlin"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 2 call(s), got 0",
+      "avg_latency_ms": 9981.57,
+      "total_tokens": 1410
+    },
+    {
+      "test_id": "single_parallel_003",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 11845.14,
+          "tokens_used": 566,
+          "error": "Expected 4 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 14316.38,
+          "tokens_used": 566,
+          "error": "Expected 4 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 14259.59,
+          "tokens_used": 566,
+          "error": "Expected 4 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Sydney"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Melbourne"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Brisbane"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Perth"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 4 call(s), got 0",
+      "avg_latency_ms": 13473.7,
+      "total_tokens": 1698
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 13392.32,
+          "tokens_used": 636,
+          "error": "Expected 2 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 14290.99,
+          "tokens_used": 636,
+          "error": "Expected 2 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 14280.16,
+          "tokens_used": 636,
+          "error": "Expected 2 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "john@example.com",
+            "subject": "Meeting",
+            "body": "About the meeting"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "Tokyo"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 2 call(s), got 0",
+      "avg_latency_ms": 13987.82,
+      "total_tokens": 1908
+    },
+    {
+      "test_id": "single_parallel_multi_002",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 15421.57,
+          "tokens_used": 626,
+          "error": "Expected 3 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 14268.66,
+          "tokens_used": 626,
+          "error": "Expected 3 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 14300.25,
+          "tokens_used": 626,
+          "error": "Expected 3 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "New York"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "London"
+          }
+        },
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "admin@example.com",
+            "subject": "Report Ready",
+            "body": "The report is ready"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 3 call(s), got 0",
+      "avg_latency_ms": 14663.49,
+      "total_tokens": 1878
+    },
+    {
+      "test_id": "single_parallel_multi_003",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 14760.5,
+          "tokens_used": 529,
+          "error": "Expected 2 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 14293.75,
+          "tokens_used": 529,
+          "error": "Expected 2 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 14246.19,
+          "tokens_used": 529,
+          "error": "Expected 2 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "hello@example.com",
+            "subject": "Hello",
+            "body": "World"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "UTC"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 2 call(s), got 0",
+      "avg_latency_ms": 14433.48,
+      "total_tokens": 1587
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 14576.96,
+          "tokens_used": 455,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 14319.42,
+          "tokens_used": 455,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 14212.69,
+          "tokens_used": 455,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 14369.69,
+      "total_tokens": 1365
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 12999.42,
+          "tokens_used": 434,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 12004.7,
+          "tokens_used": 434,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 11892.88,
+          "tokens_used": 434,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Paris"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 12299.0,
+      "total_tokens": 1302
+    },
+    {
+      "test_id": "single_relevance_003",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 13023.94,
+          "tokens_used": 570,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 12010.82,
+          "tokens_used": 570,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 11960.36,
+          "tokens_used": 570,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 12331.71,
+      "total_tokens": 1710
+    },
+    {
+      "test_id": "single_relevance_004",
+      "model": "qwen3.5:9b",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 11485.52,
+          "tokens_used": 440,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 12013.81,
+          "tokens_used": 440,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 11986.45,
+          "tokens_used": 440,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Dubai"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 11828.59,
+      "total_tokens": 1320
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "qwen3.5:9b",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 11729.54,
+          "tokens_used": 611,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 12010.37,
+          "tokens_used": 611,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 11992.27,
+          "tokens_used": 611,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "book_flight",
+          "arguments": {
+            "flight_id": "BA112",
+            "passenger_name": "John Doe",
+            "seat_class": "business"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 11910.73,
+      "total_tokens": 1833
+    },
+    {
+      "test_id": "multi_base_002",
+      "model": "qwen3.5:9b",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 12343.75,
+          "tokens_used": 618,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 11911.51,
+          "tokens_used": 618,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 11979.42,
+          "tokens_used": 618,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "book_flight",
+          "arguments": {
+            "flight_id": "JL002",
+            "passenger_name": "Jane Smith"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 12078.22,
+      "total_tokens": 1854
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "qwen3.5:9b",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 13935.35,
+          "tokens_used": 652,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 12256.17,
+          "tokens_used": 652,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 12298.73,
+          "tokens_used": 652,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 12830.08,
+      "total_tokens": 1956
+    },
+    {
+      "test_id": "multi_mp_002",
+      "model": "qwen3.5:9b",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 12597.51,
+          "tokens_used": 560,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 12259.74,
+          "tokens_used": 560,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 12339.42,
+          "tokens_used": 560,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 12398.89,
+      "total_tokens": 1680
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "qwen3.5:9b",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 13978.32,
+          "tokens_used": 637,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 12243.82,
+          "tokens_used": 637,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 12369.71,
+          "tokens_used": 637,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 12863.95,
+      "total_tokens": 1911
+    },
+    {
+      "test_id": "multi_mf_002",
+      "model": "qwen3.5:9b",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 14169.64,
+          "tokens_used": 590,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 12256.62,
+          "tokens_used": 590,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 12416.88,
+          "tokens_used": 590,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 12947.71,
+      "total_tokens": 1770
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "qwen3.5:9b",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 12543.86,
+          "tokens_used": 412,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 12271.57,
+          "tokens_used": 412,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 12409.7,
+          "tokens_used": 412,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "web_search",
+          "arguments": {
+            "query": "Python programming language"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 12408.38,
+      "total_tokens": 1236
+    },
+    {
+      "test_id": "agentic_web_002",
+      "model": "qwen3.5:9b",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 10236.88,
+          "tokens_used": 416,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 8727.6,
+          "tokens_used": 416,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 8857.32,
+          "tokens_used": 416,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "web_search",
+          "arguments": {
+            "query": "latest news artificial intelligence"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 9273.93,
+      "total_tokens": 1248
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "qwen3.5:9b",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 9390.8,
+          "tokens_used": 463,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 8728.48,
+          "tokens_used": 463,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 8858.17,
+          "tokens_used": 463,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "retrieve_memory",
+          "arguments": {
+            "key": "favorite_color"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 8992.48,
+      "total_tokens": 1389
+    },
+    {
+      "test_id": "agentic_memory_002",
+      "model": "qwen3.5:9b",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 7740.55,
+          "tokens_used": 481,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 8828.91,
+          "tokens_used": 481,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 8743.6,
+          "tokens_used": 481,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "retrieve_memory",
+          "arguments": {
+            "key": "phone_number"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 8437.69,
+      "total_tokens": 1443
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "qwen3.5:9b",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 8359.65,
+          "tokens_used": 635,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 8851.26,
+          "tokens_used": 635,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 8738.13,
+          "tokens_used": 635,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "execute_sql",
+          "arguments": {
+            "query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 8649.68,
+      "total_tokens": 1905
+    },
+    {
+      "test_id": "agentic_format_002",
+      "model": "qwen3.5:9b",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 9005.95,
+          "tokens_used": 496,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 8883.76,
+          "tokens_used": 496,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 8730.69,
+          "tokens_used": 496,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "call_rest_api",
+          "arguments": {
+            "url": "https://api.example.com/users",
+            "method": "GET"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 8873.47,
+      "total_tokens": 1488
+    }
+  ]
+}

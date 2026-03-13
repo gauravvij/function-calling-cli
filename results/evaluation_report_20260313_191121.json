@@ -1,0 +1,616 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-13T19:11:21.919201",
+    "total_tests": 18,
+    "models_evaluated": 1,
+    "trials_per_test": 1,
+    "evaluation_method": "Best of N (pass if at least one trial succeeds)"
+  },
+  "summary": {
+    "leaderboard": [
+      {
+        "rank": 1,
+        "model": "llama3.2",
+        "accuracy": 0.1111,
+        "reliability_percent": 11.11,
+        "passed_tests": 2,
+        "total_tests": 18,
+        "avg_latency_ms": 5500.18,
+        "total_tokens": 4127
+      }
+    ]
+  },
+  "model_scores": [
+    {
+      "model": "llama3.2",
+      "overall_accuracy": 0.1111111111111111,
+      "overall_reliability": 11.11111111111111,
+      "category_scores": {
+        "single_turn": 0.1111111111111111
+      },
+      "category_reliability": {
+        "single_turn": 11.11111111111111
+      },
+      "subcategory_scores": {
+        "multiple": 0.0,
+        "parallel": 0.0,
+        "parallel_multiple": 0.0,
+        "relevance": 0.5,
+        "simple": 0.0
+      },
+      "subcategory_reliability": {
+        "multiple": 0.0,
+        "parallel": 0.0,
+        "parallel_multiple": 0.0,
+        "relevance": 50.0,
+        "simple": 0.0
+      },
+      "total_tests": 18,
+      "passed_tests": 2,
+      "avg_latency_ms": 5500.180257691278,
+      "total_tokens": 4127
+    }
+  ],
+  "detailed_results": [
+    {
+      "test_id": "single_simple_001",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 61613.16,
+          "tokens_used": 194,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 61613.16,
+      "total_tokens": 194
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 8799.66,
+          "tokens_used": 206,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London",
+            "unit": "celsius"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 8799.66,
+      "total_tokens": 206
+    },
+    {
+      "test_id": "single_simple_003",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 322.78,
+          "tokens_used": 208,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "New York",
+            "unit": "fahrenheit"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 322.78,
+      "total_tokens": 208
+    },
+    {
+      "test_id": "single_simple_004",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 15398.68,
+          "tokens_used": 195,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "San Francisco"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 15398.68,
+      "total_tokens": 195
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 284.22,
+          "tokens_used": 254,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "order_id": "ORD-12345"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 284.22,
+      "total_tokens": 254
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 271.3,
+          "tokens_used": 251,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "search_products",
+          "arguments": {
+            "query": "wireless headphones"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 271.3,
+      "total_tokens": 251
+    },
+    {
+      "test_id": "single_multiple_003",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 311.06,
+          "tokens_used": 263,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "cancel_order",
+          "arguments": {
+            "order_id": "ORD-67890",
+            "reason": "I changed my mind"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 311.06,
+      "total_tokens": 263
+    },
+    {
+      "test_id": "single_multiple_004",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 307.38,
+          "tokens_used": 263,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "search_products",
+          "arguments": {
+            "query": "laptops",
+            "category": "electronics"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 307.38,
+      "total_tokens": 263
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 392.59,
+          "tokens_used": 224,
+          "error": "Expected 3 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "New York"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 3 call(s), got 0",
+      "avg_latency_ms": 392.59,
+      "total_tokens": 224
+    },
+    {
+      "test_id": "single_parallel_002",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 491.04,
+          "tokens_used": 249,
+          "error": "Expected 2 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Paris"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Berlin"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 2 call(s), got 0",
+      "avg_latency_ms": 491.04,
+      "total_tokens": 249
+    },
+    {
+      "test_id": "single_parallel_003",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 421.62,
+          "tokens_used": 231,
+          "error": "Expected 4 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Sydney"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Melbourne"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Brisbane"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Perth"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 4 call(s), got 0",
+      "avg_latency_ms": 421.62,
+      "total_tokens": 231
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 372.9,
+          "tokens_used": 254,
+          "error": "Expected 2 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "john@example.com",
+            "subject": "Meeting",
+            "body": "About the meeting"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "Tokyo"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 2 call(s), got 0",
+      "avg_latency_ms": 372.9,
+      "total_tokens": 254
+    },
+    {
+      "test_id": "single_parallel_multi_002",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 8408.56,
+          "tokens_used": 286,
+          "error": "Expected 3 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "New York"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "London"
+          }
+        },
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "admin@example.com",
+            "subject": "Report Ready",
+            "body": "The report is ready"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 3 call(s), got 0",
+      "avg_latency_ms": 8408.56,
+      "total_tokens": 286
+    },
+    {
+      "test_id": "single_parallel_multi_003",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 388.44,
+          "tokens_used": 256,
+          "error": "Expected 2 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "hello@example.com",
+            "subject": "Hello",
+            "body": "World"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "UTC"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 2 call(s), got 0",
+      "avg_latency_ms": 388.44,
+      "total_tokens": 256
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 272.35,
+          "tokens_used": 192,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 272.35,
+      "total_tokens": 192
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 317.06,
+          "tokens_used": 203,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Paris"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 317.06,
+      "total_tokens": 203
+    },
+    {
+      "test_id": "single_relevance_003",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 300.7,
+          "tokens_used": 193,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 300.7,
+      "total_tokens": 193
+    },
+    {
+      "test_id": "single_relevance_004",
+      "model": "llama3.2",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 329.74,
+          "tokens_used": 205,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Dubai"
+          }
+        }
+      ],
+      "error": "Failed 1/1 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 329.74,
+      "total_tokens": 205
+    }
+  ]
+}

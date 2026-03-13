@@ -1,0 +1,555 @@
+====================================================================================================
+FUNCTION CALLING EVALUATION REPORT - Best of N Trials with Reliability Metrics
+====================================================================================================
+Generated: 2026-03-13 19:20:08
+Total Tests: 30
+Models Evaluated: 2
+Trials per Test: 3
+
+----------------------------------------------------------------------------------------------------
+LEADERBOARD (Ranked by Accuracy, with Reliability)
+----------------------------------------------------------------------------------------------------
+Rank   Model                                              Accuracy     Reliability  Tests     
+----------------------------------------------------------------------------------------------------
+1      llama3.2                                                20.0%        20.0%  6/30
+2      mistral                                                 20.0%        20.0%  6/30
+
+----------------------------------------------------------------------------------------------------
+CATEGORY BREAKDOWN (Accuracy | Reliability)
+----------------------------------------------------------------------------------------------------
+
+AGENTIC:
+  llama3.2                                             0.0% |   0.0%
+  mistral                                              0.0% |   0.0%
+
+MULTI_TURN:
+  llama3.2                                            66.7% |  66.7%
+  mistral                                             66.7% |  66.7%
+
+SINGLE_TURN:
+  llama3.2                                            11.1% |  11.1%
+  mistral                                             11.1% |  11.1%
+
+----------------------------------------------------------------------------------------------------
+SUBCATEGORY BREAKDOWN
+----------------------------------------------------------------------------------------------------
+
+BASE:
+  llama3.2                                             0.0% |   0.0%
+  mistral                                              0.0% |   0.0%
+
+FORMAT_SENSITIVITY:
+  llama3.2                                             0.0% |   0.0%
+  mistral                                              0.0% |   0.0%
+
+MEMORY:
+  llama3.2                                             0.0% |   0.0%
+  mistral                                              0.0% |   0.0%
+
+MISSING_FUNCTIONS:
+  llama3.2                                           100.0% | 100.0%
+  mistral                                            100.0% | 100.0%
+
+MISSING_PARAMS:
+  llama3.2                                           100.0% | 100.0%
+  mistral                                            100.0% | 100.0%
+
+MULTIPLE:
+  llama3.2                                             0.0% |   0.0%
+  mistral                                              0.0% |   0.0%
+
+PARALLEL:
+  llama3.2                                             0.0% |   0.0%
+  mistral                                              0.0% |   0.0%
+
+PARALLEL_MULTIPLE:
+  llama3.2                                             0.0% |   0.0%
+  mistral                                              0.0% |   0.0%
+
+RELEVANCE:
+  llama3.2                                            50.0% |  50.0%
+  mistral                                             50.0% |  50.0%
+
+SIMPLE:
+  llama3.2                                             0.0% |   0.0%
+  mistral                                              0.0% |   0.0%
+
+WEB_SEARCH:
+  llama3.2                                             0.0% |   0.0%
+  mistral                                              0.0% |   0.0%
+
+----------------------------------------------------------------------------------------------------
+DETAILED TEST RESULTS (with Trial Breakdown)
+----------------------------------------------------------------------------------------------------
+
+✗ FAIL | llama3.2 | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (536ms)
+    Trial 2: ✗ (367ms)
+    Trial 3: ✗ (375ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 426ms
+
+✗ FAIL | llama3.2 | agentic_format_002 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (574ms)
+    Trial 2: ✗ (369ms)
+    Trial 3: ✗ (296ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 413ms
+
+✗ FAIL | llama3.2 | agentic_memory_001 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (433ms)
+    Trial 2: ✗ (467ms)
+    Trial 3: ✗ (369ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 423ms
+
+✗ FAIL | llama3.2 | agentic_memory_002 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (474ms)
+    Trial 2: ✗ (369ms)
+    Trial 3: ✗ (372ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 405ms
+
+✗ FAIL | llama3.2 | agentic_web_001 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (383ms)
+    Trial 2: ✗ (338ms)
+    Trial 3: ✗ (406ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 376ms
+
+✗ FAIL | llama3.2 | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (366ms)
+    Trial 2: ✗ (573ms)
+    Trial 3: ✗ (368ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 436ms
+
+✗ FAIL | llama3.2 | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (541ms)
+    Trial 2: ✗ (476ms)
+    Trial 3: ✗ (626ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 548ms
+
+✗ FAIL | llama3.2 | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (506ms)
+    Trial 2: ✗ (477ms)
+    Trial 3: ✗ (685ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 556ms
+
+✓ PASS | llama3.2 | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (570ms)
+    Trial 2: ✓ (497ms)
+    Trial 3: ✓ (454ms)
+  Avg Latency: 507ms
+
+✓ PASS | llama3.2 | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (541ms)
+    Trial 2: ✓ (329ms)
+    Trial 3: ✓ (455ms)
+  Avg Latency: 442ms
+
+✓ PASS | llama3.2 | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (567ms)
+    Trial 2: ✓ (553ms)
+    Trial 3: ✓ (339ms)
+  Avg Latency: 486ms
+
+✓ PASS | llama3.2 | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (617ms)
+    Trial 2: ✓ (497ms)
+    Trial 3: ✓ (345ms)
+  Avg Latency: 486ms
+
+✗ FAIL | llama3.2 | single_multiple_001 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (2532ms)
+    Trial 2: ✗ (361ms)
+    Trial 3: ✗ (333ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 1075ms
+
+✗ FAIL | llama3.2 | single_multiple_002 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (396ms)
+    Trial 2: ✗ (621ms)
+    Trial 3: ✗ (638ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 552ms
+
+✗ FAIL | llama3.2 | single_multiple_003 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (568ms)
+    Trial 2: ✗ (801ms)
+    Trial 3: ✗ (636ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 668ms
+
+✗ FAIL | llama3.2 | single_multiple_004 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (711ms)
+    Trial 2: ✗ (638ms)
+    Trial 3: ✗ (635ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 661ms
+
+✗ FAIL | llama3.2 | single_parallel_001 | Reliability: 0%
+  Category: single_turn/parallel
+    Trial 1: ✗ (657ms)
+    Trial 2: ✗ (636ms)
+    Trial 3: ✗ (864ms)
+  Error: Failed 3/3 trials. Last error: Expected 3 call(s), got 0
+  Avg Latency: 719ms
+
+✗ FAIL | llama3.2 | single_parallel_002 | Reliability: 0%
+  Category: single_turn/parallel
+    Trial 1: ✗ (808ms)
+    Trial 2: ✗ (636ms)
+    Trial 3: ✗ (1283ms)
+  Error: Failed 3/3 trials. Last error: Expected 2 call(s), got 0
+  Avg Latency: 909ms
+
+✗ FAIL | llama3.2 | single_parallel_003 | Reliability: 0%
+  Category: single_turn/parallel
+    Trial 1: ✗ (845ms)
+    Trial 2: ✗ (1215ms)
+    Trial 3: ✗ (784ms)
+  Error: Failed 3/3 trials. Last error: Expected 4 call(s), got 0
+  Avg Latency: 948ms
+
+✗ FAIL | llama3.2 | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (783ms)
+    Trial 2: ✗ (1013ms)
+    Trial 3: ✗ (782ms)
+  Error: Failed 3/3 trials. Last error: Expected 2 call(s), got 0
+  Avg Latency: 859ms
+
+✗ FAIL | llama3.2 | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (975ms)
+    Trial 2: ✗ (998ms)
+    Trial 3: ✗ (782ms)
+  Error: Failed 3/3 trials. Last error: Expected 3 call(s), got 0
+  Avg Latency: 918ms
+
+✗ FAIL | llama3.2 | single_parallel_multi_003 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (1077ms)
+    Trial 2: ✗ (782ms)
+    Trial 3: ✗ (930ms)
+  Error: Failed 3/3 trials. Last error: Expected 2 call(s), got 0
+  Avg Latency: 930ms
+
+✓ PASS | llama3.2 | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1084ms)
+    Trial 2: ✓ (783ms)
+    Trial 3: ✓ (428ms)
+  Avg Latency: 765ms
+
+✗ FAIL | llama3.2 | single_relevance_002 | Reliability: 0%
+  Category: single_turn/relevance
+    Trial 1: ✗ (777ms)
+    Trial 2: ✗ (642ms)
+    Trial 3: ✗ (477ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 632ms
+
+✓ PASS | llama3.2 | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (908ms)
+    Trial 2: ✓ (578ms)
+    Trial 3: ✓ (476ms)
+  Avg Latency: 654ms
+
+✗ FAIL | llama3.2 | single_relevance_004 | Reliability: 0%
+  Category: single_turn/relevance
+    Trial 1: ✗ (736ms)
+    Trial 2: ✗ (579ms)
+    Trial 3: ✗ (477ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 597ms
+
+✗ FAIL | llama3.2 | single_simple_001 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (2408ms)
+    Trial 2: ✗ (380ms)
+    Trial 3: ✗ (322ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 1037ms
+
+✗ FAIL | llama3.2 | single_simple_002 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (2978ms)
+    Trial 2: ✗ (322ms)
+    Trial 3: ✗ (647ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 1316ms
+
+✗ FAIL | llama3.2 | single_simple_003 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (2687ms)
+    Trial 2: ✗ (360ms)
+    Trial 3: ✗ (343ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 1130ms
+
+✗ FAIL | llama3.2 | single_simple_004 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (2818ms)
+    Trial 2: ✗ (338ms)
+    Trial 3: ✗ (501ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 1219ms
+
+✗ FAIL | mistral | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (8288ms)
+    Trial 2: ✗ (4061ms)
+    Trial 3: ✗ (4063ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 5471ms
+
+✗ FAIL | mistral | agentic_format_002 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (4254ms)
+    Trial 2: ✗ (4062ms)
+    Trial 3: ✗ (4063ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 4127ms
+
+✗ FAIL | mistral | agentic_memory_001 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (8705ms)
+    Trial 2: ✗ (4061ms)
+    Trial 3: ✗ (4063ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 5610ms
+
+✗ FAIL | mistral | agentic_memory_002 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (7716ms)
+    Trial 2: ✗ (4061ms)
+    Trial 3: ✗ (4064ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 5280ms
+
+✗ FAIL | mistral | agentic_web_001 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (9726ms)
+    Trial 2: ✗ (8670ms)
+    Trial 3: ✗ (8675ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 9024ms
+
+✗ FAIL | mistral | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (10362ms)
+    Trial 2: ✗ (4061ms)
+    Trial 3: ✗ (4063ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 6162ms
+
+✗ FAIL | mistral | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (3710ms)
+    Trial 2: ✗ (4088ms)
+    Trial 3: ✗ (4089ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 3963ms
+
+✗ FAIL | mistral | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (4373ms)
+    Trial 2: ✗ (4089ms)
+    Trial 3: ✗ (4088ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 4183ms
+
+✓ PASS | mistral | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (5445ms)
+    Trial 2: ✓ (10089ms)
+    Trial 3: ✓ (8673ms)
+  Avg Latency: 8069ms
+
+✓ PASS | mistral | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (6299ms)
+    Trial 2: ✓ (8668ms)
+    Trial 3: ✓ (8673ms)
+  Avg Latency: 7880ms
+
+✓ PASS | mistral | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (5097ms)
+    Trial 2: ✓ (9439ms)
+    Trial 3: ✓ (8670ms)
+  Avg Latency: 7735ms
+
+✓ PASS | mistral | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (5348ms)
+    Trial 2: ✓ (9417ms)
+    Trial 3: ✓ (8671ms)
+  Avg Latency: 7812ms
+
+✗ FAIL | mistral | single_multiple_001 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (32211ms)
+    Trial 2: ✗ (2321ms)
+    Trial 3: ✗ (2320ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 12284ms
+
+✗ FAIL | mistral | single_multiple_002 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (2838ms)
+    Trial 2: ✗ (2676ms)
+    Trial 3: ✗ (2675ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 2729ms
+
+✗ FAIL | mistral | single_multiple_003 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (2786ms)
+    Trial 2: ✗ (2676ms)
+    Trial 3: ✗ (2674ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 2712ms
+
+✗ FAIL | mistral | single_multiple_004 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (2602ms)
+    Trial 2: ✗ (2676ms)
+    Trial 3: ✗ (2675ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 2651ms
+
+✗ FAIL | mistral | single_parallel_001 | Reliability: 0%
+  Category: single_turn/parallel
+    Trial 1: ✗ (2511ms)
+    Trial 2: ✗ (2676ms)
+    Trial 3: ✗ (2676ms)
+  Error: Failed 3/3 trials. Last error: Expected 3 call(s), got 0
+  Avg Latency: 2621ms
+
+✗ FAIL | mistral | single_parallel_002 | Reliability: 0%
+  Category: single_turn/parallel
+    Trial 1: ✗ (2706ms)
+    Trial 2: ✗ (2677ms)
+    Trial 3: ✗ (2675ms)
+  Error: Failed 3/3 trials. Last error: Expected 2 call(s), got 0
+  Avg Latency: 2686ms
+
+✗ FAIL | mistral | single_parallel_003 | Reliability: 0%
+  Category: single_turn/parallel
+    Trial 1: ✗ (2597ms)
+    Trial 2: ✗ (2431ms)
+    Trial 3: ✗ (2432ms)
+  Error: Failed 3/3 trials. Last error: Expected 4 call(s), got 0
+  Avg Latency: 2486ms
+
+✗ FAIL | mistral | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (2835ms)
+    Trial 2: ✗ (2431ms)
+    Trial 3: ✗ (2432ms)
+  Error: Failed 3/3 trials. Last error: Expected 2 call(s), got 0
+  Avg Latency: 2566ms
+
+✗ FAIL | mistral | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (3249ms)
+    Trial 2: ✗ (2430ms)
+    Trial 3: ✗ (2432ms)
+  Error: Failed 3/3 trials. Last error: Expected 3 call(s), got 0
+  Avg Latency: 2704ms
+
+✗ FAIL | mistral | single_parallel_multi_003 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (2909ms)
+    Trial 2: ✗ (2432ms)
+    Trial 3: ✗ (2431ms)
+  Error: Failed 3/3 trials. Last error: Expected 2 call(s), got 0
+  Avg Latency: 2591ms
+
+✓ PASS | mistral | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (2728ms)
+    Trial 2: ✓ (2432ms)
+    Trial 3: ✓ (2432ms)
+  Avg Latency: 2531ms
+
+✗ FAIL | mistral | single_relevance_002 | Reliability: 0%
+  Category: single_turn/relevance
+    Trial 1: ✗ (2260ms)
+    Trial 2: ✗ (4089ms)
+    Trial 3: ✗ (4089ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 3480ms
+
+✓ PASS | mistral | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (3390ms)
+    Trial 2: ✓ (4089ms)
+    Trial 3: ✓ (4090ms)
+  Avg Latency: 3856ms
+
+✗ FAIL | mistral | single_relevance_004 | Reliability: 0%
+  Category: single_turn/relevance
+    Trial 1: ✗ (3066ms)
+    Trial 2: ✗ (4090ms)
+    Trial 3: ✗ (4089ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 3748ms
+
+✗ FAIL | mistral | single_simple_001 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (21645ms)
+    Trial 2: ✗ (11764ms)
+    Trial 3: ✗ (2321ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 11910ms
+
+✗ FAIL | mistral | single_simple_002 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (27254ms)
+    Trial 2: ✗ (6700ms)
+    Trial 3: ✗ (2321ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 12092ms
+
+✗ FAIL | mistral | single_simple_003 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (26613ms)
+    Trial 2: ✗ (6699ms)
+    Trial 3: ✗ (2322ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 11878ms
+
+✗ FAIL | mistral | single_simple_004 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (32024ms)
+    Trial 2: ✗ (2321ms)
+    Trial 3: ✗ (2320ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 12222ms
+
+====================================================================================================
+END OF REPORT
+====================================================================================================

@@ -4,13 +4,16 @@ Evaluation executor for running test cases against models.
 
 import time
 import logging
-from typing import List, Optional
+from typing import List, Optional, Union
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 
-from .client import OpenRouterClient
+from .client import OpenRouterClient, OllamaClient
 from .test_suite import TestCase
 from .validator import ASTValidator
+
+# Type alias for any client that supports the required interface
+ClientType = Union[OpenRouterClient, OllamaClient]
 
 logger = logging.getLogger(__name__)
 
@@ -46,7 +49,15 @@ class TestResult:
 class EvaluationExecutor:
     """Executes test cases against models with sequential or parallel support."""
     
-    def __init__(self, client: OpenRouterClient, max_workers: int = 5, trials: int = 3):
+    def __init__(self, client, max_workers: int = 5, trials: int = 3):
+        """
+        Initialize evaluation executor.
+        
+        Args:
+            client: API client instance (OpenRouterClient or OllamaClient)
+            max_workers: Maximum number of parallel workers
+            trials: Number of trials per test case
+        """
         self.client = client
         self.max_workers = max_workers
         self.trials = trials

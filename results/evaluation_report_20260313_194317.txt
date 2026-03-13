@@ -1,0 +1,306 @@
+====================================================================================================
+FUNCTION CALLING EVALUATION REPORT - Best of N Trials with Reliability Metrics
+====================================================================================================
+Generated: 2026-03-13 19:43:17
+Total Tests: 30
+Models Evaluated: 1
+Trials per Test: 3
+
+----------------------------------------------------------------------------------------------------
+LEADERBOARD (Ranked by Accuracy, with Reliability)
+----------------------------------------------------------------------------------------------------
+Rank   Model                                              Accuracy     Reliability  Tests     
+----------------------------------------------------------------------------------------------------
+1      qwen3.5:9b                                              20.0%        20.0%  6/30
+
+----------------------------------------------------------------------------------------------------
+CATEGORY BREAKDOWN (Accuracy | Reliability)
+----------------------------------------------------------------------------------------------------
+
+AGENTIC:
+  qwen3.5:9b                                           0.0% |   0.0%
+
+MULTI_TURN:
+  qwen3.5:9b                                          66.7% |  66.7%
+
+SINGLE_TURN:
+  qwen3.5:9b                                          11.1% |  11.1%
+
+----------------------------------------------------------------------------------------------------
+SUBCATEGORY BREAKDOWN
+----------------------------------------------------------------------------------------------------
+
+BASE:
+  qwen3.5:9b                                           0.0% |   0.0%
+
+FORMAT_SENSITIVITY:
+  qwen3.5:9b                                           0.0% |   0.0%
+
+MEMORY:
+  qwen3.5:9b                                           0.0% |   0.0%
+
+MISSING_FUNCTIONS:
+  qwen3.5:9b                                         100.0% | 100.0%
+
+MISSING_PARAMS:
+  qwen3.5:9b                                         100.0% | 100.0%
+
+MULTIPLE:
+  qwen3.5:9b                                           0.0% |   0.0%
+
+PARALLEL:
+  qwen3.5:9b                                           0.0% |   0.0%
+
+PARALLEL_MULTIPLE:
+  qwen3.5:9b                                           0.0% |   0.0%
+
+RELEVANCE:
+  qwen3.5:9b                                          50.0% |  50.0%
+
+SIMPLE:
+  qwen3.5:9b                                           0.0% |   0.0%
+
+WEB_SEARCH:
+  qwen3.5:9b                                           0.0% |   0.0%
+
+----------------------------------------------------------------------------------------------------
+DETAILED TEST RESULTS (with Trial Breakdown)
+----------------------------------------------------------------------------------------------------
+
+✗ FAIL | qwen3.5:9b | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (8360ms)
+    Trial 2: ✗ (8851ms)
+    Trial 3: ✗ (8738ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 8650ms
+
+✗ FAIL | qwen3.5:9b | agentic_format_002 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (9006ms)
+    Trial 2: ✗ (8884ms)
+    Trial 3: ✗ (8731ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 8873ms
+
+✗ FAIL | qwen3.5:9b | agentic_memory_001 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (9391ms)
+    Trial 2: ✗ (8728ms)
+    Trial 3: ✗ (8858ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 8992ms
+
+✗ FAIL | qwen3.5:9b | agentic_memory_002 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (7741ms)
+    Trial 2: ✗ (8829ms)
+    Trial 3: ✗ (8744ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 8438ms
+
+✗ FAIL | qwen3.5:9b | agentic_web_001 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (12544ms)
+    Trial 2: ✗ (12272ms)
+    Trial 3: ✗ (12410ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 12408ms
+
+✗ FAIL | qwen3.5:9b | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (10237ms)
+    Trial 2: ✗ (8728ms)
+    Trial 3: ✗ (8857ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 9274ms
+
+✗ FAIL | qwen3.5:9b | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (11730ms)
+    Trial 2: ✗ (12010ms)
+    Trial 3: ✗ (11992ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 11911ms
+
+✗ FAIL | qwen3.5:9b | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (12344ms)
+    Trial 2: ✗ (11912ms)
+    Trial 3: ✗ (11979ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 12078ms
+
+✓ PASS | qwen3.5:9b | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (13978ms)
+    Trial 2: ✓ (12244ms)
+    Trial 3: ✓ (12370ms)
+  Avg Latency: 12864ms
+
+✓ PASS | qwen3.5:9b | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (14170ms)
+    Trial 2: ✓ (12257ms)
+    Trial 3: ✓ (12417ms)
+  Avg Latency: 12948ms
+
+✓ PASS | qwen3.5:9b | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (13935ms)
+    Trial 2: ✓ (12256ms)
+    Trial 3: ✓ (12299ms)
+  Avg Latency: 12830ms
+
+✓ PASS | qwen3.5:9b | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (12598ms)
+    Trial 2: ✓ (12260ms)
+    Trial 3: ✓ (12339ms)
+  Avg Latency: 12399ms
+
+✗ FAIL | qwen3.5:9b | single_multiple_001 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (3384ms)
+    Trial 2: ✗ (7476ms)
+    Trial 3: ✗ (7504ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 6121ms
+
+✗ FAIL | qwen3.5:9b | single_multiple_002 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (7821ms)
+    Trial 2: ✗ (9912ms)
+    Trial 3: ✗ (9853ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 9195ms
+
+✗ FAIL | qwen3.5:9b | single_multiple_003 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (8484ms)
+    Trial 2: ✗ (9935ms)
+    Trial 3: ✗ (9799ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 9406ms
+
+✗ FAIL | qwen3.5:9b | single_multiple_004 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (8409ms)
+    Trial 2: ✗ (9937ms)
+    Trial 3: ✗ (9812ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 9386ms
+
+✗ FAIL | qwen3.5:9b | single_parallel_001 | Reliability: 0%
+  Category: single_turn/parallel
+    Trial 1: ✗ (9366ms)
+    Trial 2: ✗ (9856ms)
+    Trial 3: ✗ (9852ms)
+  Error: Failed 3/3 trials. Last error: Expected 3 call(s), got 0
+  Avg Latency: 9692ms
+
+✗ FAIL | qwen3.5:9b | single_parallel_002 | Reliability: 0%
+  Category: single_turn/parallel
+    Trial 1: ✗ (10218ms)
+    Trial 2: ✗ (9883ms)
+    Trial 3: ✗ (9843ms)
+  Error: Failed 3/3 trials. Last error: Expected 2 call(s), got 0
+  Avg Latency: 9982ms
+
+✗ FAIL | qwen3.5:9b | single_parallel_003 | Reliability: 0%
+  Category: single_turn/parallel
+    Trial 1: ✗ (11845ms)
+    Trial 2: ✗ (14316ms)
+    Trial 3: ✗ (14260ms)
+  Error: Failed 3/3 trials. Last error: Expected 4 call(s), got 0
+  Avg Latency: 13474ms
+
+✗ FAIL | qwen3.5:9b | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (13392ms)
+    Trial 2: ✗ (14291ms)
+    Trial 3: ✗ (14280ms)
+  Error: Failed 3/3 trials. Last error: Expected 2 call(s), got 0
+  Avg Latency: 13988ms
+
+✗ FAIL | qwen3.5:9b | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (15422ms)
+    Trial 2: ✗ (14269ms)
+    Trial 3: ✗ (14300ms)
+  Error: Failed 3/3 trials. Last error: Expected 3 call(s), got 0
+  Avg Latency: 14663ms
+
+✗ FAIL | qwen3.5:9b | single_parallel_multi_003 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (14760ms)
+    Trial 2: ✗ (14294ms)
+    Trial 3: ✗ (14246ms)
+  Error: Failed 3/3 trials. Last error: Expected 2 call(s), got 0
+  Avg Latency: 14433ms
+
+✓ PASS | qwen3.5:9b | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (14577ms)
+    Trial 2: ✓ (14319ms)
+    Trial 3: ✓ (14213ms)
+  Avg Latency: 14370ms
+
+✗ FAIL | qwen3.5:9b | single_relevance_002 | Reliability: 0%
+  Category: single_turn/relevance
+    Trial 1: ✗ (12999ms)
+    Trial 2: ✗ (12005ms)
+    Trial 3: ✗ (11893ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 12299ms
+
+✓ PASS | qwen3.5:9b | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (13024ms)
+    Trial 2: ✓ (12011ms)
+    Trial 3: ✓ (11960ms)
+  Avg Latency: 12332ms
+
+✗ FAIL | qwen3.5:9b | single_relevance_004 | Reliability: 0%
+  Category: single_turn/relevance
+    Trial 1: ✗ (11486ms)
+    Trial 2: ✗ (12014ms)
+    Trial 3: ✗ (11986ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 11829ms
+
+✗ FAIL | qwen3.5:9b | single_simple_001 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (6725ms)
+    Trial 2: ✗ (7516ms)
+    Trial 3: ✗ (7512ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 7251ms
+
+✗ FAIL | qwen3.5:9b | single_simple_002 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (8091ms)
+    Trial 2: ✗ (7516ms)
+    Trial 3: ✗ (7523ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 7710ms
+
+✗ FAIL | qwen3.5:9b | single_simple_003 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (4781ms)
+    Trial 2: ✗ (7490ms)
+    Trial 3: ✗ (7519ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 6597ms
+
+✗ FAIL | qwen3.5:9b | single_simple_004 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (2037ms)
+    Trial 2: ✗ (7466ms)
+    Trial 3: ✗ (7507ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 5670ms
+
+====================================================================================================
+END OF REPORT
+====================================================================================================

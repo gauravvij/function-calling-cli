@@ -10,7 +10,7 @@ import logging
 import argparse
 from typing import List, Optional
 
-from .client import OpenRouterClient
+from .client import OpenRouterClient, OllamaClient
 from .evaluator import EvaluationExecutor
 from .reporter import ReportGenerator
 from .test_suite import BFCLTestSuite
@@ -46,11 +46,17 @@ DEFAULT_MODELS = [
 def parse_arguments():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(
-        description="FC-Eval: Evaluate LLM function calling capabilities on OpenRouter with Best of N trials",
+        description="FC-Eval: Evaluate LLM function calling capabilities with Best of N trials (OpenRouter or Ollama)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  fc-eval --models openai/gpt-4o anthropic/claude-3.5-sonnet
+  # OpenRouter (default)
+  fc-eval --provider openrouter --models openai/gpt-4o anthropic/claude-3.5-sonnet
+  
+  # Ollama (local)
+  fc-eval --provider ollama --models llama3.2 mistral
+  
+  # Other options
   fc-eval --mode parallel --trials 5 --max-workers 10
   fc-eval --category single_turn --output-dir ./my_results
 
@@ -58,10 +64,21 @@ For more information, visit: https://github.com/gauravvij/function-calling-cli
         """
     )
     parser.add_argument(
+        "--provider",
+        choices=["openrouter", "ollama"],
+        default="openrouter",
+        help="API provider to use for evaluation (default: openrouter)"
+    )
+    parser.add_argument(
+        "--ollama-url",
+        default="http://localhost:11434",
+        help="Ollama API base URL (default: http://localhost:11434)"
+    )
+    parser.add_argument(
         "--models",
         nargs="+",
         default=None,
-        help="List of models to evaluate (default: predefined list of 11 models)"
+        help="List of models to evaluate (default: predefined list for OpenRouter, must specify for Ollama)"
     )
     parser.add_argument(
         "--mode",
@@ -110,11 +127,20 @@ def main():
     """Main entry point for the evaluation script."""
     args = parse_arguments()
     
+    # Initialize appropriate client based on provider
     try:
-        client = OpenRouterClient(api_key=args.api_key)
-        logger.info("OpenRouter client initialized successfully")
+        if args.provider == "ollama":
+            client = OllamaClient(base_url=args.ollama_url)
+            logger.info(f"Ollama client initialized successfully (URL: {args.ollama_url})")
+            # Validate that models are specified for Ollama
+            if not args.models:
+                logger.error("Ollama provider requires --models to be specified (e.g., --models llama3.2 mistral)")
+                sys.exit(1)
+        else:
+            client = OpenRouterClient(api_key=args.api_key)
+            logger.info("OpenRouter client initialized successfully")
     except ValueError as e:
-        logger.error(f"Failed to initialize OpenRouter client: {e}")
+        logger.error(f"Failed to initialize {args.provider} client: {e}")
         sys.exit(1)
     
     test_suite = BFCLTestSuite()

@@ -1,0 +1,154 @@
+====================================================================================================
+FUNCTION CALLING EVALUATION REPORT - Best of N Trials with Reliability Metrics
+====================================================================================================
+Generated: 2026-03-13 19:11:21
+Total Tests: 18
+Models Evaluated: 1
+Trials per Test: 1
+
+----------------------------------------------------------------------------------------------------
+LEADERBOARD (Ranked by Accuracy, with Reliability)
+----------------------------------------------------------------------------------------------------
+Rank   Model                                              Accuracy     Reliability  Tests     
+----------------------------------------------------------------------------------------------------
+1      llama3.2                                                11.1%        11.1%  2/18
+
+----------------------------------------------------------------------------------------------------
+CATEGORY BREAKDOWN (Accuracy | Reliability)
+----------------------------------------------------------------------------------------------------
+
+SINGLE_TURN:
+  llama3.2                                            11.1% |  11.1%
+
+----------------------------------------------------------------------------------------------------
+SUBCATEGORY BREAKDOWN
+----------------------------------------------------------------------------------------------------
+
+MULTIPLE:
+  llama3.2                                             0.0% |   0.0%
+
+PARALLEL:
+  llama3.2                                             0.0% |   0.0%
+
+PARALLEL_MULTIPLE:
+  llama3.2                                             0.0% |   0.0%
+
+RELEVANCE:
+  llama3.2                                            50.0% |  50.0%
+
+SIMPLE:
+  llama3.2                                             0.0% |   0.0%
+
+----------------------------------------------------------------------------------------------------
+DETAILED TEST RESULTS (with Trial Breakdown)
+----------------------------------------------------------------------------------------------------
+
+✗ FAIL | llama3.2 | single_multiple_001 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (284ms)
+  Error: Failed 1/1 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 284ms
+
+✗ FAIL | llama3.2 | single_multiple_002 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (271ms)
+  Error: Failed 1/1 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 271ms
+
+✗ FAIL | llama3.2 | single_multiple_003 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (311ms)
+  Error: Failed 1/1 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 311ms
+
+✗ FAIL | llama3.2 | single_multiple_004 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (307ms)
+  Error: Failed 1/1 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 307ms
+
+✗ FAIL | llama3.2 | single_parallel_001 | Reliability: 0%
+  Category: single_turn/parallel
+    Trial 1: ✗ (393ms)
+  Error: Failed 1/1 trials. Last error: Expected 3 call(s), got 0
+  Avg Latency: 393ms
+
+✗ FAIL | llama3.2 | single_parallel_002 | Reliability: 0%
+  Category: single_turn/parallel
+    Trial 1: ✗ (491ms)
+  Error: Failed 1/1 trials. Last error: Expected 2 call(s), got 0
+  Avg Latency: 491ms
+
+✗ FAIL | llama3.2 | single_parallel_003 | Reliability: 0%
+  Category: single_turn/parallel
+    Trial 1: ✗ (422ms)
+  Error: Failed 1/1 trials. Last error: Expected 4 call(s), got 0
+  Avg Latency: 422ms
+
+✗ FAIL | llama3.2 | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (373ms)
+  Error: Failed 1/1 trials. Last error: Expected 2 call(s), got 0
+  Avg Latency: 373ms
+
+✗ FAIL | llama3.2 | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (8409ms)
+  Error: Failed 1/1 trials. Last error: Expected 3 call(s), got 0
+  Avg Latency: 8409ms
+
+✗ FAIL | llama3.2 | single_parallel_multi_003 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (388ms)
+  Error: Failed 1/1 trials. Last error: Expected 2 call(s), got 0
+  Avg Latency: 388ms
+
+✓ PASS | llama3.2 | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (272ms)
+  Avg Latency: 272ms
+
+✗ FAIL | llama3.2 | single_relevance_002 | Reliability: 0%
+  Category: single_turn/relevance
+    Trial 1: ✗ (317ms)
+  Error: Failed 1/1 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 317ms
+
+✓ PASS | llama3.2 | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (301ms)
+  Avg Latency: 301ms
+
+✗ FAIL | llama3.2 | single_relevance_004 | Reliability: 0%
+  Category: single_turn/relevance
+    Trial 1: ✗ (330ms)
+  Error: Failed 1/1 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 330ms
+
+✗ FAIL | llama3.2 | single_simple_001 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (61613ms)
+  Error: Failed 1/1 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 61613ms
+
+✗ FAIL | llama3.2 | single_simple_002 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (8800ms)
+  Error: Failed 1/1 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 8800ms
+
+✗ FAIL | llama3.2 | single_simple_003 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (323ms)
+  Error: Failed 1/1 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 323ms
+
+✗ FAIL | llama3.2 | single_simple_004 | Reliability: 0%
+  Category: single_turn/simple
+    Trial 1: ✗ (15399ms)
+  Error: Failed 1/1 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 15399ms
+
+====================================================================================================
+END OF REPORT
+====================================================================================================

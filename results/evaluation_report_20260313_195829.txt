@@ -1,0 +1,291 @@
+====================================================================================================
+FUNCTION CALLING EVALUATION REPORT - Best of N Trials with Reliability Metrics
+====================================================================================================
+Generated: 2026-03-13 19:58:29
+Total Tests: 30
+Models Evaluated: 1
+Trials per Test: 3
+
+----------------------------------------------------------------------------------------------------
+LEADERBOARD (Ranked by Accuracy, with Reliability)
+----------------------------------------------------------------------------------------------------
+Rank   Model                                              Accuracy     Reliability  Tests     
+----------------------------------------------------------------------------------------------------
+1      qwen/qwen3.5-9b                                         70.0%        70.0%  21/30
+
+----------------------------------------------------------------------------------------------------
+CATEGORY BREAKDOWN (Accuracy | Reliability)
+----------------------------------------------------------------------------------------------------
+
+AGENTIC:
+  qwen/qwen3.5-9b                                     33.3% |  33.3%
+
+MULTI_TURN:
+  qwen/qwen3.5-9b                                     66.7% |  66.7%
+
+SINGLE_TURN:
+  qwen/qwen3.5-9b                                     83.3% |  83.3%
+
+----------------------------------------------------------------------------------------------------
+SUBCATEGORY BREAKDOWN
+----------------------------------------------------------------------------------------------------
+
+BASE:
+  qwen/qwen3.5-9b                                      0.0% |   0.0%
+
+FORMAT_SENSITIVITY:
+  qwen/qwen3.5-9b                                     50.0% |  50.0%
+
+MEMORY:
+  qwen/qwen3.5-9b                                      0.0% |   0.0%
+
+MISSING_FUNCTIONS:
+  qwen/qwen3.5-9b                                    100.0% | 100.0%
+
+MISSING_PARAMS:
+  qwen/qwen3.5-9b                                    100.0% | 100.0%
+
+MULTIPLE:
+  qwen/qwen3.5-9b                                     75.0% |  75.0%
+
+PARALLEL:
+  qwen/qwen3.5-9b                                    100.0% | 100.0%
+
+PARALLEL_MULTIPLE:
+  qwen/qwen3.5-9b                                     33.3% |  33.3%
+
+RELEVANCE:
+  qwen/qwen3.5-9b                                    100.0% | 100.0%
+
+SIMPLE:
+  qwen/qwen3.5-9b                                    100.0% | 100.0%
+
+WEB_SEARCH:
+  qwen/qwen3.5-9b                                     50.0% |  50.0%
+
+----------------------------------------------------------------------------------------------------
+DETAILED TEST RESULTS (with Trial Breakdown)
+----------------------------------------------------------------------------------------------------
+
+✗ FAIL | qwen/qwen3.5-9b | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (4231ms)
+    Trial 2: ✗ (7847ms)
+    Trial 3: ✗ (11722ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY)"}}
+  Avg Latency: 7933ms
+
+✓ PASS | qwen/qwen3.5-9b | agentic_format_002 | Reliability: 100%
+  Category: agentic/format_sensitivity
+    Trial 1: ✓ (2552ms)
+    Trial 2: ✓ (2286ms)
+    Trial 3: ✓ (2254ms)
+  Avg Latency: 2364ms
+
+✗ FAIL | qwen/qwen3.5-9b | agentic_memory_001 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (1191ms)
+    Trial 2: ✗ (1330ms)
+    Trial 3: ✗ (3637ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "retrieve_memory", "arguments": {"key": "favorite color"}}
+  Avg Latency: 2053ms
+
+✗ FAIL | qwen/qwen3.5-9b | agentic_memory_002 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (1665ms)
+    Trial 2: ✗ (3348ms)
+    Trial 3: ✗ (1964ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "phone_number"}}, got {"name": "store_memory", "arguments": {"key": "phone_number", "value": "555-1234"}}
+  Avg Latency: 2326ms
+
+✓ PASS | qwen/qwen3.5-9b | agentic_web_001 | Reliability: 100%
+  Category: agentic/web_search
+    Trial 1: ✓ (1596ms)
+    Trial 2: ✓ (925ms)
+    Trial 3: ✓ (1330ms)
+  Avg Latency: 1284ms
+
+✗ FAIL | qwen/qwen3.5-9b | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (1322ms)
+    Trial 2: ✗ (907ms)
+    Trial 3: ✗ (1580ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "latest news artificial intelligence"}}, got {"name": "web_search", "arguments": {"query": "latest news about artificial intelligence"}}
+  Avg Latency: 1270ms
+
+✗ FAIL | qwen/qwen3.5-9b | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (3217ms)
+    Trial 2: ✗ (3094ms)
+    Trial 3: ✗ (3112ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "London", "date": "2024-12-25"}}
+  Avg Latency: 3141ms
+
+✗ FAIL | qwen/qwen3.5-9b | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (2215ms)
+    Trial 2: ✗ (3194ms)
+    Trial 3: ✗ (2944ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "JL002", "passenger_name": "Jane Smith"}}, got {"name": "search_flights", "arguments": {"origin": "LA", "destination": "Tokyo", "date": "2024-12-20"}}
+  Avg Latency: 2784ms
+
+✓ PASS | qwen/qwen3.5-9b | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (2831ms)
+    Trial 2: ✓ (3733ms)
+    Trial 3: ✓ (3219ms)
+  Avg Latency: 3261ms
+
+✓ PASS | qwen/qwen3.5-9b | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (3802ms)
+    Trial 2: ✓ (3452ms)
+    Trial 3: ✓ (3621ms)
+  Avg Latency: 3625ms
+
+✓ PASS | qwen/qwen3.5-9b | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (3230ms)
+    Trial 2: ✓ (3321ms)
+    Trial 3: ✓ (3175ms)
+  Avg Latency: 3242ms
+
+✓ PASS | qwen/qwen3.5-9b | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (2885ms)
+    Trial 2: ✓ (2488ms)
+    Trial 3: ✓ (2870ms)
+  Avg Latency: 2748ms
+
+✓ PASS | qwen/qwen3.5-9b | single_multiple_001 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1975ms)
+    Trial 2: ✓ (1431ms)
+    Trial 3: ✓ (1524ms)
+  Avg Latency: 1643ms
+
+✓ PASS | qwen/qwen3.5-9b | single_multiple_002 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (6797ms)
+    Trial 2: ✓ (2110ms)
+    Trial 3: ✓ (1887ms)
+  Avg Latency: 3598ms
+
+✗ FAIL | qwen/qwen3.5-9b | single_multiple_003 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (7587ms)
+    Trial 2: ✗ (2484ms)
+    Trial 3: ✗ (2212ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "cancel_order", "arguments": {"order_id": "ORD-67890", "reason": "I changed my mind"}}, got {"name": "cancel_order", "arguments": {"order_id": "ORD-67890", "reason": "changed my mind"}}
+  Avg Latency: 4094ms
+
+✓ PASS | qwen/qwen3.5-9b | single_multiple_004 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1930ms)
+    Trial 2: ✓ (4385ms)
+    Trial 3: ✓ (2264ms)
+  Avg Latency: 2860ms
+
+✓ PASS | qwen/qwen3.5-9b | single_parallel_001 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (7523ms)
+    Trial 2: ✓ (2137ms)
+    Trial 3: ✓ (2410ms)
+  Avg Latency: 4024ms
+
+✓ PASS | qwen/qwen3.5-9b | single_parallel_002 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (6248ms)
+    Trial 2: ✓ (2238ms)
+    Trial 3: ✓ (2063ms)
+  Avg Latency: 3516ms
+
+✓ PASS | qwen/qwen3.5-9b | single_parallel_003 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (3123ms)
+    Trial 2: ✓ (2719ms)
+    Trial 3: ✓ (3541ms)
+  Avg Latency: 3128ms
+
+✗ FAIL | qwen/qwen3.5-9b | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (2952ms)
+    Trial 2: ✗ (3305ms)
+    Trial 3: ✗ (3731ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Information", "body": "Hi John,\n\nI wanted to send you a quick email regarding our upcoming meeting. Please let me know if you have any questions or need any additional information.\n\nBest regards,\n[Your Name]"}}
+  Avg Latency: 3329ms
+
+✗ FAIL | qwen/qwen3.5-9b | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (4632ms)
+    Trial 2: ✗ (3036ms)
+    Trial 3: ✗ (8325ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "get_current_time", "arguments": {"timezone": "New York"}}, got {"name": "get_current_time", "arguments": {"timezone": "America/New_York"}}
+  Avg Latency: 5331ms
+
+✓ PASS | qwen/qwen3.5-9b | single_parallel_multi_003 | Reliability: 100%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✓ (3306ms)
+    Trial 2: ✓ (3050ms)
+    Trial 3: ✓ (2951ms)
+  Avg Latency: 3103ms
+
+✓ PASS | qwen/qwen3.5-9b | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1680ms)
+    Trial 2: ✓ (1689ms)
+    Trial 3: ✓ (1733ms)
+  Avg Latency: 1701ms
+
+✓ PASS | qwen/qwen3.5-9b | single_relevance_002 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1780ms)
+    Trial 2: ✓ (1402ms)
+    Trial 3: ✓ (1535ms)
+  Avg Latency: 1573ms
+
+✓ PASS | qwen/qwen3.5-9b | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (3787ms)
+    Trial 2: ✓ (8471ms)
+    Trial 3: ✓ (4050ms)
+  Avg Latency: 5436ms
+
+✓ PASS | qwen/qwen3.5-9b | single_relevance_004 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1222ms)
+    Trial 2: ✓ (2032ms)
+    Trial 3: ✓ (2550ms)
+  Avg Latency: 1935ms
+
+✓ PASS | qwen/qwen3.5-9b | single_simple_001 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1501ms)
+    Trial 2: ✓ (1410ms)
+    Trial 3: ✓ (1262ms)
+  Avg Latency: 1391ms
+
+✓ PASS | qwen/qwen3.5-9b | single_simple_002 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1764ms)
+    Trial 2: ✓ (1201ms)
+    Trial 3: ✓ (1639ms)
+  Avg Latency: 1535ms
+
+✓ PASS | qwen/qwen3.5-9b | single_simple_003 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1557ms)
+    Trial 2: ✓ (1465ms)
+    Trial 3: ✓ (1618ms)
+  Avg Latency: 1547ms
+
+✓ PASS | qwen/qwen3.5-9b | single_simple_004 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1429ms)
+    Trial 2: ✓ (1424ms)
+    Trial 3: ✓ (1557ms)
+  Avg Latency: 1470ms
+
+====================================================================================================
+END OF REPORT
+====================================================================================================

@@ -1660,3 +1660,630 @@
 2026-03-13 12:26:51,807 - INFO - Evaluation completed in 135.9 seconds
 2026-03-13 12:26:51,811 - INFO - Text report saved: ./results/evaluation_report_20260313_122651.txt
 2026-03-13 12:26:51,836 - INFO - JSON report saved: ./results/evaluation_report_20260313_122651.json
+2026-03-13 18:45:20,521 - WARNING - Could not connect to Ollama at http://localhost:11434: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,522 - WARNING - Make sure Ollama is running: ollama serve
+2026-03-13 18:45:20,522 - INFO - Ollama client initialized successfully (URL: http://localhost:11434)
+2026-03-13 18:45:20,522 - INFO - Loaded 30 test cases (category: all)
+2026-03-13 18:45:20,522 - INFO - Models to evaluate: ['llama3.2', 'mistral']
+2026-03-13 18:45:20,522 - INFO - Trials per test: 3 (Best of N: pass if at least one trial succeeds)
+2026-03-13 18:45:20,522 - INFO - Running evaluation in PARALLEL mode
+2026-03-13 18:45:20,522 - INFO - Starting parallel evaluation with 5 workers: 2 models x 30 tests x 3 trials = 180 total calls
+2026-03-13 18:45:20,527 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,528 - ERROR - Error in trial 1 for test single_simple_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,529 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,529 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,529 - ERROR - Error in trial 1 for test single_simple_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,529 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,529 - ERROR - Error in trial 1 for test single_simple_003 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,530 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,530 - ERROR - Error in trial 1 for test single_simple_004 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,530 - ERROR - Error in trial 1 for test single_multiple_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,829 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,829 - ERROR - Error in trial 2 for test single_simple_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,833 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,833 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,833 - ERROR - Error in trial 2 for test single_simple_004 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,834 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,834 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,834 - ERROR - Error in trial 2 for test single_multiple_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,834 - ERROR - Error in trial 2 for test single_simple_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:20,834 - ERROR - Error in trial 2 for test single_simple_003 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,130 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,131 - ERROR - Error in trial 3 for test single_simple_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,131 - INFO - [1/60] ✗ llama3.2 - single_simple_001 (0% reliable)
+2026-03-13 18:45:21,131 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,132 - ERROR - Error in trial 1 for test single_multiple_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,137 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,138 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,138 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,138 - ERROR - Error in trial 3 for test single_simple_004 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,138 - ERROR - Error in trial 3 for test single_multiple_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,138 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,138 - ERROR - Error in trial 3 for test single_simple_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,140 - INFO - [2/60] ✗ llama3.2 - single_simple_004 (0% reliable)
+2026-03-13 18:45:21,140 - ERROR - Error in trial 3 for test single_simple_003 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,141 - INFO - [3/60] ✗ llama3.2 - single_multiple_001 (0% reliable)
+2026-03-13 18:45:21,142 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,142 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,143 - INFO - [4/60] ✗ llama3.2 - single_simple_002 (0% reliable)
+2026-03-13 18:45:21,143 - ERROR - Error in trial 1 for test single_multiple_004 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,143 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,143 - ERROR - Error in trial 1 for test single_multiple_003 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,143 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,143 - INFO - [5/60] ✗ llama3.2 - single_simple_003 (0% reliable)
+2026-03-13 18:45:21,143 - ERROR - Error in trial 1 for test single_parallel_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,144 - ERROR - Error in trial 1 for test single_parallel_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,433 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,433 - ERROR - Error in trial 2 for test single_multiple_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,447 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,447 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,447 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,448 - ERROR - Error in trial 2 for test single_multiple_003 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,448 - ERROR - Error in trial 2 for test single_multiple_004 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,448 - ERROR - Error in trial 2 for test single_parallel_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,448 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,449 - ERROR - Error in trial 2 for test single_parallel_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,734 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,734 - ERROR - Error in trial 3 for test single_multiple_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,734 - INFO - [6/60] ✗ llama3.2 - single_multiple_002 (0% reliable)
+2026-03-13 18:45:21,735 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,735 - ERROR - Error in trial 1 for test single_parallel_003 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,751 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,751 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,752 - ERROR - Error in trial 3 for test single_parallel_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,752 - ERROR - Error in trial 3 for test single_multiple_003 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,752 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,752 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,753 - INFO - [7/60] ✗ llama3.2 - single_parallel_002 (0% reliable)
+2026-03-13 18:45:21,754 - ERROR - Error in trial 3 for test single_parallel_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,754 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,754 - ERROR - Error in trial 3 for test single_multiple_004 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,754 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,754 - INFO - [8/60] ✗ llama3.2 - single_multiple_003 (0% reliable)
+2026-03-13 18:45:21,755 - ERROR - Error in trial 1 for test single_parallel_multi_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,756 - ERROR - Error in trial 1 for test single_parallel_multi_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,757 - INFO - [9/60] ✗ llama3.2 - single_parallel_001 (0% reliable)
+2026-03-13 18:45:21,757 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,757 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,757 - INFO - [10/60] ✗ llama3.2 - single_multiple_004 (0% reliable)
+2026-03-13 18:45:21,757 - ERROR - Error in trial 1 for test single_parallel_multi_003 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:21,758 - ERROR - Error in trial 1 for test single_relevance_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,036 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,036 - ERROR - Error in trial 2 for test single_parallel_003 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,060 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,060 - ERROR - Error in trial 2 for test single_parallel_multi_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,060 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,060 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,060 - ERROR - Error in trial 2 for test single_parallel_multi_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,062 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,062 - ERROR - Error in trial 2 for test single_parallel_multi_003 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,062 - ERROR - Error in trial 2 for test single_relevance_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,337 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,337 - ERROR - Error in trial 3 for test single_parallel_003 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,337 - INFO - [11/60] ✗ llama3.2 - single_parallel_003 (0% reliable)
+2026-03-13 18:45:22,338 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,338 - ERROR - Error in trial 1 for test single_relevance_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,361 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,361 - ERROR - Error in trial 3 for test single_parallel_multi_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,362 - INFO - [12/60] ✗ llama3.2 - single_parallel_multi_001 (0% reliable)
+2026-03-13 18:45:22,362 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,362 - ERROR - Error in trial 1 for test single_relevance_003 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,364 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,364 - ERROR - Error in trial 3 for test single_parallel_multi_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,365 - INFO - [13/60] ✗ llama3.2 - single_parallel_multi_002 (0% reliable)
+2026-03-13 18:45:22,365 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,366 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,366 - ERROR - Error in trial 3 for test single_parallel_multi_003 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,366 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,366 - ERROR - Error in trial 3 for test single_relevance_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,367 - ERROR - Error in trial 1 for test single_relevance_004 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,367 - INFO - [14/60] ✗ llama3.2 - single_parallel_multi_003 (0% reliable)
+2026-03-13 18:45:22,368 - INFO - [15/60] ✗ llama3.2 - single_relevance_001 (0% reliable)
+2026-03-13 18:45:22,368 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,368 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,368 - ERROR - Error in trial 1 for test multi_base_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,368 - ERROR - Error in trial 1 for test multi_base_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,639 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,639 - ERROR - Error in trial 2 for test single_relevance_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,663 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,663 - ERROR - Error in trial 2 for test single_relevance_003 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,668 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,668 - ERROR - Error in trial 2 for test single_relevance_004 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,670 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,670 - ERROR - Error in trial 2 for test multi_base_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,670 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,670 - ERROR - Error in trial 2 for test multi_base_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,940 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,940 - ERROR - Error in trial 3 for test single_relevance_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,941 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,942 - ERROR - Error in trial 1 for test multi_mp_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,964 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,964 - ERROR - Error in trial 3 for test single_relevance_003 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,965 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,965 - ERROR - Error in trial 1 for test multi_mp_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,969 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,969 - ERROR - Error in trial 3 for test single_relevance_004 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,970 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,970 - ERROR - Error in trial 1 for test multi_mf_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,973 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,973 - ERROR - Error in trial 3 for test multi_base_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,974 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,974 - ERROR - Error in trial 3 for test multi_base_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,974 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,974 - ERROR - Error in trial 1 for test multi_mf_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,975 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:22,975 - ERROR - Error in trial 1 for test agentic_web_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:23,243 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:23,244 - ERROR - Error in trial 2 for test multi_mp_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:23,266 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:23,266 - ERROR - Error in trial 2 for test multi_mp_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:23,271 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:23,271 - ERROR - Error in trial 2 for test multi_mf_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:23,276 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:23,276 - ERROR - Error in trial 2 for test multi_mf_002 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:23,276 - ERROR - Ollama API request failed for model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:45:23,276 - ERROR - Error in trial 2 for test agentic_web_001 with model llama3.2: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-13 18:51:31,827 - INFO - Ollama client initialized successfully (URL: http://localhost:11434)
+2026-03-13 18:51:31,827 - INFO - Ollama client initialized successfully (URL: http://localhost:11434)
+2026-03-13 18:51:31,827 - INFO - Loaded 30 test cases (category: all)
+2026-03-13 18:51:31,827 - INFO - Models to evaluate: ['llama3.2', 'mistral']
+2026-03-13 18:51:31,827 - INFO - Trials per test: 3 (Best of N: pass if at least one trial succeeds)
+2026-03-13 18:51:31,827 - INFO - Running evaluation in PARALLEL mode
+2026-03-13 18:51:31,827 - INFO - Starting parallel evaluation with 5 workers: 2 models x 30 tests x 3 trials = 180 total calls
+2026-03-13 18:51:31,833 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:31,834 - ERROR - Error in trial 1 for test single_simple_001 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:31,834 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:31,835 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:31,835 - ERROR - Error in trial 1 for test single_simple_003 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:31,835 - ERROR - Error in trial 1 for test single_simple_004 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:31,835 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:31,836 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:31,836 - ERROR - Error in trial 1 for test single_multiple_001 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:31,836 - ERROR - Error in trial 1 for test single_simple_002 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,136 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,136 - ERROR - Error in trial 2 for test single_simple_001 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,140 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,140 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,141 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,141 - ERROR - Error in trial 2 for test single_simple_004 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,141 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,141 - ERROR - Error in trial 2 for test single_simple_003 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,141 - ERROR - Error in trial 2 for test single_simple_002 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,141 - ERROR - Error in trial 2 for test single_multiple_001 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,441 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,441 - ERROR - Error in trial 3 for test single_simple_001 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,441 - INFO - [1/60] ✗ llama3.2 - single_simple_001 (0% reliable)
+2026-03-13 18:51:32,445 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,446 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,446 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,446 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,446 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,447 - ERROR - Error in trial 1 for test single_multiple_002 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,447 - ERROR - Error in trial 3 for test single_simple_002 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,447 - ERROR - Error in trial 3 for test single_simple_004 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,447 - ERROR - Error in trial 3 for test single_simple_003 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,447 - ERROR - Error in trial 3 for test single_multiple_001 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,448 - INFO - [2/60] ✗ llama3.2 - single_simple_002 (0% reliable)
+2026-03-13 18:51:32,451 - INFO - [3/60] ✗ llama3.2 - single_simple_004 (0% reliable)
+2026-03-13 18:51:32,451 - INFO - [4/60] ✗ llama3.2 - single_simple_003 (0% reliable)
+2026-03-13 18:51:32,451 - INFO - [5/60] ✗ llama3.2 - single_multiple_001 (0% reliable)
+2026-03-13 18:51:32,451 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,452 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,452 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,452 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,453 - ERROR - Error in trial 1 for test single_parallel_001 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,453 - ERROR - Error in trial 1 for test single_multiple_003 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,453 - ERROR - Error in trial 1 for test single_multiple_004 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,453 - ERROR - Error in trial 1 for test single_parallel_002 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,750 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,750 - ERROR - Error in trial 2 for test single_multiple_002 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,757 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,757 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,757 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,758 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,758 - ERROR - Error in trial 2 for test single_multiple_003 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,758 - ERROR - Error in trial 2 for test single_multiple_004 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,758 - ERROR - Error in trial 2 for test single_parallel_002 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:32,758 - ERROR - Error in trial 2 for test single_parallel_001 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,051 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,051 - ERROR - Error in trial 3 for test single_multiple_002 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,052 - INFO - [6/60] ✗ llama3.2 - single_multiple_002 (0% reliable)
+2026-03-13 18:51:33,052 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,053 - ERROR - Error in trial 1 for test single_parallel_003 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,062 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,062 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,062 - ERROR - Error in trial 3 for test single_parallel_002 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,062 - ERROR - Error in trial 3 for test single_multiple_003 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,063 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,064 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,064 - INFO - [7/60] ✗ llama3.2 - single_parallel_002 (0% reliable)
+2026-03-13 18:51:33,065 - ERROR - Error in trial 3 for test single_multiple_004 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,065 - ERROR - Error in trial 3 for test single_parallel_001 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,065 - INFO - [8/60] ✗ llama3.2 - single_multiple_003 (0% reliable)
+2026-03-13 18:51:33,066 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,067 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,067 - INFO - [9/60] ✗ llama3.2 - single_multiple_004 (0% reliable)
+2026-03-13 18:51:33,067 - ERROR - Error in trial 1 for test single_parallel_multi_001 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,068 - ERROR - Error in trial 1 for test single_parallel_multi_002 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,068 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,068 - INFO - [10/60] ✗ llama3.2 - single_parallel_001 (0% reliable)
+2026-03-13 18:51:33,069 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,069 - ERROR - Error in trial 1 for test single_parallel_multi_003 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,069 - ERROR - Error in trial 1 for test single_relevance_001 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,354 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,354 - ERROR - Error in trial 2 for test single_parallel_003 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,372 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,372 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,373 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,373 - ERROR - Error in trial 2 for test single_parallel_multi_002 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,373 - ERROR - Ollama API request failed for model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,373 - ERROR - Error in trial 2 for test single_parallel_multi_003 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,373 - ERROR - Error in trial 2 for test single_relevance_001 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 18:51:33,373 - ERROR - Error in trial 2 for test single_parallel_multi_001 with model llama3.2: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:07:25,406 - ERROR - Failed to initialize OpenRouter client: OpenRouter API key required. Set OPENROUTER_API_KEY env var.
+2026-03-13 19:08:35,665 - ERROR - Failed to initialize OpenRouter client: OpenRouter API key required. Set OPENROUTER_API_KEY env var.
+2026-03-13 19:09:33,908 - INFO - Ollama client initialized successfully (URL: http://localhost:11434)
+2026-03-13 19:09:33,908 - INFO - Ollama client initialized successfully (URL: http://localhost:11434)
+2026-03-13 19:09:33,909 - INFO - Loaded 18 test cases (category: single_turn)
+2026-03-13 19:09:33,909 - INFO - Models to evaluate: ['llama3.2']
+2026-03-13 19:09:33,909 - INFO - Trials per test: 1 (Best of N: pass if at least one trial succeeds)
+2026-03-13 19:09:33,909 - INFO - Running evaluation in SEQUENTIAL mode
+2026-03-13 19:09:33,909 - INFO - Starting sequential evaluation: 1 models x 18 tests x 1 trials = 18 total calls
+2026-03-13 19:10:35,522 - INFO - [1/18] ✗ llama3.2 - single_simple_001 (0% reliable)
+2026-03-13 19:10:44,822 - INFO - [2/18] ✗ llama3.2 - single_simple_002 (0% reliable)
+2026-03-13 19:10:45,645 - INFO - [3/18] ✗ llama3.2 - single_simple_003 (0% reliable)
+2026-03-13 19:11:01,544 - INFO - [4/18] ✗ llama3.2 - single_simple_004 (0% reliable)
+2026-03-13 19:11:02,329 - INFO - [5/18] ✗ llama3.2 - single_multiple_001 (0% reliable)
+2026-03-13 19:11:03,101 - INFO - [6/18] ✗ llama3.2 - single_multiple_002 (0% reliable)
+2026-03-13 19:11:03,912 - INFO - [7/18] ✗ llama3.2 - single_multiple_003 (0% reliable)
+2026-03-13 19:11:04,720 - INFO - [8/18] ✗ llama3.2 - single_multiple_004 (0% reliable)
+2026-03-13 19:11:05,613 - INFO - [9/18] ✗ llama3.2 - single_parallel_001 (0% reliable)
+2026-03-13 19:11:06,604 - INFO - [10/18] ✗ llama3.2 - single_parallel_002 (0% reliable)
+2026-03-13 19:11:07,526 - INFO - [11/18] ✗ llama3.2 - single_parallel_003 (0% reliable)
+2026-03-13 19:11:08,399 - INFO - [12/18] ✗ llama3.2 - single_parallel_multi_001 (0% reliable)
+2026-03-13 19:11:17,308 - INFO - [13/18] ✗ llama3.2 - single_parallel_multi_002 (0% reliable)
+2026-03-13 19:11:18,197 - INFO - [14/18] ✗ llama3.2 - single_parallel_multi_003 (0% reliable)
+2026-03-13 19:11:18,969 - INFO - [15/18] ✓ llama3.2 - single_relevance_001 (100% reliable)
+2026-03-13 19:11:19,787 - INFO - [16/18] ✗ llama3.2 - single_relevance_002 (0% reliable)
+2026-03-13 19:11:20,588 - INFO - [17/18] ✓ llama3.2 - single_relevance_003 (100% reliable)
+2026-03-13 19:11:21,418 - INFO - [18/18] ✗ llama3.2 - single_relevance_004 (0% reliable)
+2026-03-13 19:11:21,918 - INFO - Evaluation completed in 108.0 seconds
+2026-03-13 19:11:21,919 - INFO - Text report saved: ./results/evaluation_report_20260313_191121.txt
+2026-03-13 19:11:21,920 - INFO - JSON report saved: ./results/evaluation_report_20260313_191121.json
+2026-03-13 19:18:03,986 - INFO - Ollama client initialized successfully (URL: http://localhost:11434)
+2026-03-13 19:18:03,987 - INFO - Ollama client initialized successfully (URL: http://localhost:11434)
+2026-03-13 19:18:03,987 - INFO - Loaded 30 test cases (category: all)
+2026-03-13 19:18:03,987 - INFO - Models to evaluate: ['llama3.2', 'mistral']
+2026-03-13 19:18:03,987 - INFO - Trials per test: 3 (Best of N: pass if at least one trial succeeds)
+2026-03-13 19:18:03,987 - INFO - Running evaluation in PARALLEL mode
+2026-03-13 19:18:03,987 - INFO - Starting parallel evaluation with 5 workers: 2 models x 30 tests x 3 trials = 180 total calls
+2026-03-13 19:18:07,698 - INFO - [1/60] ✗ llama3.2 - single_simple_001 (0% reliable)
+2026-03-13 19:18:07,818 - INFO - [2/60] ✗ llama3.2 - single_multiple_001 (0% reliable)
+2026-03-13 19:18:07,980 - INFO - [3/60] ✗ llama3.2 - single_simple_003 (0% reliable)
+2026-03-13 19:18:08,246 - INFO - [4/60] ✗ llama3.2 - single_simple_004 (0% reliable)
+2026-03-13 19:18:08,536 - INFO - [5/60] ✗ llama3.2 - single_simple_002 (0% reliable)
+2026-03-13 19:18:09,954 - INFO - [6/60] ✗ llama3.2 - single_multiple_002 (0% reliable)
+2026-03-13 19:18:10,423 - INFO - [7/60] ✗ llama3.2 - single_multiple_003 (0% reliable)
+2026-03-13 19:18:10,564 - INFO - [8/60] ✗ llama3.2 - single_multiple_004 (0% reliable)
+2026-03-13 19:18:11,003 - INFO - [9/60] ✗ llama3.2 - single_parallel_001 (0% reliable)
+2026-03-13 19:18:11,863 - INFO - [10/60] ✗ llama3.2 - single_parallel_002 (0% reliable)
+2026-03-13 19:18:13,399 - INFO - [11/60] ✗ llama3.2 - single_parallel_003 (0% reliable)
+2026-03-13 19:18:13,601 - INFO - [12/60] ✗ llama3.2 - single_parallel_multi_001 (0% reliable)
+2026-03-13 19:18:13,919 - INFO - [13/60] ✗ llama3.2 - single_parallel_multi_002 (0% reliable)
+2026-03-13 19:18:14,392 - INFO - [14/60] ✗ llama3.2 - single_parallel_multi_003 (0% reliable)
+2026-03-13 19:18:14,759 - INFO - [15/60] ✓ llama3.2 - single_relevance_001 (100% reliable)
+2026-03-13 19:18:15,895 - INFO - [16/60] ✗ llama3.2 - single_relevance_002 (0% reliable)
+2026-03-13 19:18:16,163 - INFO - [17/60] ✓ llama3.2 - single_relevance_003 (100% reliable)
+2026-03-13 19:18:16,310 - INFO - [18/60] ✗ llama3.2 - single_relevance_004 (0% reliable)
+2026-03-13 19:18:16,635 - INFO - [19/60] ✗ llama3.2 - multi_base_001 (0% reliable)
+2026-03-13 19:18:17,027 - INFO - [20/60] ✗ llama3.2 - multi_base_002 (0% reliable)
+2026-03-13 19:18:17,954 - INFO - [21/60] ✓ llama3.2 - multi_mp_001 (100% reliable)
+2026-03-13 19:18:18,223 - INFO - [22/60] ✓ llama3.2 - multi_mp_002 (100% reliable)
+2026-03-13 19:18:18,432 - INFO - [23/60] ✓ llama3.2 - multi_mf_001 (100% reliable)
+2026-03-13 19:18:18,560 - INFO - [24/60] ✓ llama3.2 - multi_mf_002 (100% reliable)
+2026-03-13 19:18:18,757 - INFO - [25/60] ✗ llama3.2 - agentic_web_001 (0% reliable)
+2026-03-13 19:18:19,862 - INFO - [26/60] ✗ llama3.2 - agentic_web_002 (0% reliable)
+2026-03-13 19:18:20,092 - INFO - [27/60] ✗ llama3.2 - agentic_memory_001 (0% reliable)
+2026-03-13 19:18:20,247 - INFO - [28/60] ✗ llama3.2 - agentic_memory_002 (0% reliable)
+2026-03-13 19:18:20,439 - INFO - [29/60] ✗ llama3.2 - agentic_format_001 (0% reliable)
+2026-03-13 19:18:20,593 - INFO - [30/60] ✗ llama3.2 - agentic_format_002 (0% reliable)
+2026-03-13 19:18:56,192 - INFO - [31/60] ✗ mistral - single_simple_001 (0% reliable)
+2026-03-13 19:18:56,481 - INFO - [32/60] ✗ mistral - single_simple_003 (0% reliable)
+2026-03-13 19:18:56,967 - INFO - [33/60] ✗ mistral - single_simple_002 (0% reliable)
+2026-03-13 19:18:57,706 - INFO - [34/60] ✗ mistral - single_simple_004 (0% reliable)
+2026-03-13 19:18:58,046 - INFO - [35/60] ✗ mistral - single_multiple_001 (0% reliable)
+2026-03-13 19:19:04,981 - INFO - [36/60] ✗ mistral - single_multiple_002 (0% reliable)
+2026-03-13 19:19:05,217 - INFO - [37/60] ✗ mistral - single_multiple_003 (0% reliable)
+2026-03-13 19:19:05,520 - INFO - [38/60] ✗ mistral - single_multiple_004 (0% reliable)
+2026-03-13 19:19:06,169 - INFO - [39/60] ✗ mistral - single_parallel_001 (0% reliable)
+2026-03-13 19:19:06,704 - INFO - [40/60] ✗ mistral - single_parallel_002 (0% reliable)
+2026-03-13 19:19:13,041 - INFO - [41/60] ✗ mistral - single_parallel_003 (0% reliable)
+2026-03-13 19:19:13,515 - INFO - [42/60] ✗ mistral - single_parallel_multi_001 (0% reliable)
+2026-03-13 19:19:14,230 - INFO - [43/60] ✗ mistral - single_parallel_multi_002 (0% reliable)
+2026-03-13 19:19:14,541 - INFO - [44/60] ✗ mistral - single_parallel_multi_003 (0% reliable)
+2026-03-13 19:19:14,897 - INFO - [45/60] ✓ mistral - single_relevance_001 (100% reliable)
+2026-03-13 19:19:24,079 - INFO - [46/60] ✗ mistral - single_relevance_002 (0% reliable)
+2026-03-13 19:19:25,685 - INFO - [47/60] ✓ mistral - single_relevance_003 (100% reliable)
+2026-03-13 19:19:26,075 - INFO - [48/60] ✗ mistral - single_relevance_004 (0% reliable)
+2026-03-13 19:19:27,029 - INFO - [49/60] ✗ mistral - multi_base_001 (0% reliable)
+2026-03-13 19:19:28,048 - INFO - [50/60] ✗ mistral - multi_base_002 (0% reliable)
+2026-03-13 19:19:47,886 - INFO - [51/60] ✓ mistral - multi_mp_001 (100% reliable)
+2026-03-13 19:19:49,721 - INFO - [52/60] ✓ mistral - multi_mp_002 (100% reliable)
+2026-03-13 19:19:50,883 - INFO - [53/60] ✓ mistral - multi_mf_001 (100% reliable)
+2026-03-13 19:19:51,269 - INFO - [54/60] ✓ mistral - multi_mf_002 (100% reliable)
+2026-03-13 19:19:55,719 - INFO - [55/60] ✗ mistral - agentic_web_001 (0% reliable)
+2026-03-13 19:20:06,971 - INFO - [56/60] ✗ mistral - agentic_web_002 (0% reliable)
+2026-03-13 19:20:07,150 - INFO - [57/60] ✗ mistral - agentic_memory_001 (0% reliable)
+2026-03-13 19:20:07,323 - INFO - [58/60] ✗ mistral - agentic_memory_002 (0% reliable)
+2026-03-13 19:20:08,281 - INFO - [59/60] ✗ mistral - agentic_format_001 (0% reliable)
+2026-03-13 19:20:08,698 - INFO - [60/60] ✗ mistral - agentic_format_002 (0% reliable)
+2026-03-13 19:20:08,699 - INFO - Evaluation completed in 124.7 seconds
+2026-03-13 19:20:08,700 - INFO - Text report saved: ./results/evaluation_report_20260313_192008.txt
+2026-03-13 19:20:08,703 - INFO - JSON report saved: ./results/evaluation_report_20260313_192008.json
+2026-03-13 19:37:18,693 - INFO - Ollama client initialized successfully (URL: http://localhost:11434)
+2026-03-13 19:37:18,693 - INFO - Ollama client initialized successfully (URL: http://localhost:11434)
+2026-03-13 19:37:18,693 - INFO - Loaded 30 test cases (category: all)
+2026-03-13 19:37:18,693 - INFO - Models to evaluate: ['qwen3.5:9b']
+2026-03-13 19:37:18,693 - INFO - Trials per test: 3 (Best of N: pass if at least one trial succeeds)
+2026-03-13 19:37:18,693 - INFO - Running evaluation in PARALLEL mode
+2026-03-13 19:37:18,693 - INFO - Starting parallel evaluation with 5 workers: 1 models x 30 tests x 3 trials = 90 total calls
+2026-03-13 19:37:18,698 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:18,699 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:18,700 - ERROR - Error in trial 1 for test single_simple_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:18,700 - ERROR - Error in trial 1 for test single_simple_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:18,701 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:18,701 - ERROR - Error in trial 1 for test single_simple_004 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:18,702 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:18,702 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:18,702 - ERROR - Error in trial 1 for test single_multiple_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:18,703 - ERROR - Error in trial 1 for test single_simple_003 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,003 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,003 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,003 - ERROR - Error in trial 2 for test single_simple_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,004 - ERROR - Error in trial 2 for test single_simple_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,006 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,006 - ERROR - Error in trial 2 for test single_multiple_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,006 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,007 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,007 - ERROR - Error in trial 2 for test single_simple_004 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,007 - ERROR - Error in trial 2 for test single_simple_003 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,307 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,308 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,309 - ERROR - Error in trial 3 for test single_simple_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,309 - ERROR - Error in trial 3 for test single_simple_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,311 - INFO - [1/30] ✗ qwen3.5:9b - single_simple_001 (0% reliable)
+2026-03-13 19:37:19,312 - INFO - [2/30] ✗ qwen3.5:9b - single_simple_002 (0% reliable)
+2026-03-13 19:37:19,313 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,313 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,313 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,313 - ERROR - Error in trial 3 for test single_multiple_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,314 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,314 - ERROR - Error in trial 1 for test single_multiple_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,314 - ERROR - Error in trial 3 for test single_simple_004 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,315 - ERROR - Error in trial 3 for test single_simple_003 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,315 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,315 - INFO - [3/30] ✗ qwen3.5:9b - single_multiple_001 (0% reliable)
+2026-03-13 19:37:19,317 - ERROR - Error in trial 1 for test single_multiple_003 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,318 - INFO - [4/30] ✗ qwen3.5:9b - single_simple_004 (0% reliable)
+2026-03-13 19:37:19,318 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,318 - INFO - [5/30] ✗ qwen3.5:9b - single_simple_003 (0% reliable)
+2026-03-13 19:37:19,319 - ERROR - Error in trial 1 for test single_multiple_004 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,319 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,319 - ERROR - Error in trial 1 for test single_parallel_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,320 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,320 - ERROR - Error in trial 1 for test single_parallel_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,618 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,618 - ERROR - Error in trial 2 for test single_multiple_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,621 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,622 - ERROR - Error in trial 2 for test single_multiple_003 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,623 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,623 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,623 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,624 - ERROR - Error in trial 2 for test single_multiple_004 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,624 - ERROR - Error in trial 2 for test single_parallel_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,624 - ERROR - Error in trial 2 for test single_parallel_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,920 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,920 - ERROR - Error in trial 3 for test single_multiple_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,921 - INFO - [6/30] ✗ qwen3.5:9b - single_multiple_002 (0% reliable)
+2026-03-13 19:37:19,923 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,923 - ERROR - Error in trial 1 for test single_parallel_003 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,924 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,924 - ERROR - Error in trial 3 for test single_multiple_003 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,926 - INFO - [7/30] ✗ qwen3.5:9b - single_multiple_003 (0% reliable)
+2026-03-13 19:37:19,928 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,928 - ERROR - Error in trial 1 for test single_parallel_multi_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,928 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,929 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,929 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,929 - ERROR - Error in trial 3 for test single_multiple_004 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,929 - ERROR - Error in trial 3 for test single_parallel_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,929 - ERROR - Error in trial 3 for test single_parallel_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,930 - INFO - [8/30] ✗ qwen3.5:9b - single_multiple_004 (0% reliable)
+2026-03-13 19:37:19,932 - INFO - [9/30] ✗ qwen3.5:9b - single_parallel_002 (0% reliable)
+2026-03-13 19:37:19,932 - INFO - [10/30] ✗ qwen3.5:9b - single_parallel_001 (0% reliable)
+2026-03-13 19:37:19,933 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,933 - ERROR - Error in trial 1 for test single_parallel_multi_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,933 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,933 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,933 - ERROR - Error in trial 1 for test single_parallel_multi_003 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:19,934 - ERROR - Error in trial 1 for test single_relevance_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,225 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,225 - ERROR - Error in trial 2 for test single_parallel_003 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,230 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,230 - ERROR - Error in trial 2 for test single_parallel_multi_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,237 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,237 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,237 - ERROR - Error in trial 2 for test single_parallel_multi_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,237 - ERROR - Error in trial 2 for test single_relevance_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,238 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,238 - ERROR - Error in trial 2 for test single_parallel_multi_003 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,526 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,526 - ERROR - Error in trial 3 for test single_parallel_003 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,527 - INFO - [11/30] ✗ qwen3.5:9b - single_parallel_003 (0% reliable)
+2026-03-13 19:37:20,528 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,528 - ERROR - Error in trial 1 for test single_relevance_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,531 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,531 - ERROR - Error in trial 3 for test single_parallel_multi_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,532 - INFO - [12/30] ✗ qwen3.5:9b - single_parallel_multi_001 (0% reliable)
+2026-03-13 19:37:20,533 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,533 - ERROR - Error in trial 1 for test single_relevance_003 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,541 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,541 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,542 - ERROR - Error in trial 3 for test single_relevance_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,542 - ERROR - Error in trial 3 for test single_parallel_multi_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,542 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,543 - INFO - [13/30] ✗ qwen3.5:9b - single_relevance_001 (0% reliable)
+2026-03-13 19:37:20,544 - ERROR - Error in trial 3 for test single_parallel_multi_003 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,544 - INFO - [14/30] ✗ qwen3.5:9b - single_parallel_multi_002 (0% reliable)
+2026-03-13 19:37:20,545 - INFO - [15/30] ✗ qwen3.5:9b - single_parallel_multi_003 (0% reliable)
+2026-03-13 19:37:20,545 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,546 - ERROR - Error in trial 1 for test single_relevance_004 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,546 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,546 - ERROR - Error in trial 1 for test multi_base_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,547 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,547 - ERROR - Error in trial 1 for test multi_base_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,830 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,830 - ERROR - Error in trial 2 for test single_relevance_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,835 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,835 - ERROR - Error in trial 2 for test single_relevance_003 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,849 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,849 - ERROR - Error in trial 2 for test single_relevance_004 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,849 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,849 - ERROR - Error in trial 2 for test multi_base_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,850 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:20,850 - ERROR - Error in trial 2 for test multi_base_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,132 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,132 - ERROR - Error in trial 3 for test single_relevance_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,133 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,133 - ERROR - Error in trial 1 for test multi_mp_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,136 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,136 - ERROR - Error in trial 3 for test single_relevance_003 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,138 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,139 - ERROR - Error in trial 1 for test multi_mp_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,152 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,152 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,152 - ERROR - Error in trial 3 for test multi_base_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,152 - ERROR - Error in trial 3 for test single_relevance_004 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,154 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,154 - ERROR - Error in trial 3 for test multi_base_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,156 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,156 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,157 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,157 - ERROR - Error in trial 1 for test multi_mf_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,157 - ERROR - Error in trial 1 for test agentic_web_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,157 - ERROR - Error in trial 1 for test multi_mf_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,435 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,435 - ERROR - Error in trial 2 for test multi_mp_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,440 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,441 - ERROR - Error in trial 2 for test multi_mp_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,460 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,461 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,461 - ERROR - Ollama API request failed for model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,461 - ERROR - Error in trial 2 for test multi_mf_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,461 - ERROR - Error in trial 2 for test agentic_web_001 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:37:21,461 - ERROR - Error in trial 2 for test multi_mf_002 with model qwen3.5:9b: 404 Client Error: Not Found for url: http://localhost:11434/api/chat
+2026-03-13 19:39:57,936 - INFO - Ollama client initialized successfully (URL: http://localhost:11434)
+2026-03-13 19:39:57,936 - INFO - Ollama client initialized successfully (URL: http://localhost:11434)
+2026-03-13 19:39:57,936 - INFO - Loaded 30 test cases (category: all)
+2026-03-13 19:39:57,936 - INFO - Models to evaluate: ['qwen3.5:9b']
+2026-03-13 19:39:57,936 - INFO - Trials per test: 3 (Best of N: pass if at least one trial succeeds)
+2026-03-13 19:39:57,936 - INFO - Running evaluation in PARALLEL mode
+2026-03-13 19:39:57,936 - INFO - Starting parallel evaluation with 5 workers: 1 models x 30 tests x 3 trials = 90 total calls
+2026-03-13 19:40:15,549 - INFO - [1/30] ✗ qwen3.5:9b - single_simple_004 (0% reliable)
+2026-03-13 19:40:16,904 - INFO - [2/30] ✗ qwen3.5:9b - single_multiple_001 (0% reliable)
+2026-03-13 19:40:18,329 - INFO - [3/30] ✗ qwen3.5:9b - single_simple_003 (0% reliable)
+2026-03-13 19:40:20,290 - INFO - [4/30] ✗ qwen3.5:9b - single_simple_001 (0% reliable)
+2026-03-13 19:40:21,668 - INFO - [5/30] ✗ qwen3.5:9b - single_simple_002 (0% reliable)
+2026-03-13 19:40:43,736 - INFO - [6/30] ✗ qwen3.5:9b - single_multiple_002 (0% reliable)
+2026-03-13 19:40:45,723 - INFO - [7/30] ✗ qwen3.5:9b - single_multiple_003 (0% reliable)
+2026-03-13 19:40:47,086 - INFO - [8/30] ✗ qwen3.5:9b - single_multiple_004 (0% reliable)
+2026-03-13 19:40:49,965 - INFO - [9/30] ✗ qwen3.5:9b - single_parallel_001 (0% reliable)
+2026-03-13 19:40:52,213 - INFO - [10/30] ✗ qwen3.5:9b - single_parallel_002 (0% reliable)
+2026-03-13 19:41:24,757 - INFO - [11/30] ✗ qwen3.5:9b - single_parallel_003 (0% reliable)
+2026-03-13 19:41:28,287 - INFO - [12/30] ✗ qwen3.5:9b - single_parallel_multi_001 (0% reliable)
+2026-03-13 19:41:31,677 - INFO - [13/30] ✗ qwen3.5:9b - single_parallel_multi_002 (0% reliable)
+2026-03-13 19:41:33,866 - INFO - [14/30] ✗ qwen3.5:9b - single_parallel_multi_003 (0% reliable)
+2026-03-13 19:41:35,922 - INFO - [15/30] ✓ qwen3.5:9b - single_relevance_001 (100% reliable)
+2026-03-13 19:42:02,254 - INFO - [16/30] ✗ qwen3.5:9b - single_relevance_002 (0% reliable)
+2026-03-13 19:42:05,885 - INFO - [17/30] ✓ qwen3.5:9b - single_relevance_003 (100% reliable)
+2026-03-13 19:42:07,763 - INFO - [18/30] ✗ qwen3.5:9b - single_relevance_004 (0% reliable)
+2026-03-13 19:42:10,199 - INFO - [19/30] ✗ qwen3.5:9b - multi_base_001 (0% reliable)
+2026-03-13 19:42:12,758 - INFO - [20/30] ✗ qwen3.5:9b - multi_base_002 (0% reliable)
+2026-03-13 19:42:41,344 - INFO - [21/30] ✓ qwen3.5:9b - multi_mp_001 (100% reliable)
+2026-03-13 19:42:43,679 - INFO - [22/30] ✓ qwen3.5:9b - multi_mp_002 (100% reliable)
+2026-03-13 19:42:46,955 - INFO - [23/30] ✓ qwen3.5:9b - multi_mf_001 (100% reliable)
+2026-03-13 19:42:49,642 - INFO - [24/30] ✓ qwen3.5:9b - multi_mf_002 (100% reliable)
+2026-03-13 19:42:50,583 - INFO - [25/30] ✗ qwen3.5:9b - agentic_web_001 (0% reliable)
+2026-03-13 19:43:09,766 - INFO - [26/30] ✗ qwen3.5:9b - agentic_web_002 (0% reliable)
+2026-03-13 19:43:11,256 - INFO - [27/30] ✗ qwen3.5:9b - agentic_memory_001 (0% reliable)
+2026-03-13 19:43:12,868 - INFO - [28/30] ✗ qwen3.5:9b - agentic_memory_002 (0% reliable)
+2026-03-13 19:43:16,191 - INFO - [29/30] ✗ qwen3.5:9b - agentic_format_001 (0% reliable)
+2026-03-13 19:43:17,803 - INFO - [30/30] ✗ qwen3.5:9b - agentic_format_002 (0% reliable)
+2026-03-13 19:43:17,804 - INFO - Evaluation completed in 199.9 seconds
+2026-03-13 19:43:17,804 - INFO - Text report saved: ./results/evaluation_report_20260313_194317.txt
+2026-03-13 19:43:17,807 - INFO - JSON report saved: ./results/evaluation_report_20260313_194317.json
+2026-03-13 19:55:59,004 - ERROR - Failed to initialize openrouter client: OpenRouter API key required. Set OPENROUTER_API_KEY environment variable or pass --api-key.
+2026-03-13 19:56:27,443 - INFO - OpenRouter client initialized
+2026-03-13 19:56:27,443 - INFO - OpenRouter client initialized successfully
+2026-03-13 19:56:27,444 - INFO - Loaded 30 test cases (category: all)
+2026-03-13 19:56:27,444 - INFO - Models to evaluate: ['x-ai/grok-4.1-fast', 'qwen/qwen3.5-35b-a3b']
+2026-03-13 19:56:27,444 - INFO - Trials per test: 3 (Best of N: pass if at least one trial succeeds)
+2026-03-13 19:56:27,444 - INFO - Running evaluation in PARALLEL mode
+2026-03-13 19:56:27,444 - INFO - Starting parallel evaluation with 5 workers: 2 models x 30 tests x 3 trials = 180 total calls
+2026-03-13 19:56:35,040 - INFO - [1/60] ✓ x-ai/grok-4.1-fast - single_simple_003 (100% reliable)
+2026-03-13 19:56:35,288 - INFO - [2/60] ✓ x-ai/grok-4.1-fast - single_simple_002 (100% reliable)
+2026-03-13 19:56:37,035 - INFO - [3/60] ✓ x-ai/grok-4.1-fast - single_simple_001 (100% reliable)
+2026-03-13 19:56:37,194 - INFO - [4/60] ✓ x-ai/grok-4.1-fast - single_multiple_001 (100% reliable)
+2026-03-13 19:56:38,153 - INFO - [5/60] ✓ x-ai/grok-4.1-fast - single_simple_004 (100% reliable)
+2026-03-13 19:56:43,412 - INFO - [6/60] ✓ x-ai/grok-4.1-fast - single_multiple_002 (100% reliable)
+2026-03-13 19:56:43,778 - INFO - [7/60] ✓ x-ai/grok-4.1-fast - single_multiple_004 (100% reliable)
+2026-03-13 19:56:44,944 - INFO - [8/60] ✓ x-ai/grok-4.1-fast - single_multiple_003 (67% reliable)
+2026-03-13 19:56:45,828 - INFO - [9/60] ✓ x-ai/grok-4.1-fast - single_parallel_002 (100% reliable)
+2026-03-13 19:56:46,957 - INFO - [10/60] ✓ x-ai/grok-4.1-fast - single_parallel_001 (100% reliable)
+2026-03-13 19:56:53,762 - INFO - [11/60] ✓ x-ai/grok-4.1-fast - single_parallel_multi_003 (100% reliable)
+2026-03-13 19:56:54,359 - INFO - [12/60] ✓ x-ai/grok-4.1-fast - single_relevance_001 (100% reliable)
+2026-03-13 19:56:56,122 - INFO - [13/60] ✗ x-ai/grok-4.1-fast - single_parallel_multi_002 (0% reliable)
+2026-03-13 19:56:56,461 - INFO - [14/60] ✓ x-ai/grok-4.1-fast - single_parallel_003 (100% reliable)
+2026-03-13 19:57:00,024 - INFO - [15/60] ✗ x-ai/grok-4.1-fast - single_parallel_multi_001 (0% reliable)
+2026-03-13 19:57:01,452 - INFO - [16/60] ✓ x-ai/grok-4.1-fast - single_relevance_002 (100% reliable)
+2026-03-13 19:57:04,845 - INFO - [17/60] ✓ x-ai/grok-4.1-fast - single_relevance_004 (100% reliable)
+2026-03-13 19:57:18,301 - INFO - OpenRouter client initialized
+2026-03-13 19:57:18,301 - INFO - OpenRouter client initialized successfully
+2026-03-13 19:57:18,302 - INFO - Loaded 30 test cases (category: all)
+2026-03-13 19:57:18,302 - INFO - Models to evaluate: ['qwen/qwen3.5-9b']
+2026-03-13 19:57:18,302 - INFO - Trials per test: 3 (Best of N: pass if at least one trial succeeds)
+2026-03-13 19:57:18,302 - INFO - Running evaluation in PARALLEL mode
+2026-03-13 19:57:18,302 - INFO - Starting parallel evaluation with 5 workers: 1 models x 30 tests x 3 trials = 90 total calls
+2026-03-13 19:57:23,077 - INFO - [1/30] ✓ qwen/qwen3.5-9b - single_simple_001 (100% reliable)
+2026-03-13 19:57:23,317 - INFO - [2/30] ✓ qwen/qwen3.5-9b - single_simple_004 (100% reliable)
+2026-03-13 19:57:23,510 - INFO - [3/30] ✓ qwen/qwen3.5-9b - single_simple_002 (100% reliable)
+2026-03-13 19:57:23,546 - INFO - [4/30] ✓ qwen/qwen3.5-9b - single_simple_003 (100% reliable)
+2026-03-13 19:57:23,837 - INFO - [5/30] ✓ qwen/qwen3.5-9b - single_multiple_001 (100% reliable)
+2026-03-13 19:57:32,690 - INFO - [6/30] ✓ qwen/qwen3.5-9b - single_multiple_004 (100% reliable)
+2026-03-13 19:57:34,472 - INFO - [7/30] ✓ qwen/qwen3.5-9b - single_multiple_002 (100% reliable)
+2026-03-13 19:57:34,988 - INFO - [8/30] ✓ qwen/qwen3.5-9b - single_parallel_002 (100% reliable)
+2026-03-13 19:57:36,200 - INFO - [9/30] ✗ qwen/qwen3.5-9b - single_multiple_003 (0% reliable)
+2026-03-13 19:57:36,218 - INFO - [10/30] ✓ qwen/qwen3.5-9b - single_parallel_001 (100% reliable)
+2026-03-13 19:57:41,921 - INFO - [11/30] ✓ qwen/qwen3.5-9b - single_relevance_001 (100% reliable)
+2026-03-13 19:57:42,674 - INFO - [12/30] ✓ qwen/qwen3.5-9b - single_parallel_003 (100% reliable)
+2026-03-13 19:57:45,061 - INFO - [13/30] ✗ qwen/qwen3.5-9b - single_parallel_multi_001 (0% reliable)
+2026-03-13 19:57:46,109 - INFO - [14/30] ✓ qwen/qwen3.5-9b - single_parallel_multi_003 (100% reliable)
+2026-03-13 19:57:47,240 - INFO - [15/30] ✓ qwen/qwen3.5-9b - single_relevance_002 (100% reliable)
+2026-03-13 19:57:51,466 - INFO - [16/30] ✓ qwen/qwen3.5-9b - single_relevance_004 (100% reliable)
+2026-03-13 19:57:51,581 - INFO - [17/30] ✗ qwen/qwen3.5-9b - single_parallel_multi_002 (0% reliable)
+2026-03-13 19:57:56,133 - INFO - [18/30] ✗ qwen/qwen3.5-9b - multi_base_001 (0% reliable)
+2026-03-13 19:57:56,193 - INFO - [19/30] ✗ qwen/qwen3.5-9b - multi_base_002 (0% reliable)
+2026-03-13 19:57:59,583 - INFO - [20/30] ✓ qwen/qwen3.5-9b - single_relevance_003 (100% reliable)
+2026-03-13 19:58:00,424 - INFO - [21/30] ✓ qwen/qwen3.5-9b - multi_mp_002 (100% reliable)
+2026-03-13 19:58:01,792 - INFO - [22/30] ✓ qwen/qwen3.5-9b - multi_mp_001 (100% reliable)
+2026-03-13 19:58:04,033 - INFO - [23/30] ✓ qwen/qwen3.5-9b - agentic_web_001 (100% reliable)
+2026-03-13 19:58:04,834 - INFO - [24/30] ✗ qwen/qwen3.5-9b - agentic_web_002 (0% reliable)
+2026-03-13 19:58:06,516 - INFO - [25/30] ✓ qwen/qwen3.5-9b - multi_mf_001 (100% reliable)
+2026-03-13 19:58:07,668 - INFO - [26/30] ✓ qwen/qwen3.5-9b - multi_mf_002 (100% reliable)
+2026-03-13 19:58:08,550 - INFO - [27/30] ✗ qwen/qwen3.5-9b - agentic_memory_001 (0% reliable)
+2026-03-13 19:58:11,611 - INFO - [28/30] ✗ qwen/qwen3.5-9b - agentic_memory_002 (0% reliable)
+2026-03-13 19:58:14,209 - INFO - [29/30] ✓ qwen/qwen3.5-9b - agentic_format_002 (100% reliable)
+2026-03-13 19:58:29,234 - INFO - [30/30] ✗ qwen/qwen3.5-9b - agentic_format_001 (0% reliable)
+2026-03-13 19:58:29,234 - INFO - Evaluation completed in 70.9 seconds
+2026-03-13 19:58:29,235 - INFO - Text report saved: ./results/evaluation_report_20260313_195829.txt
+2026-03-13 19:58:29,237 - INFO - JSON report saved: ./results/evaluation_report_20260313_195829.json
