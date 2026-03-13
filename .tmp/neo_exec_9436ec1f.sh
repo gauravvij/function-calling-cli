@@ -1,1 +1,0 @@
-cd /root/test_fc && git add -A && git commit -m "Initial commit: FC-Eval function calling evaluation tool with 30 test cases, Best of N trials, and parallel execution"
