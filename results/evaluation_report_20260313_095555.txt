@@ -1,0 +1,97 @@
+====================================================================================================
+FUNCTION CALLING EVALUATION REPORT - Best of N Trials with Reliability Metrics
+====================================================================================================
+Generated: 2026-03-13 09:55:55
+Total Tests: 8
+Models Evaluated: 1
+Trials per Test: 2
+
+----------------------------------------------------------------------------------------------------
+LEADERBOARD (Ranked by Accuracy, with Reliability)
+----------------------------------------------------------------------------------------------------
+Rank   Model                                              Accuracy     Reliability  Tests     
+----------------------------------------------------------------------------------------------------
+1      qwen/qwen3.5-27b                                        87.5%        87.5%  7/8
+
+----------------------------------------------------------------------------------------------------
+CATEGORY BREAKDOWN (Accuracy | Reliability)
+----------------------------------------------------------------------------------------------------
+
+SINGLE_TURN:
+  qwen/qwen3.5-27b                                    87.5% |  87.5%
+
+----------------------------------------------------------------------------------------------------
+SUBCATEGORY BREAKDOWN
+----------------------------------------------------------------------------------------------------
+
+MULTIPLE:
+  qwen/qwen3.5-27b                                   100.0% | 100.0%
+
+PARALLEL:
+  qwen/qwen3.5-27b                                   100.0% | 100.0%
+
+PARALLEL_MULTIPLE:
+  qwen/qwen3.5-27b                                     0.0% |   0.0%
+
+RELEVANCE:
+  qwen/qwen3.5-27b                                   100.0% | 100.0%
+
+SIMPLE:
+  qwen/qwen3.5-27b                                   100.0% | 100.0%
+
+----------------------------------------------------------------------------------------------------
+DETAILED TEST RESULTS (with Trial Breakdown)
+----------------------------------------------------------------------------------------------------
+
+✓ PASS | qwen/qwen3.5-27b | single_multiple_001 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1549ms)
+    Trial 2: ✓ (1528ms)
+  Avg Latency: 1539ms
+
+✓ PASS | qwen/qwen3.5-27b | single_multiple_002 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1981ms)
+    Trial 2: ✓ (1779ms)
+  Avg Latency: 1880ms
+
+✓ PASS | qwen/qwen3.5-27b | single_parallel_001 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (2530ms)
+    Trial 2: ✓ (2598ms)
+  Avg Latency: 2564ms
+
+✗ FAIL | qwen/qwen3.5-27b | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (2458ms)
+    Trial 2: ✗ (2436ms)
+  Error: Failed 2/2 trials. Last error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Information", "body": "Hi John,\n\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions or need to reschedule.\n\nBest regards"}}
+  Avg Latency: 2447ms
+
+✓ PASS | qwen/qwen3.5-27b | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (2841ms)
+    Trial 2: ✓ (3475ms)
+  Avg Latency: 3158ms
+
+✓ PASS | qwen/qwen3.5-27b | single_relevance_002 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1358ms)
+    Trial 2: ✓ (2534ms)
+  Avg Latency: 1946ms
+
+✓ PASS | qwen/qwen3.5-27b | single_simple_001 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1633ms)
+    Trial 2: ✓ (1354ms)
+  Avg Latency: 1494ms
+
+✓ PASS | qwen/qwen3.5-27b | single_simple_002 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1559ms)
+    Trial 2: ✓ (1507ms)
+  Avg Latency: 1533ms
+
+====================================================================================================
+END OF REPORT
+====================================================================================================

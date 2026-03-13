@@ -1,0 +1,1958 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-13T09:41:26.980720",
+    "total_tests": 15,
+    "models_evaluated": 11
+  },
+  "model_scores": [
+    {
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "overall_accuracy": 0.6,
+      "category_scores": {
+        "agentic": 0.0,
+        "multi_turn": 0.5,
+        "single_turn": 0.875
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 0.0,
+        "memory": 0.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 0.0
+      },
+      "total_tests": 15,
+      "passed_tests": 9,
+      "avg_latency_ms": 1006.5046787261963,
+      "total_tokens": 1656
+    },
+    {
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "overall_accuracy": 0.7333333333333333,
+      "category_scores": {
+        "agentic": 0.3333333333333333,
+        "multi_turn": 0.75,
+        "single_turn": 0.875
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 1.0,
+        "memory": 0.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 1.0
+      },
+      "total_tests": 15,
+      "passed_tests": 11,
+      "avg_latency_ms": 4307.821544011434,
+      "total_tokens": 5722
+    },
+    {
+      "model": "minimax/minimax-m2.5",
+      "overall_accuracy": 0.6,
+      "category_scores": {
+        "agentic": 0.0,
+        "multi_turn": 0.5,
+        "single_turn": 0.875
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 0.0,
+        "memory": 0.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 0.0
+      },
+      "total_tests": 15,
+      "passed_tests": 9,
+      "avg_latency_ms": 6615.574169158936,
+      "total_tokens": 6905
+    },
+    {
+      "model": "moonshotai/kimi-k2.5",
+      "overall_accuracy": 0.7333333333333333,
+      "category_scores": {
+        "agentic": 0.3333333333333333,
+        "multi_turn": 0.75,
+        "single_turn": 0.875
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 1.0,
+        "memory": 0.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 1.0
+      },
+      "total_tests": 15,
+      "passed_tests": 11,
+      "avg_latency_ms": 4489.1030470530195,
+      "total_tokens": 3928
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "overall_accuracy": 0.6,
+      "category_scores": {
+        "agentic": 0.3333333333333333,
+        "multi_turn": 0.5,
+        "single_turn": 0.75
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 0.0,
+        "memory": 0.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 0.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 1.0
+      },
+      "total_tests": 15,
+      "passed_tests": 9,
+      "avg_latency_ms": 11553.404331207275,
+      "total_tokens": 7852
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "overall_accuracy": 0.6666666666666666,
+      "category_scores": {
+        "agentic": 0.0,
+        "multi_turn": 0.75,
+        "single_turn": 0.875
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 1.0,
+        "memory": 0.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 0.0
+      },
+      "total_tests": 15,
+      "passed_tests": 10,
+      "avg_latency_ms": 1572.6438522338867,
+      "total_tokens": 8484
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "overall_accuracy": 0.7333333333333333,
+      "category_scores": {
+        "agentic": 0.6666666666666666,
+        "multi_turn": 0.5,
+        "single_turn": 0.875
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 0.0,
+        "memory": 1.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 1.0
+      },
+      "total_tests": 15,
+      "passed_tests": 11,
+      "avg_latency_ms": 2446.7365900675454,
+      "total_tokens": 8220
+    },
+    {
+      "model": "qwen/qwen3.5-35b-a3b",
+      "overall_accuracy": 0.6,
+      "category_scores": {
+        "agentic": 0.0,
+        "multi_turn": 0.5,
+        "single_turn": 0.875
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 0.0,
+        "memory": 0.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 0.0
+      },
+      "total_tests": 15,
+      "passed_tests": 9,
+      "avg_latency_ms": 1295.6526438395183,
+      "total_tokens": 8086
+    },
+    {
+      "model": "qwen/qwen3.5-flash-02-23",
+      "overall_accuracy": 0.6,
+      "category_scores": {
+        "agentic": 0.0,
+        "multi_turn": 0.5,
+        "single_turn": 0.875
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 0.0,
+        "memory": 0.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 0.0
+      },
+      "total_tests": 15,
+      "passed_tests": 9,
+      "avg_latency_ms": 1261.3757451375325,
+      "total_tokens": 8004
+    },
+    {
+      "model": "x-ai/grok-4.1-fast",
+      "overall_accuracy": 0.8,
+      "category_scores": {
+        "agentic": 0.6666666666666666,
+        "multi_turn": 0.75,
+        "single_turn": 0.875
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 1.0,
+        "memory": 1.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 1.0
+      },
+      "total_tests": 15,
+      "passed_tests": 12,
+      "avg_latency_ms": 6627.8715292612715,
+      "total_tokens": 14651
+    },
+    {
+      "model": "x-ai/grok-4.20-beta",
+      "overall_accuracy": 0.7333333333333333,
+      "category_scores": {
+        "agentic": 0.6666666666666666,
+        "multi_turn": 0.5,
+        "single_turn": 0.875
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 0.0,
+        "memory": 1.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 1.0
+      },
+      "total_tests": 15,
+      "passed_tests": 11,
+      "avg_latency_ms": 1644.0941174825032,
+      "total_tokens": 4942
+    }
+  ],
+  "detailed_results": [
+    {
+      "test_id": "single_simple_001",
+      "model": "x-ai/grok-4.20-beta",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1569.68092918396,
+      "tokens_used": 248
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "x-ai/grok-4.20-beta",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1661.7960929870605,
+      "tokens_used": 342
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "x-ai/grok-4.20-beta",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1723.2012748718262,
+      "tokens_used": 349
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "x-ai/grok-4.20-beta",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1825.6328105926514,
+      "tokens_used": 258
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "x-ai/grok-4.20-beta",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1862.8044128417969,
+      "tokens_used": 275
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "x-ai/grok-4.20-beta",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1375.382900238037,
+      "tokens_used": 250
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "x-ai/grok-4.20-beta",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1485.6061935424805,
+      "tokens_used": 248
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "x-ai/grok-4.20-beta",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"This is a reminder about the upcoming meeting.\"}}",
+      "latency_ms": 1745.5523014068604,
+      "tokens_used": 340
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "x-ai/grok-4.20-beta",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"10:00\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}",
+      "latency_ms": 1635.0593566894531,
+      "tokens_used": 386
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "x-ai/grok-4.20-beta",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1941.6327476501465,
+      "tokens_used": 417
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "x-ai/grok-4.20-beta",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1645.1976299285889,
+      "tokens_used": 391
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "x-ai/grok-4.20-beta",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}",
+      "latency_ms": 1574.8586654663086,
+      "tokens_used": 502
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "x-ai/grok-4.20-beta",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1526.3772010803223,
+      "tokens_used": 290
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "x-ai/grok-4.20-beta",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1499.3383884429932,
+      "tokens_used": 292
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "x-ai/grok-4.20-beta",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY);\"}}",
+      "latency_ms": 1589.2908573150635,
+      "tokens_used": 354
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 3081.3021659851074,
+      "tokens_used": 496
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 4570.034980773926,
+      "tokens_used": 504
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": false,
+      "error": "Expected 3 call(s), got 1",
+      "latency_ms": 6166.944742202759,
+      "tokens_used": 402
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "error": "Expected 2 call(s), got 1",
+      "latency_ms": 7655.365467071533,
+      "tokens_used": 604
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"London\", \"date\": \"2024-12-25\"}}",
+      "latency_ms": 1397.7630138397217,
+      "tokens_used": 603
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 13717.2269821167,
+      "tokens_used": 394
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 11390.078783035278,
+      "tokens_used": 449
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 19376.20258331299,
+      "tokens_used": 434
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 12738.224983215332,
+      "tokens_used": 446
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "error": null,
+      "latency_ms": 7341.276407241821,
+      "tokens_used": 720
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}",
+      "latency_ms": 4283.99658203125,
+      "tokens_used": 739
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1132.6956748962402,
+      "tokens_used": 401
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 878.7984848022461,
+      "tokens_used": 396
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1088.608980178833,
+      "tokens_used": 427
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1052.9038906097412,
+      "tokens_used": 512
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1286.9586944580078,
+      "tokens_used": 542
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1222.261667251587,
+      "tokens_used": 484
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Update\", \"body\": \"Hi John, I wanted to send you a quick note about our upcoming meeting. Please let me know if you have any questions or need to reschedule.\"}}",
+      "latency_ms": 1709.040641784668,
+      "tokens_used": 647
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1042.3004627227783,
+      "tokens_used": 414
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 998.9907741546631,
+      "tokens_used": 414
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "error": "Expected 1 call(s), got 0",
+      "latency_ms": 1404.1805267333984,
+      "tokens_used": 635
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "error": null,
+      "latency_ms": 2116.7821884155273,
+      "tokens_used": 671
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1648.82493019104,
+      "tokens_used": 618
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"key\": \"favorite_color\", \"value\": \"blue\"}}",
+      "latency_ms": 8669.462203979492,
+      "tokens_used": 479
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language overview features history\"}}",
+      "latency_ms": 850.1970767974854,
+      "tokens_used": 421
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite color\"}}",
+      "latency_ms": 893.7187194824219,
+      "tokens_used": 423
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}",
+      "latency_ms": 2073.256492614746,
+      "tokens_used": 885
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY) ORDER BY signup_date DESC\"}}",
+      "latency_ms": 1167.9661273956299,
+      "tokens_used": 597
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1600.7583141326904,
+      "tokens_used": 397
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1713.2506370544434,
+      "tokens_used": 422
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1673.2697486877441,
+      "tokens_used": 530
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1599.2190837860107,
+      "tokens_used": 525
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "error": null,
+      "latency_ms": 2892.338991165161,
+      "tokens_used": 530
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Information\", \"body\": \"Hi John,\\n\\nI'm writing to inform you about an upcoming meeting. Please let me know if you have any questions or need additional details.\\n\\nBest regards\"}}",
+      "latency_ms": 2885.8630657196045,
+      "tokens_used": 605
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 2546.924829483032,
+      "tokens_used": 468
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1466.7925834655762,
+      "tokens_used": 394
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"London\", \"date\": \"2024-12-25\"}}",
+      "latency_ms": 3321.861743927002,
+      "tokens_used": 660
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "error": null,
+      "latency_ms": 2949.3653774261475,
+      "tokens_used": 596
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "error": null,
+      "latency_ms": 4065.227508544922,
+      "tokens_used": 694
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1110.3177070617676,
+      "tokens_used": 421
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1234.1804504394531,
+      "tokens_used": 422
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'\"}}",
+      "latency_ms": 21514.658212661743,
+      "tokens_used": 516
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "qwen/qwen3.5-122b-a10b",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1123.1639385223389,
+      "tokens_used": 437
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}",
+      "latency_ms": 4169.422626495361,
+      "tokens_used": 887
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "qwen/qwen3.5-122b-a10b",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1081.3031196594238,
+      "tokens_used": 528
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "qwen/qwen3.5-122b-a10b",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1362.3528480529785,
+      "tokens_used": 415
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "qwen/qwen3.5-122b-a10b",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 985.7161045074463,
+      "tokens_used": 508
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= CURRENT_DATE - INTERVAL 30 DAY\"}}",
+      "latency_ms": 3472.2561836242676,
+      "tokens_used": 669
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "qwen/qwen3.5-122b-a10b",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1505.6328773498535,
+      "tokens_used": 492
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "qwen/qwen3.5-122b-a10b",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Information\", \"body\": \"Hello John,\\n\\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions or need to reschedule.\\n\\nBest regards\"}}",
+      "latency_ms": 1581.300973892212,
+      "tokens_used": 625
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "qwen/qwen3.5-122b-a10b",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1173.9356517791748,
+      "tokens_used": 429
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "qwen/qwen3.5-122b-a10b",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1459.0840339660645,
+      "tokens_used": 450
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "qwen/qwen3.5-122b-a10b",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1675.9228706359863,
+      "tokens_used": 573
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "qwen/qwen3.5-122b-a10b",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1829.8962116241455,
+      "tokens_used": 781
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "qwen/qwen3.5-122b-a10b",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language information\"}}",
+      "latency_ms": 690.6697750091553,
+      "tokens_used": 422
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "qwen/qwen3.5-122b-a10b",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "error": null,
+      "latency_ms": 2639.730453491211,
+      "tokens_used": 717
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "qwen/qwen3.5-122b-a10b",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite color\"}}",
+      "latency_ms": 867.0763969421387,
+      "tokens_used": 421
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "qwen/qwen3.5-122b-a10b",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "error": "Expected 1 call(s), got 0",
+      "latency_ms": 3472.5992679595947,
+      "tokens_used": 924
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1018.5451507568359,
+      "tokens_used": 427
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 862.586259841919,
+      "tokens_used": 400
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1162.8296375274658,
+      "tokens_used": 530
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 921.5710163116455,
+      "tokens_used": 516
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "qwen/qwen3.5-122b-a10b",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= CURRENT_DATE - INTERVAL '30 days'\"}}",
+      "latency_ms": 2141.273260116577,
+      "tokens_used": 762
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1123.931884765625,
+      "tokens_used": 484
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 912.6596450805664,
+      "tokens_used": 394
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 937.7529621124268,
+      "tokens_used": 414
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Information\", \"body\": \"Hi John,\\n\\nThis is regarding our upcoming meeting. Please let me know if you have any questions or need any additional information.\\n\\nBest regards\"}}",
+      "latency_ms": 1825.9661197662354,
+      "tokens_used": 630
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "error": "Expected 1 call(s), got 0",
+      "latency_ms": 1535.8970165252686,
+      "tokens_used": 635
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language overview features history\"}}",
+      "latency_ms": 723.6442565917969,
+      "tokens_used": 421
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1865.1819229125977,
+      "tokens_used": 616
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "error": null,
+      "latency_ms": 2084.8567485809326,
+      "tokens_used": 676
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}",
+      "latency_ms": 1744.4915771484375,
+      "tokens_used": 841
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite color\"}}",
+      "latency_ms": 861.7994785308838,
+      "tokens_used": 423
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY) ORDER BY signup_date DESC\"}}",
+      "latency_ms": 1338.9225006103516,
+      "tokens_used": 597
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "moonshotai/kimi-k2.5",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 2669.5566177368164,
+      "tokens_used": 200
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "moonshotai/kimi-k2.5",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 3550.13108253479,
+      "tokens_used": 165
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "moonshotai/kimi-k2.5",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 2641.691207885742,
+      "tokens_used": 168
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "moonshotai/kimi-k2.5",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 4546.179294586182,
+      "tokens_used": 188
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "moonshotai/kimi-k2.5",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "error": null,
+      "latency_ms": 4341.860055923462,
+      "tokens_used": 288
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "moonshotai/kimi-k2.5",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 4147.688865661621,
+      "tokens_used": 182
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "moonshotai/kimi-k2.5",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "error": "Expected 1 call(s), got 0",
+      "latency_ms": 1854.919672012329,
+      "tokens_used": 361
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "moonshotai/kimi-k2.5",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 6322.141885757446,
+      "tokens_used": 264
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "moonshotai/kimi-k2.5",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "error": "Expected 2 call(s), got 1",
+      "latency_ms": 7805.015802383423,
+      "tokens_used": 344
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "error": null,
+      "latency_ms": 50265.83218574524,
+      "tokens_used": 665
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "moonshotai/kimi-k2.5",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1731.8651676177979,
+      "tokens_used": 134
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "moonshotai/kimi-k2.5",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"key\": \"favorite_color\", \"value\": \"blue\"}}",
+      "latency_ms": 1600.5940437316895,
+      "tokens_used": 164
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "moonshotai/kimi-k2.5",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "error": null,
+      "latency_ms": 5155.772924423218,
+      "tokens_used": 281
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "moonshotai/kimi-k2.5",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "error": null,
+      "latency_ms": 5600.594997406006,
+      "tokens_used": 286
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "x-ai/grok-4.1-fast",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 2630.9101581573486,
+      "tokens_used": 542
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "moonshotai/kimi-k2.5",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": true,
+      "error": null,
+      "latency_ms": 7477.935552597046,
+      "tokens_used": 512
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "x-ai/grok-4.1-fast",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 4086.8871212005615,
+      "tokens_used": 643
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "x-ai/grok-4.1-fast",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 3197.378396987915,
+      "tokens_used": 608
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "x-ai/grok-4.1-fast",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 2675.5778789520264,
+      "tokens_used": 504
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "x-ai/grok-4.1-fast",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 4046.9515323638916,
+      "tokens_used": 708
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "moonshotai/kimi-k2.5",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE created_at >= CURRENT_DATE - INTERVAL '30 days'\", \"done\": false}}",
+      "latency_ms": 7890.59853553772,
+      "tokens_used": 391
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "x-ai/grok-4.1-fast",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "error": null,
+      "latency_ms": 3539.9951934814453,
+      "tokens_used": 647
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "x-ai/grok-4.1-fast",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Reminder\", \"body\": \"Hi John, this is a reminder about our upcoming meeting. Please let me know if you need any additional details.\"}}",
+      "latency_ms": 5332.265853881836,
+      "tokens_used": 863
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "x-ai/grok-4.1-fast",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 2606.0397624969482,
+      "tokens_used": 532
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "x-ai/grok-4.1-fast",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "error": null,
+      "latency_ms": 3730.7498455047607,
+      "tokens_used": 733
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "x-ai/grok-4.1-fast",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "error": null,
+      "latency_ms": 4684.668779373169,
+      "tokens_used": 804
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "x-ai/grok-4.1-fast",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": true,
+      "error": null,
+      "latency_ms": 3050.340414047241,
+      "tokens_used": 612
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "x-ai/grok-4.1-fast",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": true,
+      "error": null,
+      "latency_ms": 5742.056608200073,
+      "tokens_used": 940
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "x-ai/grok-4.1-fast",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": true,
+      "error": null,
+      "latency_ms": 8451.243877410889,
+      "tokens_used": 1212
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "minimax/minimax-m2.5",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 3763.2224559783936,
+      "tokens_used": 307
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "x-ai/grok-4.1-fast",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE created_at >= NOW() - INTERVAL 30 DAY;\"}}",
+      "latency_ms": 9174.92961883545,
+      "tokens_used": 1310
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "minimax/minimax-m2.5",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 8924.8628616333,
+      "tokens_used": 287
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "minimax/minimax-m2.5",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 5623.581171035767,
+      "tokens_used": 385
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "minimax/minimax-m2.5",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 3698.7507343292236,
+      "tokens_used": 327
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "minimax/minimax-m2.5",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 7784.99174118042,
+      "tokens_used": 368
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "minimax/minimax-m2.5",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"body\": \"I would like to discuss the meeting details with you.\", \"subject\": \"Meeting\", \"to\": \"john@example.com\"}}",
+      "latency_ms": 9545.117855072021,
+      "tokens_used": 762
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "minimax/minimax-m2.5",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 4278.184175491333,
+      "tokens_used": 275
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "minimax/minimax-m2.5",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "error": null,
+      "latency_ms": 4393.617630004883,
+      "tokens_used": 508
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "minimax/minimax-m2.5",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "error": null,
+      "latency_ms": 14528.54585647583,
+      "tokens_used": 573
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "minimax/minimax-m2.5",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "error": null,
+      "latency_ms": 6276.158332824707,
+      "tokens_used": 499
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "minimax/minimax-m2.5",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language information\"}}",
+      "latency_ms": 3261.650323867798,
+      "tokens_used": 319
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "minimax/minimax-m2.5",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"date\": \"2024-12-25\", \"destination\": \"London\", \"origin\": \"NYC\"}}",
+      "latency_ms": 10766.580820083618,
+      "tokens_used": 682
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 831.3355445861816,
+      "tokens_used": 58
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 599.1194248199463,
+      "tokens_used": 67
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 781.9867134094238,
+      "tokens_used": 119
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "minimax/minimax-m2.5",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY);\"}}",
+      "latency_ms": 2613.935947418213,
+      "tokens_used": 387
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1060.3129863739014,
+      "tokens_used": 103
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1164.7577285766602,
+      "tokens_used": 97
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "minimax/minimax-m2.5",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"key\": \"favorite_color\", \"value\": \"blue\"}}",
+      "latency_ms": 5645.673990249634,
+      "tokens_used": 421
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "x-ai/grok-4.1-fast",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"10:00\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}",
+      "latency_ms": 36468.07789802551,
+      "tokens_used": 3993
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Follow-up\", \"body\": \"Hi John,\\n\\nI'm writing to follow up on our upcoming meeting. Looking forward to it.\\n\\nBest regards,\"}}",
+      "latency_ms": 1095.949411392212,
+      "tokens_used": 154
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "minimax/minimax-m2.5",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"date\": \"2025-01-15\", \"destination\": \"CDG\", \"origin\": \"JFK\"}}",
+      "latency_ms": 8128.738641738892,
+      "tokens_used": 805
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1185.6184005737305,
+      "tokens_used": 53
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 913.1505489349365,
+      "tokens_used": 58
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"date\": \"2025-01-15\", \"destination\": \"Paris\"}}",
+      "latency_ms": 724.4892120361328,
+      "tokens_used": 265
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"destination\": \"London\", \"date\": \"2024-12-25\", \"origin\": \"NYC\"}}",
+      "latency_ms": 1039.4222736358643,
+      "tokens_used": 144
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1234.3063354492188,
+      "tokens_used": 119
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"value\": \"blue\", \"key\": \"favorite_color\"}}",
+      "latency_ms": 681.2460422515869,
+      "tokens_used": 84
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"what is python programming language\"}}",
+      "latency_ms": 818.7868595123291,
+      "tokens_used": 81
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= date('now', '-30 days');\"}}",
+      "latency_ms": 953.0940055847168,
+      "tokens_used": 109
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "error": null,
+      "latency_ms": 2013.9946937561035,
+      "tokens_used": 145
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 3701.6329765319824,
+      "tokens_used": 249
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 3562.7026557922363,
+      "tokens_used": 337
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "error": null,
+      "latency_ms": 3535.97354888916,
+      "tokens_used": 292
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 4098.427057266235,
+      "tokens_used": 282
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 3896.005392074585,
+      "tokens_used": 356
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 3419.018030166626,
+      "tokens_used": 214
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"Hi John, this is an email regarding our upcoming meeting. Let me know if you need any further details.\"}}",
+      "latency_ms": 4659.687042236328,
+      "tokens_used": 461
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"London\", \"date\": \"2024-12-25\"}}",
+      "latency_ms": 4060.9097480773926,
+      "tokens_used": 442
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "error": null,
+      "latency_ms": 4014.12034034729,
+      "tokens_used": 398
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 5160.423755645752,
+      "tokens_used": 344
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "error": null,
+      "latency_ms": 3914.6270751953125,
+      "tokens_used": 344
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": true,
+      "error": null,
+      "latency_ms": 4156.901597976685,
+      "tokens_used": 303
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": true,
+      "error": null,
+      "latency_ms": 4762.428998947144,
+      "tokens_used": 611
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"key\": \"favorite_color\", \"value\": \"blue\"}}",
+      "latency_ms": 4671.202182769775,
+      "tokens_used": 384
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "google/gemini-3.1-pro-preview-customtools",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE created_at >= NOW() - INTERVAL 30 DAY;\"}}",
+      "latency_ms": 7003.262758255005,
+      "tokens_used": 705
+    }
+  ]
+}

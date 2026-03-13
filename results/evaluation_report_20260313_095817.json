@@ -1,0 +1,2090 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-13T09:58:17.942288",
+    "total_tests": 15,
+    "models_evaluated": 3,
+    "trials_per_test": 3,
+    "evaluation_method": "Best of N (pass if at least one trial succeeds)"
+  },
+  "summary": {
+    "leaderboard": [
+      {
+        "rank": 1,
+        "model": "qwen/qwen3.5-27b",
+        "accuracy": 0.7333,
+        "reliability_percent": 73.33,
+        "passed_tests": 11,
+        "total_tests": 15,
+        "avg_latency_ms": 3604.49,
+        "total_tokens": 24699
+      },
+      {
+        "rank": 2,
+        "model": "google/gemini-3.1-flash-lite-preview",
+        "accuracy": 0.6,
+        "reliability_percent": 60.0,
+        "passed_tests": 9,
+        "total_tests": 15,
+        "avg_latency_ms": 868.94,
+        "total_tokens": 4968
+      },
+      {
+        "rank": 3,
+        "model": "qwen/qwen3.5-flash-02-23",
+        "accuracy": 0.6,
+        "reliability_percent": 60.0,
+        "passed_tests": 9,
+        "total_tests": 15,
+        "avg_latency_ms": 1632.5,
+        "total_tokens": 24126
+      }
+    ]
+  },
+  "model_scores": [
+    {
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "overall_accuracy": 0.6,
+      "overall_reliability": 60.0,
+      "category_scores": {
+        "agentic": 0.0,
+        "multi_turn": 0.5,
+        "single_turn": 0.875
+      },
+      "category_reliability": {
+        "agentic": 0.0,
+        "multi_turn": 50.0,
+        "single_turn": 87.5
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 0.0,
+        "memory": 0.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 0.0
+      },
+      "subcategory_reliability": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 0.0,
+        "memory": 0.0,
+        "missing_functions": 100.0,
+        "missing_params": 100.0,
+        "multiple": 100.0,
+        "parallel": 100.0,
+        "parallel_multiple": 0.0,
+        "relevance": 100.0,
+        "simple": 100.0,
+        "web_search": 0.0
+      },
+      "total_tests": 15,
+      "passed_tests": 9,
+      "avg_latency_ms": 868.9384407467312,
+      "total_tokens": 4968
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "overall_accuracy": 0.7333333333333333,
+      "overall_reliability": 73.33333333333333,
+      "category_scores": {
+        "agentic": 0.6666666666666666,
+        "multi_turn": 0.5,
+        "single_turn": 0.875
+      },
+      "category_reliability": {
+        "agentic": 66.66666666666667,
+        "multi_turn": 50.0,
+        "single_turn": 87.5
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 0.0,
+        "memory": 1.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 1.0
+      },
+      "subcategory_reliability": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 0.0,
+        "memory": 100.0,
+        "missing_functions": 100.0,
+        "missing_params": 100.0,
+        "multiple": 100.0,
+        "parallel": 100.0,
+        "parallel_multiple": 0.0,
+        "relevance": 100.0,
+        "simple": 100.0,
+        "web_search": 100.0
+      },
+      "total_tests": 15,
+      "passed_tests": 11,
+      "avg_latency_ms": 3604.4895595974394,
+      "total_tokens": 24699
+    },
+    {
+      "model": "qwen/qwen3.5-flash-02-23",
+      "overall_accuracy": 0.6,
+      "overall_reliability": 60.0,
+      "category_scores": {
+        "agentic": 0.0,
+        "multi_turn": 0.5,
+        "single_turn": 0.875
+      },
+      "category_reliability": {
+        "agentic": 0.0,
+        "multi_turn": 50.0,
+        "single_turn": 87.5
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 0.0,
+        "memory": 0.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 0.0
+      },
+      "subcategory_reliability": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 0.0,
+        "memory": 0.0,
+        "missing_functions": 100.0,
+        "missing_params": 100.0,
+        "multiple": 100.0,
+        "parallel": 100.0,
+        "parallel_multiple": 0.0,
+        "relevance": 100.0,
+        "simple": 100.0,
+        "web_search": 0.0
+      },
+      "total_tests": 15,
+      "passed_tests": 9,
+      "avg_latency_ms": 1632.4986086951362,
+      "total_tokens": 24126
+    }
+  ],
+  "detailed_results": [
+    {
+      "test_id": "single_multiple_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1951.36,
+          "tokens_used": 530,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1677.92,
+          "tokens_used": 530,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1728.25,
+          "tokens_used": 530,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "order_id": "ORD-12345"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1785.84,
+      "total_tokens": 1590
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1791.28,
+          "tokens_used": 525,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1759.91,
+          "tokens_used": 525,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1715.92,
+          "tokens_used": 525,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "search_products",
+          "arguments": {
+            "query": "wireless headphones"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1755.7,
+      "total_tokens": 1575
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 3200.31,
+          "tokens_used": 397,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 15065.6,
+          "tokens_used": 399,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 7053.78,
+          "tokens_used": 397,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 8439.9,
+      "total_tokens": 1193
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 3165.84,
+          "tokens_used": 422,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 15437.45,
+          "tokens_used": 422,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 6973.03,
+          "tokens_used": 422,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London",
+            "unit": "celsius"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 8525.44,
+      "total_tokens": 1266
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 13943.07,
+          "tokens_used": 531,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 3868.52,
+          "tokens_used": 530,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 2830.84,
+          "tokens_used": 529,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "New York"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 6880.81,
+      "total_tokens": 1590
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 2444.58,
+          "tokens_used": 597,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Information\", \"body\": \"Hi John,\\n\\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions or need to reschedule.\\n\\nBest regards\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 2414.47,
+          "tokens_used": 597,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Information\", \"body\": \"Hi John,\\n\\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions or need to reschedule.\\n\\nBest regards\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 2401.32,
+          "tokens_used": 597,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Information\", \"body\": \"Hi John,\\n\\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions or need to reschedule.\\n\\nBest regards\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "john@example.com",
+            "subject": "Meeting",
+            "body": "About the meeting"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "Tokyo"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Information\", \"body\": \"Hi John,\\n\\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions or need to reschedule.\\n\\nBest regards\"}}",
+      "avg_latency_ms": 2420.12,
+      "total_tokens": 1791
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 3697.02,
+          "tokens_used": 491,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 2540.25,
+          "tokens_used": 466,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 2689.18,
+          "tokens_used": 468,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 2975.48,
+      "total_tokens": 1425
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1638.91,
+          "tokens_used": 394,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1412.3,
+          "tokens_used": 394,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1425.49,
+          "tokens_used": 396,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Paris"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1492.24,
+      "total_tokens": 1184
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 2700.87,
+          "tokens_used": 661,
+          "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"London\", \"date\": \"2024-12-25\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 2864.28,
+          "tokens_used": 660,
+          "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"London\", \"date\": \"2024-12-25\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 2894.73,
+          "tokens_used": 661,
+          "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"London\", \"date\": \"2024-12-25\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "book_flight",
+          "arguments": {
+            "flight_id": "BA112",
+            "passenger_name": "John Doe",
+            "seat_class": "business"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"London\", \"date\": \"2024-12-25\"}}",
+      "avg_latency_ms": 2819.96,
+      "total_tokens": 1982
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 3531.23,
+          "tokens_used": 692,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 3541.24,
+          "tokens_used": 692,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 3496.34,
+          "tokens_used": 697,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 3522.94,
+      "total_tokens": 2081
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 2883.78,
+          "tokens_used": 616,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 2936.85,
+          "tokens_used": 616,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 2528.62,
+          "tokens_used": 616,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 2783.08,
+      "total_tokens": 1848
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1163.34,
+          "tokens_used": 422,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1268.85,
+          "tokens_used": 422,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1243.59,
+          "tokens_used": 422,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "retrieve_memory",
+          "arguments": {
+            "key": "favorite_color"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1225.26,
+      "total_tokens": 1266
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1092.72,
+          "tokens_used": 421,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1076.86,
+          "tokens_used": 421,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 2225.88,
+          "tokens_used": 421,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "web_search",
+          "arguments": {
+            "query": "Python programming language"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1465.16,
+      "total_tokens": 1263
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1161.89,
+          "tokens_used": 427,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1225.31,
+          "tokens_used": 427,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1211.85,
+          "tokens_used": 427,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1199.68,
+      "total_tokens": 1281
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 4239.21,
+          "tokens_used": 887,
+          "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 6680.32,
+          "tokens_used": 887,
+          "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 3577.92,
+          "tokens_used": 866,
+          "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "search_flights",
+          "arguments": {
+            "origin": "NYC",
+            "destination": "Paris",
+            "date": "2025-01-15"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}",
+      "avg_latency_ms": 4832.48,
+      "total_tokens": 2640
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 963.71,
+          "tokens_used": 387,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 945.55,
+          "tokens_used": 387,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1291.61,
+          "tokens_used": 387,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London",
+            "unit": "celsius"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1066.96,
+      "total_tokens": 1161
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 3433.84,
+          "tokens_used": 673,
+          "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= CURRENT_DATE - INTERVAL 30 DAY\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 3053.82,
+          "tokens_used": 669,
+          "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= CURRENT_DATE - INTERVAL 30 DAY\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 2941.12,
+          "tokens_used": 663,
+          "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= CURRENT_DATE - INTERVAL 30 DAY\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "execute_sql",
+          "arguments": {
+            "query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= CURRENT_DATE - INTERVAL 30 DAY\"}}",
+      "avg_latency_ms": 3142.93,
+      "total_tokens": 2005
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1140.27,
+          "tokens_used": 542,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1313.89,
+          "tokens_used": 542,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1460.4,
+          "tokens_used": 542,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "order_id": "ORD-12345"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1304.85,
+      "total_tokens": 1626
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1096.13,
+          "tokens_used": 512,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1116.13,
+          "tokens_used": 512,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1064.47,
+          "tokens_used": 512,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "search_products",
+          "arguments": {
+            "query": "wireless headphones"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1092.24,
+      "total_tokens": 1536
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1639.0,
+          "tokens_used": 484,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1643.29,
+          "tokens_used": 484,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1721.33,
+          "tokens_used": 484,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "New York"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1667.87,
+      "total_tokens": 1452
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1233.99,
+          "tokens_used": 403,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1290.8,
+          "tokens_used": 394,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1387.28,
+          "tokens_used": 390,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 1304.03,
+      "total_tokens": 1187
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 2229.92,
+          "tokens_used": 636,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Information\", \"body\": \"Hi John,\\n\\nThis is regarding our upcoming meeting. Please let me know if you have any questions or need any additional information.\\n\\nBest regards\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 2194.93,
+          "tokens_used": 636,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Information\", \"body\": \"Hi John,\\n\\nThis is regarding our upcoming meeting. Please let me know if you have any questions or need any additional information.\\n\\nBest regards\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 2409.42,
+          "tokens_used": 645,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Information\", \"body\": \"Hi John,\\n\\nI'm writing to inform you about our upcoming meeting. Please let me know if you have any questions or need to reschedule.\\n\\nBest regards\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "john@example.com",
+            "subject": "Meeting",
+            "body": "About the meeting"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "Tokyo"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Information\", \"body\": \"Hi John,\\n\\nI'm writing to inform you about our upcoming meeting. Please let me know if you have any questions or need to reschedule.\\n\\nBest regards\"}}",
+      "avg_latency_ms": 2278.09,
+      "total_tokens": 1917
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1414.24,
+          "tokens_used": 414,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1308.62,
+          "tokens_used": 414,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1237.47,
+          "tokens_used": 414,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Paris"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1320.11,
+      "total_tokens": 1242
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 1951.74,
+          "tokens_used": 635,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 2145.72,
+          "tokens_used": 671,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 2290.46,
+          "tokens_used": 671,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "book_flight",
+          "arguments": {
+            "flight_id": "BA112",
+            "passenger_name": "John Doe",
+            "seat_class": "business"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 2129.31,
+      "total_tokens": 1977
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 2360.9,
+          "tokens_used": 661,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 2486.17,
+          "tokens_used": 661,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 2794.01,
+          "tokens_used": 734,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 2547.03,
+      "total_tokens": 2056
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 2271.88,
+          "tokens_used": 618,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 2118.18,
+          "tokens_used": 618,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 2303.04,
+          "tokens_used": 618,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 2231.03,
+      "total_tokens": 1854
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 925.85,
+          "tokens_used": 421,
+          "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language overview features history\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 936.95,
+          "tokens_used": 421,
+          "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language overview features history\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 970.31,
+          "tokens_used": 421,
+          "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language overview features history\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "web_search",
+          "arguments": {
+            "query": "Python programming language"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language overview features history\"}}",
+      "avg_latency_ms": 944.37,
+      "total_tokens": 1263
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 766.88,
+          "tokens_used": 423,
+          "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite color\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 1050.06,
+          "tokens_used": 423,
+          "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite color\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 790.64,
+          "tokens_used": 423,
+          "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite color\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "retrieve_memory",
+          "arguments": {
+            "key": "favorite_color"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite color\"}}",
+      "avg_latency_ms": 869.19,
+      "total_tokens": 1269
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 2380.76,
+          "tokens_used": 808,
+          "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 2997.78,
+          "tokens_used": 883,
+          "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 2321.67,
+          "tokens_used": 808,
+          "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "search_flights",
+          "arguments": {
+            "origin": "NYC",
+            "destination": "Paris",
+            "date": "2025-01-15"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}",
+      "avg_latency_ms": 2566.74,
+      "total_tokens": 2499
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 888.96,
+          "tokens_used": 58,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 744.15,
+          "tokens_used": 58,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 671.99,
+          "tokens_used": 58,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 768.36,
+      "total_tokens": 174
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 996.95,
+          "tokens_used": 67,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 971.92,
+          "tokens_used": 67,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 862.17,
+          "tokens_used": 67,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London",
+            "unit": "celsius"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 943.68,
+      "total_tokens": 201
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 882.85,
+          "tokens_used": 119,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 786.45,
+          "tokens_used": 119,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 815.4,
+          "tokens_used": 119,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "order_id": "ORD-12345"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 828.23,
+      "total_tokens": 357
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "qwen/qwen3.5-flash-02-23",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 1803.36,
+          "tokens_used": 616,
+          "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY) ORDER BY signup_date DESC\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 2615.92,
+          "tokens_used": 597,
+          "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY) ORDER BY signup_date DESC\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 1478.66,
+          "tokens_used": 593,
+          "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY)\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "execute_sql",
+          "arguments": {
+            "query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY)\"}}",
+      "avg_latency_ms": 1965.98,
+      "total_tokens": 1806
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 908.11,
+          "tokens_used": 103,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 588.78,
+          "tokens_used": 103,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 693.17,
+          "tokens_used": 103,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "search_products",
+          "arguments": {
+            "query": "wireless headphones"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 730.02,
+      "total_tokens": 309
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1092.79,
+          "tokens_used": 97,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 790.15,
+          "tokens_used": 97,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 822.93,
+          "tokens_used": 97,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "New York"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 901.96,
+      "total_tokens": 291
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 1227.21,
+          "tokens_used": 154,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"body\": \"Hi John,\\n\\nI'm writing to follow up on our upcoming meeting. Looking forward to it.\\n\\nBest regards,\", \"subject\": \"Meeting Follow-up\", \"to\": \"john@example.com\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 766.28,
+          "tokens_used": 154,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"body\": \"Hi John,\\n\\nI'm writing to follow up on our upcoming meeting. Looking forward to it.\\n\\nBest regards,\", \"subject\": \"Meeting Follow-up\", \"to\": \"john@example.com\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 870.53,
+          "tokens_used": 154,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"body\": \"Hi John,\\n\\nI'm writing to follow up on our upcoming meeting. Looking forward to it.\\n\\nBest regards,\", \"subject\": \"Meeting Follow-up\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "john@example.com",
+            "subject": "Meeting",
+            "body": "About the meeting"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "Tokyo"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"body\": \"Hi John,\\n\\nI'm writing to follow up on our upcoming meeting. Looking forward to it.\\n\\nBest regards,\", \"subject\": \"Meeting Follow-up\"}}",
+      "avg_latency_ms": 954.67,
+      "total_tokens": 462
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 818.86,
+          "tokens_used": 53,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1182.19,
+          "tokens_used": 53,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 585.5,
+          "tokens_used": 53,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 862.18,
+      "total_tokens": 159
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 718.91,
+          "tokens_used": 58,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 962.17,
+          "tokens_used": 58,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 639.27,
+          "tokens_used": 58,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Paris"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 773.45,
+      "total_tokens": 174
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 730.34,
+          "tokens_used": 144,
+          "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"destination\": \"London\", \"origin\": \"NYC\", \"date\": \"2024-12-25\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 1105.19,
+          "tokens_used": 144,
+          "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"destination\": \"London\", \"origin\": \"NYC\", \"date\": \"2024-12-25\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 766.71,
+          "tokens_used": 144,
+          "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"destination\": \"London\", \"origin\": \"NYC\", \"date\": \"2024-12-25\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "book_flight",
+          "arguments": {
+            "flight_id": "BA112",
+            "passenger_name": "John Doe",
+            "seat_class": "business"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"destination\": \"London\", \"origin\": \"NYC\", \"date\": \"2024-12-25\"}}",
+      "avg_latency_ms": 867.41,
+      "total_tokens": 432
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 836.29,
+          "tokens_used": 145,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 750.12,
+          "tokens_used": 145,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 873.77,
+          "tokens_used": 145,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 820.06,
+      "total_tokens": 435
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 932.0,
+          "tokens_used": 119,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 804.57,
+          "tokens_used": 119,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 807.13,
+          "tokens_used": 119,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 847.9,
+      "total_tokens": 357
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 937.99,
+          "tokens_used": 265,
+          "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"date\": \"2025-01-15\", \"origin\": \"New York\", \"destination\": \"Paris\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 989.84,
+          "tokens_used": 265,
+          "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"date\": \"2025-01-15\", \"origin\": \"New York\", \"destination\": \"Paris\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 777.74,
+          "tokens_used": 265,
+          "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"date\": \"2025-01-15\", \"destination\": \"Paris\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "search_flights",
+          "arguments": {
+            "origin": "NYC",
+            "destination": "Paris",
+            "date": "2025-01-15"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"date\": \"2025-01-15\", \"destination\": \"Paris\"}}",
+      "avg_latency_ms": 901.86,
+      "total_tokens": 795
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 985.23,
+          "tokens_used": 81,
+          "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"what is python programming language\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 968.07,
+          "tokens_used": 81,
+          "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"what is python programming language\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 726.95,
+          "tokens_used": 81,
+          "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"what is python programming language\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "web_search",
+          "arguments": {
+            "query": "Python programming language"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"Python programming language\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"what is python programming language\"}}",
+      "avg_latency_ms": 893.42,
+      "total_tokens": 243
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 852.74,
+          "tokens_used": 84,
+          "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"key\": \"favorite_color\", \"value\": \"blue\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 986.58,
+          "tokens_used": 84,
+          "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"key\": \"favorite_color\", \"value\": \"blue\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 1267.91,
+          "tokens_used": 84,
+          "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"value\": \"blue\", \"key\": \"favorite_color\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "retrieve_memory",
+          "arguments": {
+            "key": "favorite_color"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"value\": \"blue\", \"key\": \"favorite_color\"}}",
+      "avg_latency_ms": 1035.74,
+      "total_tokens": 252
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 1040.74,
+          "tokens_used": 109,
+          "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= date('now', '-30 days');\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 994.02,
+          "tokens_used": 109,
+          "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= date('now', '-30 days');\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 680.63,
+          "tokens_used": 109,
+          "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= date('now', '-30 days');\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "execute_sql",
+          "arguments": {
+            "query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= date('now', '-30 days');\"}}",
+      "avg_latency_ms": 905.13,
+      "total_tokens": 327
+    }
+  ]
+}

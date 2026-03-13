@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-13T09:12:47.609155",
+    "total_tests": 8,
+    "models_evaluated": 1
+  },
+  "model_scores": [
+    {
+      "model": "openai/gpt-4o-mini",
+      "overall_accuracy": 0.875,
+      "category_scores": {
+        "single_turn": 0.875
+      },
+      "subcategory_scores": {
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0
+      },
+      "total_tests": 8,
+      "passed_tests": 7,
+      "avg_latency_ms": 1219.5349633693695,
+      "total_tokens": 872
+    }
+  ],
+  "detailed_results": [
+    {
+      "test_id": "single_simple_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1472.898006439209,
+      "tokens_used": 79
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 722.686767578125,
+      "tokens_used": 87
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1292.043924331665,
+      "tokens_used": 121
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1018.9657211303711,
+      "tokens_used": 114
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1573.871374130249,
+      "tokens_used": 130
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Reminder\", \"body\": \"Hi John,\\n\\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions.\\n\\nBest regards,\\n\\n[Your Name]\"}}",
+      "latency_ms": 2467.93532371521,
+      "tokens_used": 184
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 589.2720222473145,
+      "tokens_used": 78
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 618.6065673828125,
+      "tokens_used": 79
+    }
+  ]
+}

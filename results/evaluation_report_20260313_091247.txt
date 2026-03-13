@@ -1,0 +1,61 @@
+================================================================================
+FUNCTION CALLING EVALUATION REPORT
+================================================================================
+Generated: 2026-03-13 09:12:47
+Total Tests: 8
+Models Evaluated: 1
+
+--------------------------------------------------------------------------------
+OVERALL MODEL RANKINGS
+--------------------------------------------------------------------------------
+1. openai/gpt-4o-mini
+   Accuracy: 87.50% (7/8)
+   Avg Latency: 1220ms
+
+--------------------------------------------------------------------------------
+CATEGORY BREAKDOWN
+--------------------------------------------------------------------------------
+
+SINGLE_TURN:
+  openai/gpt-4o-mini: 87.50%
+
+--------------------------------------------------------------------------------
+DETAILED TEST RESULTS
+--------------------------------------------------------------------------------
+
+✓ PASS | openai/gpt-4o-mini | single_multiple_001
+  Category: single_turn/multiple
+  Latency: 1292ms
+
+✓ PASS | openai/gpt-4o-mini | single_multiple_002
+  Category: single_turn/multiple
+  Latency: 1019ms
+
+✓ PASS | openai/gpt-4o-mini | single_parallel_001
+  Category: single_turn/parallel
+  Latency: 1574ms
+
+✗ FAIL | openai/gpt-4o-mini | single_parallel_multi_001
+  Category: single_turn/parallel_multiple
+  Error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Reminder", "body": "Hi John,\n\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions.\n\nBest regards,\n\n[Your Name]"}}
+  Latency: 2468ms
+
+✓ PASS | openai/gpt-4o-mini | single_relevance_001
+  Category: single_turn/relevance
+  Latency: 589ms
+
+✓ PASS | openai/gpt-4o-mini | single_relevance_002
+  Category: single_turn/relevance
+  Latency: 619ms
+
+✓ PASS | openai/gpt-4o-mini | single_simple_001
+  Category: single_turn/simple
+  Latency: 1473ms
+
+✓ PASS | openai/gpt-4o-mini | single_simple_002
+  Category: single_turn/simple
+  Latency: 723ms
+
+================================================================================
+END OF REPORT
+================================================================================

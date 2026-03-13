@@ -1,0 +1,87 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fc-eval"
+version = "1.0.0"
+description = "Function Calling Evaluation Tool for OpenRouter LLMs - BFCL v4 Inspired"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "NEO", email = "neo@heyneo.so"}
+]
+keywords = [
+    "llm",
+    "function-calling",
+    "openrouter",
+    "evaluation",
+    "benchmark",
+    "bfcl",
+    "tool-use"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = [
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+fc-eval = "fc_eval.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/gauravvij/function-calling-cli"
+Documentation = "https://github.com/gauravvij/function-calling-cli#readme"
+Repository = "https://github.com/gauravvij/function-calling-cli"
+Issues = "https://github.com/gauravvij/function-calling-cli/issues"
+"Made by NEO" = "https://heyneo.so"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fc_eval"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/README.md",
+    "/LICENSE",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"

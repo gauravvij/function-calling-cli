@@ -1,0 +1,350 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-13T09:55:55.389642",
+    "total_tests": 8,
+    "models_evaluated": 1,
+    "trials_per_test": 2,
+    "evaluation_method": "Best of N (pass if at least one trial succeeds)"
+  },
+  "summary": {
+    "leaderboard": [
+      {
+        "rank": 1,
+        "model": "qwen/qwen3.5-27b",
+        "accuracy": 0.875,
+        "reliability_percent": 87.5,
+        "passed_tests": 7,
+        "total_tests": 8,
+        "avg_latency_ms": 2069.99,
+        "total_tokens": 7704
+      }
+    ]
+  },
+  "model_scores": [
+    {
+      "model": "qwen/qwen3.5-27b",
+      "overall_accuracy": 0.875,
+      "overall_reliability": 87.5,
+      "category_scores": {
+        "single_turn": 0.875
+      },
+      "category_reliability": {
+        "single_turn": 87.5
+      },
+      "subcategory_scores": {
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0
+      },
+      "subcategory_reliability": {
+        "multiple": 100.0,
+        "parallel": 100.0,
+        "parallel_multiple": 0.0,
+        "relevance": 100.0,
+        "simple": 100.0
+      },
+      "total_tests": 8,
+      "passed_tests": 7,
+      "avg_latency_ms": 2069.9872970581055,
+      "total_tokens": 7704
+    }
+  ],
+  "detailed_results": [
+    {
+      "test_id": "single_simple_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1633.4,
+          "tokens_used": 397,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1354.39,
+          "tokens_used": 397,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1493.9,
+      "total_tokens": 794
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1558.77,
+          "tokens_used": 422,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1507.26,
+          "tokens_used": 422,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London",
+            "unit": "celsius"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1533.02,
+      "total_tokens": 844
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1549.38,
+          "tokens_used": 530,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1527.92,
+          "tokens_used": 530,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "order_id": "ORD-12345"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1538.65,
+      "total_tokens": 1060
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1980.77,
+          "tokens_used": 525,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1778.86,
+          "tokens_used": 525,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "search_products",
+          "arguments": {
+            "query": "wireless headphones"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1879.82,
+      "total_tokens": 1050
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 2529.68,
+          "tokens_used": 529,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 2598.01,
+          "tokens_used": 529,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "New York"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 2563.84,
+      "total_tokens": 1058
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 2457.6,
+          "tokens_used": 597,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Information\", \"body\": \"Hi John,\\n\\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions or need to reschedule.\\n\\nBest regards\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 2435.85,
+          "tokens_used": 597,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Information\", \"body\": \"Hi John,\\n\\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions or need to reschedule.\\n\\nBest regards\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "john@example.com",
+            "subject": "Meeting",
+            "body": "About the meeting"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "Tokyo"
+          }
+        }
+      ],
+      "error": "Failed 2/2 trials. Last error: Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Information\", \"body\": \"Hi John,\\n\\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions or need to reschedule.\\n\\nBest regards\"}}",
+      "avg_latency_ms": 2446.72,
+      "total_tokens": 1194
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 2841.16,
+          "tokens_used": 468,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 3474.6,
+          "tokens_used": 444,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 3157.88,
+      "total_tokens": 912
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "qwen/qwen3.5-27b",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1358.26,
+          "tokens_used": 396,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 2533.89,
+          "tokens_used": 396,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Paris"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1946.07,
+      "total_tokens": 792
+    }
+  ]
+}

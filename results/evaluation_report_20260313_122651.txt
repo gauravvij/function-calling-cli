@@ -1,0 +1,2621 @@
+====================================================================================================
+FUNCTION CALLING EVALUATION REPORT - Best of N Trials with Reliability Metrics
+====================================================================================================
+Generated: 2026-03-13 12:26:51
+Total Tests: 30
+Models Evaluated: 11
+Trials per Test: 3
+
+----------------------------------------------------------------------------------------------------
+LEADERBOARD (Ranked by Accuracy, with Reliability)
+----------------------------------------------------------------------------------------------------
+Rank   Model                                              Accuracy     Reliability  Tests     
+----------------------------------------------------------------------------------------------------
+1      qwen/qwen3.5-27b                                        80.0%        80.0%  24/30
+2      moonshotai/kimi-k2.5                                    80.0%        78.9%  24/30
+3      x-ai/grok-4.1-fast                                      80.0%        78.9%  24/30
+4      x-ai/grok-4.20-beta                                     73.3%        73.3%  22/30
+5      qwen/qwen3.5-122b-a10b                                  73.3%        71.1%  22/30
+6      anthropic/claude-haiku-4.5                              70.0%        70.0%  21/30
+7      google/gemini-3.1-flash-lite-preview                    70.0%        70.0%  21/30
+8      qwen/qwen3.5-35b-a3b                                    70.0%        70.0%  21/30
+9      qwen/qwen3.5-flash-02-23                                70.0%        70.0%  21/30
+10     minimax/minimax-m2.5                                    70.0%        67.8%  21/30
+11     google/gemini-3-flash-preview                           66.7%        65.6%  20/30
+
+----------------------------------------------------------------------------------------------------
+CATEGORY BREAKDOWN (Accuracy | Reliability)
+----------------------------------------------------------------------------------------------------
+
+AGENTIC:
+  qwen/qwen3.5-27b                                    66.7% |  66.7%
+  moonshotai/kimi-k2.5                                66.7% |  61.1%
+  x-ai/grok-4.1-fast                                  66.7% |  66.7%
+  x-ai/grok-4.20-beta                                 66.7% |  66.7%
+  qwen/qwen3.5-122b-a10b                              33.3% |  22.2%
+  anthropic/claude-haiku-4.5                          33.3% |  33.3%
+  google/gemini-3.1-flash-lite-preview                16.7% |  16.7%
+  qwen/qwen3.5-35b-a3b                                16.7% |  16.7%
+  qwen/qwen3.5-flash-02-23                            16.7% |  16.7%
+  minimax/minimax-m2.5                                33.3% |  22.2%
+  google/gemini-3-flash-preview                       16.7% |  16.7%
+
+MULTI_TURN:
+  qwen/qwen3.5-27b                                    66.7% |  66.7%
+  moonshotai/kimi-k2.5                                66.7% |  66.7%
+  x-ai/grok-4.1-fast                                  66.7% |  66.7%
+  x-ai/grok-4.20-beta                                 50.0% |  50.0%
+  qwen/qwen3.5-122b-a10b                              66.7% |  66.7%
+  anthropic/claude-haiku-4.5                          66.7% |  66.7%
+  google/gemini-3.1-flash-lite-preview                66.7% |  66.7%
+  qwen/qwen3.5-35b-a3b                                66.7% |  66.7%
+  qwen/qwen3.5-flash-02-23                            66.7% |  66.7%
+  minimax/minimax-m2.5                                66.7% |  66.7%
+  google/gemini-3-flash-preview                       50.0% |  50.0%
+
+SINGLE_TURN:
+  qwen/qwen3.5-27b                                    88.9% |  88.9%
+  moonshotai/kimi-k2.5                                88.9% |  88.9%
+  x-ai/grok-4.1-fast                                  88.9% |  87.0%
+  x-ai/grok-4.20-beta                                 83.3% |  83.3%
+  qwen/qwen3.5-122b-a10b                              88.9% |  88.9%
+  anthropic/claude-haiku-4.5                          83.3% |  83.3%
+  google/gemini-3.1-flash-lite-preview                88.9% |  88.9%
+  qwen/qwen3.5-35b-a3b                                88.9% |  88.9%
+  qwen/qwen3.5-flash-02-23                            88.9% |  88.9%
+  minimax/minimax-m2.5                                83.3% |  83.3%
+  google/gemini-3-flash-preview                       88.9% |  87.0%
+
+----------------------------------------------------------------------------------------------------
+SUBCATEGORY BREAKDOWN
+----------------------------------------------------------------------------------------------------
+
+BASE:
+  qwen/qwen3.5-27b                                     0.0% |   0.0%
+  moonshotai/kimi-k2.5                                 0.0% |   0.0%
+  x-ai/grok-4.1-fast                                   0.0% |   0.0%
+  x-ai/grok-4.20-beta                                  0.0% |   0.0%
+  qwen/qwen3.5-122b-a10b                               0.0% |   0.0%
+  anthropic/claude-haiku-4.5                           0.0% |   0.0%
+  google/gemini-3.1-flash-lite-preview                 0.0% |   0.0%
+  qwen/qwen3.5-35b-a3b                                 0.0% |   0.0%
+  qwen/qwen3.5-flash-02-23                             0.0% |   0.0%
+  minimax/minimax-m2.5                                 0.0% |   0.0%
+  google/gemini-3-flash-preview                        0.0% |   0.0%
+
+FORMAT_SENSITIVITY:
+  qwen/qwen3.5-27b                                    50.0% |  50.0%
+  moonshotai/kimi-k2.5                                50.0% |  50.0%
+  x-ai/grok-4.1-fast                                  50.0% |  50.0%
+  x-ai/grok-4.20-beta                                 50.0% |  50.0%
+  qwen/qwen3.5-122b-a10b                              50.0% |  50.0%
+  anthropic/claude-haiku-4.5                          50.0% |  50.0%
+  google/gemini-3.1-flash-lite-preview                50.0% |  50.0%
+  qwen/qwen3.5-35b-a3b                                50.0% |  50.0%
+  qwen/qwen3.5-flash-02-23                            50.0% |  50.0%
+  minimax/minimax-m2.5                                50.0% |  50.0%
+  google/gemini-3-flash-preview                       50.0% |  50.0%
+
+MEMORY:
+  qwen/qwen3.5-27b                                   100.0% | 100.0%
+  moonshotai/kimi-k2.5                               100.0% |  83.3%
+  x-ai/grok-4.1-fast                                 100.0% | 100.0%
+  x-ai/grok-4.20-beta                                100.0% | 100.0%
+  qwen/qwen3.5-122b-a10b                              50.0% |  16.7%
+  anthropic/claude-haiku-4.5                           0.0% |   0.0%
+  google/gemini-3.1-flash-lite-preview                 0.0% |   0.0%
+  qwen/qwen3.5-35b-a3b                                 0.0% |   0.0%
+  qwen/qwen3.5-flash-02-23                             0.0% |   0.0%
+  minimax/minimax-m2.5                                50.0% |  16.7%
+  google/gemini-3-flash-preview                        0.0% |   0.0%
+
+MISSING_FUNCTIONS:
+  qwen/qwen3.5-27b                                   100.0% | 100.0%
+  moonshotai/kimi-k2.5                               100.0% | 100.0%
+  x-ai/grok-4.1-fast                                 100.0% | 100.0%
+  x-ai/grok-4.20-beta                                100.0% | 100.0%
+  qwen/qwen3.5-122b-a10b                             100.0% | 100.0%
+  anthropic/claude-haiku-4.5                         100.0% | 100.0%
+  google/gemini-3.1-flash-lite-preview               100.0% | 100.0%
+  qwen/qwen3.5-35b-a3b                               100.0% | 100.0%
+  qwen/qwen3.5-flash-02-23                           100.0% | 100.0%
+  minimax/minimax-m2.5                               100.0% | 100.0%
+  google/gemini-3-flash-preview                       50.0% |  50.0%
+
+MISSING_PARAMS:
+  qwen/qwen3.5-27b                                   100.0% | 100.0%
+  moonshotai/kimi-k2.5                               100.0% | 100.0%
+  x-ai/grok-4.1-fast                                 100.0% | 100.0%
+  x-ai/grok-4.20-beta                                 50.0% |  50.0%
+  qwen/qwen3.5-122b-a10b                             100.0% | 100.0%
+  anthropic/claude-haiku-4.5                         100.0% | 100.0%
+  google/gemini-3.1-flash-lite-preview               100.0% | 100.0%
+  qwen/qwen3.5-35b-a3b                               100.0% | 100.0%
+  qwen/qwen3.5-flash-02-23                           100.0% | 100.0%
+  minimax/minimax-m2.5                               100.0% | 100.0%
+  google/gemini-3-flash-preview                      100.0% | 100.0%
+
+MULTIPLE:
+  qwen/qwen3.5-27b                                   100.0% | 100.0%
+  moonshotai/kimi-k2.5                               100.0% | 100.0%
+  x-ai/grok-4.1-fast                                 100.0% |  91.7%
+  x-ai/grok-4.20-beta                                 75.0% |  75.0%
+  qwen/qwen3.5-122b-a10b                             100.0% | 100.0%
+  anthropic/claude-haiku-4.5                          75.0% |  75.0%
+  google/gemini-3.1-flash-lite-preview               100.0% | 100.0%
+  qwen/qwen3.5-35b-a3b                               100.0% | 100.0%
+  qwen/qwen3.5-flash-02-23                           100.0% | 100.0%
+  minimax/minimax-m2.5                                75.0% |  75.0%
+  google/gemini-3-flash-preview                      100.0% |  91.7%
+
+PARALLEL:
+  qwen/qwen3.5-27b                                   100.0% | 100.0%
+  moonshotai/kimi-k2.5                               100.0% | 100.0%
+  x-ai/grok-4.1-fast                                 100.0% | 100.0%
+  x-ai/grok-4.20-beta                                100.0% | 100.0%
+  qwen/qwen3.5-122b-a10b                             100.0% | 100.0%
+  anthropic/claude-haiku-4.5                         100.0% | 100.0%
+  google/gemini-3.1-flash-lite-preview               100.0% | 100.0%
+  qwen/qwen3.5-35b-a3b                               100.0% | 100.0%
+  qwen/qwen3.5-flash-02-23                           100.0% | 100.0%
+  minimax/minimax-m2.5                               100.0% | 100.0%
+  google/gemini-3-flash-preview                      100.0% | 100.0%
+
+PARALLEL_MULTIPLE:
+  qwen/qwen3.5-27b                                    33.3% |  33.3%
+  moonshotai/kimi-k2.5                                33.3% |  33.3%
+  x-ai/grok-4.1-fast                                  33.3% |  33.3%
+  x-ai/grok-4.20-beta                                 33.3% |  33.3%
+  qwen/qwen3.5-122b-a10b                              33.3% |  33.3%
+  anthropic/claude-haiku-4.5                          33.3% |  33.3%
+  google/gemini-3.1-flash-lite-preview                33.3% |  33.3%
+  qwen/qwen3.5-35b-a3b                                33.3% |  33.3%
+  qwen/qwen3.5-flash-02-23                            33.3% |  33.3%
+  minimax/minimax-m2.5                                33.3% |  33.3%
+  google/gemini-3-flash-preview                       33.3% |  33.3%
+
+RELEVANCE:
+  qwen/qwen3.5-27b                                   100.0% | 100.0%
+  moonshotai/kimi-k2.5                               100.0% | 100.0%
+  x-ai/grok-4.1-fast                                 100.0% | 100.0%
+  x-ai/grok-4.20-beta                                100.0% | 100.0%
+  qwen/qwen3.5-122b-a10b                             100.0% | 100.0%
+  anthropic/claude-haiku-4.5                         100.0% | 100.0%
+  google/gemini-3.1-flash-lite-preview               100.0% | 100.0%
+  qwen/qwen3.5-35b-a3b                               100.0% | 100.0%
+  qwen/qwen3.5-flash-02-23                           100.0% | 100.0%
+  minimax/minimax-m2.5                               100.0% | 100.0%
+  google/gemini-3-flash-preview                      100.0% | 100.0%
+
+SIMPLE:
+  qwen/qwen3.5-27b                                   100.0% | 100.0%
+  moonshotai/kimi-k2.5                               100.0% | 100.0%
+  x-ai/grok-4.1-fast                                 100.0% | 100.0%
+  x-ai/grok-4.20-beta                                100.0% | 100.0%
+  qwen/qwen3.5-122b-a10b                             100.0% | 100.0%
+  anthropic/claude-haiku-4.5                         100.0% | 100.0%
+  google/gemini-3.1-flash-lite-preview               100.0% | 100.0%
+  qwen/qwen3.5-35b-a3b                               100.0% | 100.0%
+  qwen/qwen3.5-flash-02-23                           100.0% | 100.0%
+  minimax/minimax-m2.5                               100.0% | 100.0%
+  google/gemini-3-flash-preview                      100.0% | 100.0%
+
+WEB_SEARCH:
+  qwen/qwen3.5-27b                                    50.0% |  50.0%
+  moonshotai/kimi-k2.5                                50.0% |  50.0%
+  x-ai/grok-4.1-fast                                  50.0% |  50.0%
+  x-ai/grok-4.20-beta                                 50.0% |  50.0%
+  qwen/qwen3.5-122b-a10b                               0.0% |   0.0%
+  anthropic/claude-haiku-4.5                          50.0% |  50.0%
+  google/gemini-3.1-flash-lite-preview                 0.0% |   0.0%
+  qwen/qwen3.5-35b-a3b                                 0.0% |   0.0%
+  qwen/qwen3.5-flash-02-23                             0.0% |   0.0%
+  minimax/minimax-m2.5                                 0.0% |   0.0%
+  google/gemini-3-flash-preview                        0.0% |   0.0%
+
+----------------------------------------------------------------------------------------------------
+DETAILED TEST RESULTS (with Trial Breakdown)
+----------------------------------------------------------------------------------------------------
+
+✗ FAIL | anthropic/claude-haiku-4.5 | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (1721ms)
+    Trial 2: ✗ (1568ms)
+    Trial 3: ✗ (2202ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE created_at >= NOW() - INTERVAL '30 days' ORDER BY created_at DESC"}}
+  Avg Latency: 1830ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | agentic_format_002 | Reliability: 100%
+  Category: agentic/format_sensitivity
+    Trial 1: ✓ (2285ms)
+    Trial 2: ✓ (1848ms)
+    Trial 3: ✓ (2011ms)
+  Avg Latency: 2048ms
+
+✗ FAIL | anthropic/claude-haiku-4.5 | agentic_memory_001 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (2690ms)
+    Trial 2: ✗ (1631ms)
+    Trial 3: ✗ (2113ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 2
+  Avg Latency: 2145ms
+
+✗ FAIL | anthropic/claude-haiku-4.5 | agentic_memory_002 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (1946ms)
+    Trial 2: ✗ (2217ms)
+    Trial 3: ✗ (2009ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 2
+  Avg Latency: 2057ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | agentic_web_001 | Reliability: 100%
+  Category: agentic/web_search
+    Trial 1: ✓ (1440ms)
+    Trial 2: ✓ (1921ms)
+    Trial 3: ✓ (1879ms)
+  Avg Latency: 1747ms
+
+✗ FAIL | anthropic/claude-haiku-4.5 | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (1381ms)
+    Trial 2: ✗ (1662ms)
+    Trial 3: ✗ (2120ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "latest news artificial intelligence"}}, got {"name": "web_search", "arguments": {"query": "latest news about artificial intelligence"}}
+  Avg Latency: 1721ms
+
+✗ FAIL | anthropic/claude-haiku-4.5 | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (1740ms)
+    Trial 2: ✗ (1558ms)
+    Trial 3: ✗ (2204ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "London", "date": "2024-12-25"}}
+  Avg Latency: 1834ms
+
+✗ FAIL | anthropic/claude-haiku-4.5 | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (1661ms)
+    Trial 2: ✗ (2246ms)
+    Trial 3: ✗ (1854ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "JL002", "passenger_name": "Jane Smith"}}, got {"name": "search_flights", "arguments": {"origin": "LA", "destination": "Tokyo", "date": "2024-12-20"}}
+  Avg Latency: 1920ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (3493ms)
+    Trial 2: ✓ (2410ms)
+    Trial 3: ✓ (2896ms)
+  Avg Latency: 2933ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (2632ms)
+    Trial 2: ✓ (2607ms)
+    Trial 3: ✓ (2905ms)
+  Avg Latency: 2715ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (2190ms)
+    Trial 2: ✓ (2483ms)
+    Trial 3: ✓ (2482ms)
+  Avg Latency: 2385ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (1635ms)
+    Trial 2: ✓ (1848ms)
+    Trial 3: ✓ (2308ms)
+  Avg Latency: 1930ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | single_multiple_001 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1731ms)
+    Trial 2: ✓ (1640ms)
+    Trial 3: ✓ (1848ms)
+  Avg Latency: 1740ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | single_multiple_002 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1569ms)
+    Trial 2: ✓ (1441ms)
+    Trial 3: ✓ (1939ms)
+  Avg Latency: 1649ms
+
+✗ FAIL | anthropic/claude-haiku-4.5 | single_multiple_003 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (3108ms)
+    Trial 2: ✗ (1989ms)
+    Trial 3: ✗ (2123ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "cancel_order", "arguments": {"order_id": "ORD-67890", "reason": "I changed my mind"}}, got {"name": "cancel_order", "arguments": {"order_id": "ORD-67890", "reason": "changed my mind"}}
+  Avg Latency: 2407ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | single_multiple_004 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (2019ms)
+    Trial 2: ✓ (1997ms)
+    Trial 3: ✓ (1379ms)
+  Avg Latency: 1798ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | single_parallel_001 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (2065ms)
+    Trial 2: ✓ (1771ms)
+    Trial 3: ✓ (1703ms)
+  Avg Latency: 1846ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | single_parallel_002 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1359ms)
+    Trial 2: ✓ (2020ms)
+    Trial 3: ✓ (1917ms)
+  Avg Latency: 1765ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | single_parallel_003 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (2215ms)
+    Trial 2: ✓ (1607ms)
+    Trial 3: ✓ (2738ms)
+  Avg Latency: 2187ms
+
+✗ FAIL | anthropic/claude-haiku-4.5 | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (1809ms)
+    Trial 2: ✗ (1604ms)
+    Trial 3: ✗ (1679ms)
+  Error: Failed 3/3 trials. Last error: Expected 2 call(s), got 1
+  Avg Latency: 1698ms
+
+✗ FAIL | anthropic/claude-haiku-4.5 | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (2595ms)
+    Trial 2: ✗ (1945ms)
+    Trial 3: ✗ (1722ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "get_current_time", "arguments": {"timezone": "New York"}}, got {"name": "get_current_time", "arguments": {"timezone": "America/New_York"}}
+  Avg Latency: 2087ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | single_parallel_multi_003 | Reliability: 100%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✓ (2435ms)
+    Trial 2: ✓ (1689ms)
+    Trial 3: ✓ (1772ms)
+  Avg Latency: 1965ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (2197ms)
+    Trial 2: ✓ (2974ms)
+    Trial 3: ✓ (2222ms)
+  Avg Latency: 2465ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | single_relevance_002 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1283ms)
+    Trial 2: ✓ (1896ms)
+    Trial 3: ✓ (1723ms)
+  Avg Latency: 1634ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (3972ms)
+    Trial 2: ✓ (3999ms)
+    Trial 3: ✓ (3995ms)
+  Avg Latency: 3989ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | single_relevance_004 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1362ms)
+    Trial 2: ✓ (2110ms)
+    Trial 3: ✓ (2240ms)
+  Avg Latency: 1904ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | single_simple_001 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1653ms)
+    Trial 2: ✓ (1702ms)
+    Trial 3: ✓ (1568ms)
+  Avg Latency: 1641ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | single_simple_002 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (3032ms)
+    Trial 2: ✓ (1606ms)
+    Trial 3: ✓ (1588ms)
+  Avg Latency: 2075ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | single_simple_003 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1869ms)
+    Trial 2: ✓ (1479ms)
+    Trial 3: ✓ (1596ms)
+  Avg Latency: 1648ms
+
+✓ PASS | anthropic/claude-haiku-4.5 | single_simple_004 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1959ms)
+    Trial 2: ✓ (1950ms)
+    Trial 3: ✓ (1436ms)
+  Avg Latency: 1782ms
+
+✗ FAIL | google/gemini-3-flash-preview | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (1433ms)
+    Trial 2: ✗ (1460ms)
+    Trial 3: ✗ (1639ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE('now', '-30 days');"}}
+  Avg Latency: 1511ms
+
+✓ PASS | google/gemini-3-flash-preview | agentic_format_002 | Reliability: 100%
+  Category: agentic/format_sensitivity
+    Trial 1: ✓ (1042ms)
+    Trial 2: ✓ (1024ms)
+    Trial 3: ✓ (1045ms)
+  Avg Latency: 1037ms
+
+✗ FAIL | google/gemini-3-flash-preview | agentic_memory_001 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (1714ms)
+    Trial 2: ✗ (1084ms)
+    Trial 3: ✗ (937ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "store_memory", "arguments": {"key": "favorite_color", "value": "blue"}}
+  Avg Latency: 1245ms
+
+✗ FAIL | google/gemini-3-flash-preview | agentic_memory_002 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (1112ms)
+    Trial 2: ✗ (1173ms)
+    Trial 3: ✗ (1038ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "phone_number"}}, got {"name": "store_memory", "arguments": {"value": "555-1234", "key": "phone_number"}}
+  Avg Latency: 1108ms
+
+✗ FAIL | google/gemini-3-flash-preview | agentic_web_001 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (948ms)
+    Trial 2: ✗ (1071ms)
+    Trial 3: ✗ (946ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "Python programming language"}}, got {"name": "web_search", "arguments": {"query": "Python programming language overview features history uses"}}
+  Avg Latency: 988ms
+
+✗ FAIL | google/gemini-3-flash-preview | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (1073ms)
+    Trial 2: ✗ (1263ms)
+    Trial 3: ✗ (1171ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "latest news artificial intelligence"}}, got {"name": "web_search", "arguments": {"query": "latest artificial intelligence news October 2024"}}
+  Avg Latency: 1169ms
+
+✗ FAIL | google/gemini-3-flash-preview | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (953ms)
+    Trial 2: ✗ (1272ms)
+    Trial 3: ✗ (1212ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "search_flights", "arguments": {"destination": "London", "origin": "NYC", "date": "2024-12-25"}}
+  Avg Latency: 1146ms
+
+✗ FAIL | google/gemini-3-flash-preview | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (1092ms)
+    Trial 2: ✗ (1719ms)
+    Trial 3: ✗ (1043ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "JL002", "passenger_name": "Jane Smith"}}, got {"name": "search_flights", "arguments": {"destination": "Tokyo", "origin": "LA", "date": "2024-12-20"}}
+  Avg Latency: 1285ms
+
+✗ FAIL | google/gemini-3-flash-preview | multi_mf_001 | Reliability: 0%
+  Category: multi_turn/missing_functions
+    Trial 1: ✗ (1148ms)
+    Trial 2: ✗ (1046ms)
+    Trial 3: ✗ (952ms)
+  Error: Failed 3/3 trials. Last error: Expected no calls but got 1 call(s)
+  Avg Latency: 1049ms
+
+✓ PASS | google/gemini-3-flash-preview | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (1531ms)
+    Trial 2: ✓ (1583ms)
+    Trial 3: ✓ (1669ms)
+  Avg Latency: 1594ms
+
+✓ PASS | google/gemini-3-flash-preview | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (1686ms)
+    Trial 2: ✓ (1952ms)
+    Trial 3: ✓ (1771ms)
+  Avg Latency: 1803ms
+
+✓ PASS | google/gemini-3-flash-preview | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (1420ms)
+    Trial 2: ✓ (1317ms)
+    Trial 3: ✓ (1192ms)
+  Avg Latency: 1309ms
+
+✓ PASS | google/gemini-3-flash-preview | single_multiple_001 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1045ms)
+    Trial 2: ✓ (1321ms)
+    Trial 3: ✓ (1081ms)
+  Avg Latency: 1149ms
+
+✓ PASS | google/gemini-3-flash-preview | single_multiple_002 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (998ms)
+    Trial 2: ✓ (1113ms)
+    Trial 3: ✓ (982ms)
+  Avg Latency: 1031ms
+
+✓ PASS | google/gemini-3-flash-preview | single_multiple_003 | Reliability: 67%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1021ms)
+    Trial 2: ✗ (1216ms)
+    Trial 3: ✓ (1056ms)
+  Avg Latency: 1098ms
+
+✓ PASS | google/gemini-3-flash-preview | single_multiple_004 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1030ms)
+    Trial 2: ✓ (1104ms)
+    Trial 3: ✓ (1115ms)
+  Avg Latency: 1083ms
+
+✓ PASS | google/gemini-3-flash-preview | single_parallel_001 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1226ms)
+    Trial 2: ✓ (1432ms)
+    Trial 3: ✓ (1114ms)
+  Avg Latency: 1257ms
+
+✓ PASS | google/gemini-3-flash-preview | single_parallel_002 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1169ms)
+    Trial 2: ✓ (1179ms)
+    Trial 3: ✓ (1093ms)
+  Avg Latency: 1147ms
+
+✓ PASS | google/gemini-3-flash-preview | single_parallel_003 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1239ms)
+    Trial 2: ✓ (1302ms)
+    Trial 3: ✓ (1209ms)
+  Avg Latency: 1250ms
+
+✗ FAIL | google/gemini-3-flash-preview | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (1551ms)
+    Trial 2: ✗ (1476ms)
+    Trial 3: ✗ (1170ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"subject": "Meeting", "to": "john@example.com", "body": "Hi John, I'm writing to follow up regarding our meeting."}}
+  Avg Latency: 1399ms
+
+✗ FAIL | google/gemini-3-flash-preview | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (1446ms)
+    Trial 2: ✗ (1218ms)
+    Trial 3: ✗ (1165ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "get_current_time", "arguments": {"timezone": "New York"}}, got {"name": "get_current_time", "arguments": {"timezone": "America/New_York"}}
+  Avg Latency: 1276ms
+
+✓ PASS | google/gemini-3-flash-preview | single_parallel_multi_003 | Reliability: 100%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✓ (1011ms)
+    Trial 2: ✓ (1039ms)
+    Trial 3: ✓ (1608ms)
+  Avg Latency: 1219ms
+
+✓ PASS | google/gemini-3-flash-preview | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1103ms)
+    Trial 2: ✓ (1091ms)
+    Trial 3: ✓ (1190ms)
+  Avg Latency: 1128ms
+
+✓ PASS | google/gemini-3-flash-preview | single_relevance_002 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (934ms)
+    Trial 2: ✓ (803ms)
+    Trial 3: ✓ (1291ms)
+  Avg Latency: 1009ms
+
+✓ PASS | google/gemini-3-flash-preview | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (2451ms)
+    Trial 2: ✓ (3136ms)
+    Trial 3: ✓ (2773ms)
+  Avg Latency: 2787ms
+
+✓ PASS | google/gemini-3-flash-preview | single_relevance_004 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1215ms)
+    Trial 2: ✓ (878ms)
+    Trial 3: ✓ (995ms)
+  Avg Latency: 1029ms
+
+✓ PASS | google/gemini-3-flash-preview | single_simple_001 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (965ms)
+    Trial 2: ✓ (1050ms)
+    Trial 3: ✓ (1110ms)
+  Avg Latency: 1042ms
+
+✓ PASS | google/gemini-3-flash-preview | single_simple_002 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (909ms)
+    Trial 2: ✓ (1084ms)
+    Trial 3: ✓ (1199ms)
+  Avg Latency: 1064ms
+
+✓ PASS | google/gemini-3-flash-preview | single_simple_003 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1108ms)
+    Trial 2: ✓ (991ms)
+    Trial 3: ✓ (1173ms)
+  Avg Latency: 1091ms
+
+✓ PASS | google/gemini-3-flash-preview | single_simple_004 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1005ms)
+    Trial 2: ✓ (1192ms)
+    Trial 3: ✓ (970ms)
+  Avg Latency: 1056ms
+
+✗ FAIL | google/gemini-3.1-flash-lite-preview | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (1296ms)
+    Trial 2: ✗ (1290ms)
+    Trial 3: ✗ (1484ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= date('now', '-30 days');"}}
+  Avg Latency: 1356ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | agentic_format_002 | Reliability: 100%
+  Category: agentic/format_sensitivity
+    Trial 1: ✓ (1165ms)
+    Trial 2: ✓ (1251ms)
+    Trial 3: ✓ (1163ms)
+  Avg Latency: 1193ms
+
+✗ FAIL | google/gemini-3.1-flash-lite-preview | agentic_memory_001 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (1107ms)
+    Trial 2: ✗ (1091ms)
+    Trial 3: ✗ (846ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "store_memory", "arguments": {"value": "blue", "key": "favorite_color"}}
+  Avg Latency: 1015ms
+
+✗ FAIL | google/gemini-3.1-flash-lite-preview | agentic_memory_002 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (1067ms)
+    Trial 2: ✗ (592ms)
+    Trial 3: ✗ (1018ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "phone_number"}}, got {"name": "store_memory", "arguments": {"value": "555-1234", "key": "phone_number"}}
+  Avg Latency: 892ms
+
+✗ FAIL | google/gemini-3.1-flash-lite-preview | agentic_web_001 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (1257ms)
+    Trial 2: ✗ (592ms)
+    Trial 3: ✗ (794ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "Python programming language"}}, got {"name": "web_search", "arguments": {"query": "what is python programming language"}}
+  Avg Latency: 881ms
+
+✗ FAIL | google/gemini-3.1-flash-lite-preview | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (1197ms)
+    Trial 2: ✗ (758ms)
+    Trial 3: ✗ (932ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "latest news artificial intelligence"}}, got {"name": "web_search", "arguments": {"query": "latest news artificial intelligence October 2024"}}
+  Avg Latency: 962ms
+
+✗ FAIL | google/gemini-3.1-flash-lite-preview | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (1153ms)
+    Trial 2: ✗ (890ms)
+    Trial 3: ✗ (2724ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "London", "date": "2024-12-25"}}
+  Avg Latency: 1589ms
+
+✗ FAIL | google/gemini-3.1-flash-lite-preview | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (910ms)
+    Trial 2: ✗ (630ms)
+    Trial 3: ✗ (1188ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "JL002", "passenger_name": "Jane Smith"}}, got {"name": "search_flights", "arguments": {"date": "2024-12-20", "origin": "LA", "destination": "Tokyo"}}
+  Avg Latency: 909ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (1460ms)
+    Trial 2: ✓ (2431ms)
+    Trial 3: ✓ (1790ms)
+  Avg Latency: 1894ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (1096ms)
+    Trial 2: ✓ (895ms)
+    Trial 3: ✓ (1047ms)
+  Avg Latency: 1013ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (1085ms)
+    Trial 2: ✓ (1806ms)
+    Trial 3: ✓ (1653ms)
+  Avg Latency: 1515ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (1686ms)
+    Trial 2: ✓ (1768ms)
+    Trial 3: ✓ (1802ms)
+  Avg Latency: 1752ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_multiple_001 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (871ms)
+    Trial 2: ✓ (751ms)
+    Trial 3: ✓ (711ms)
+  Avg Latency: 778ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_multiple_002 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1018ms)
+    Trial 2: ✓ (1058ms)
+    Trial 3: ✓ (1179ms)
+  Avg Latency: 1085ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_multiple_003 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1343ms)
+    Trial 2: ✓ (653ms)
+    Trial 3: ✓ (599ms)
+  Avg Latency: 865ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_multiple_004 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (799ms)
+    Trial 2: ✓ (637ms)
+    Trial 3: ✓ (827ms)
+  Avg Latency: 754ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_parallel_001 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1364ms)
+    Trial 2: ✓ (945ms)
+    Trial 3: ✓ (1231ms)
+  Avg Latency: 1180ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_parallel_002 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (851ms)
+    Trial 2: ✓ (1283ms)
+    Trial 3: ✓ (1225ms)
+  Avg Latency: 1120ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_parallel_003 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (770ms)
+    Trial 2: ✓ (1248ms)
+    Trial 3: ✓ (1385ms)
+  Avg Latency: 1134ms
+
+✗ FAIL | google/gemini-3.1-flash-lite-preview | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (720ms)
+    Trial 2: ✗ (1930ms)
+    Trial 3: ✗ (870ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Follow-up", "body": "Hi John,\n\nI'm writing to follow up on our upcoming meeting. Looking forward to it.\n\nBest regards,"}}
+  Avg Latency: 1173ms
+
+✗ FAIL | google/gemini-3.1-flash-lite-preview | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (850ms)
+    Trial 2: ✗ (663ms)
+    Trial 3: ✗ (1014ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "get_current_time", "arguments": {"timezone": "New York"}}, got {"name": "get_current_time", "arguments": {"timezone": "America/New_York"}}
+  Avg Latency: 842ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_parallel_multi_003 | Reliability: 100%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✓ (1252ms)
+    Trial 2: ✓ (947ms)
+    Trial 3: ✓ (1251ms)
+  Avg Latency: 1150ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (745ms)
+    Trial 2: ✓ (1295ms)
+    Trial 3: ✓ (877ms)
+  Avg Latency: 973ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_relevance_002 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1028ms)
+    Trial 2: ✓ (2076ms)
+    Trial 3: ✓ (1041ms)
+  Avg Latency: 1382ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1594ms)
+    Trial 2: ✓ (1399ms)
+    Trial 3: ✓ (2865ms)
+  Avg Latency: 1953ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_relevance_004 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (974ms)
+    Trial 2: ✓ (989ms)
+    Trial 3: ✓ (1099ms)
+  Avg Latency: 1020ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_simple_001 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (799ms)
+    Trial 2: ✓ (1254ms)
+    Trial 3: ✓ (1153ms)
+  Avg Latency: 1069ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_simple_002 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (723ms)
+    Trial 2: ✓ (1226ms)
+    Trial 3: ✓ (552ms)
+  Avg Latency: 834ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_simple_003 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1256ms)
+    Trial 2: ✓ (575ms)
+    Trial 3: ✓ (803ms)
+  Avg Latency: 878ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_simple_004 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (703ms)
+    Trial 2: ✓ (666ms)
+    Trial 3: ✓ (560ms)
+  Avg Latency: 643ms
+
+✗ FAIL | minimax/minimax-m2.5 | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (4223ms)
+    Trial 2: ✗ (4261ms)
+    Trial 3: ✗ (3893ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE created_at >= DATE_SUB(CURDATE(), INTERVAL 30 DAY)"}}
+  Avg Latency: 4126ms
+
+✓ PASS | minimax/minimax-m2.5 | agentic_format_002 | Reliability: 100%
+  Category: agentic/format_sensitivity
+    Trial 1: ✓ (2201ms)
+    Trial 2: ✓ (2240ms)
+    Trial 3: ✓ (3755ms)
+  Avg Latency: 2732ms
+
+✓ PASS | minimax/minimax-m2.5 | agentic_memory_001 | Reliability: 33%
+  Category: agentic/memory
+    Trial 1: ✗ (2763ms)
+    Trial 2: ✓ (13495ms)
+    Trial 3: ✗ (3111ms)
+  Avg Latency: 6456ms
+
+✗ FAIL | minimax/minimax-m2.5 | agentic_memory_002 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (19584ms)
+    Trial 2: ✗ (4795ms)
+    Trial 3: ✗ (14585ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 12988ms
+
+✗ FAIL | minimax/minimax-m2.5 | agentic_web_001 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (5265ms)
+    Trial 2: ✗ (2246ms)
+    Trial 3: ✗ (20780ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "Python programming language"}}, got {"name": "web_search", "arguments": {"query": "Python programming language information"}}
+  Avg Latency: 9430ms
+
+✗ FAIL | minimax/minimax-m2.5 | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (3720ms)
+    Trial 2: ✗ (2985ms)
+    Trial 3: ✗ (4559ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "latest news artificial intelligence"}}, got {"name": "web_search", "arguments": {"query": "latest artificial intelligence news 2024"}}
+  Avg Latency: 3754ms
+
+✗ FAIL | minimax/minimax-m2.5 | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (4960ms)
+    Trial 2: ✗ (2853ms)
+    Trial 3: ✗ (15151ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "search_flights", "arguments": {"date": "2024-12-25", "destination": "London", "origin": "NYC"}}
+  Avg Latency: 7655ms
+
+✗ FAIL | minimax/minimax-m2.5 | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (12544ms)
+    Trial 2: ✗ (2453ms)
+    Trial 3: ✗ (28788ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "JL002", "passenger_name": "Jane Smith"}}, got {"name": "search_flights", "arguments": {"date": "2024-12-20", "destination": "Tokyo", "origin": "LA"}}
+  Avg Latency: 14595ms
+
+✓ PASS | minimax/minimax-m2.5 | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (40171ms)
+    Trial 2: ✓ (16148ms)
+    Trial 3: ✓ (4575ms)
+  Avg Latency: 20298ms
+
+✓ PASS | minimax/minimax-m2.5 | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (3346ms)
+    Trial 2: ✓ (13123ms)
+    Trial 3: ✓ (7921ms)
+  Avg Latency: 8130ms
+
+✓ PASS | minimax/minimax-m2.5 | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (3673ms)
+    Trial 2: ✓ (27097ms)
+    Trial 3: ✓ (15423ms)
+  Avg Latency: 15398ms
+
+✓ PASS | minimax/minimax-m2.5 | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (2990ms)
+    Trial 2: ✓ (22093ms)
+    Trial 3: ✓ (10885ms)
+  Avg Latency: 11989ms
+
+✓ PASS | minimax/minimax-m2.5 | single_multiple_001 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (5293ms)
+    Trial 2: ✓ (8069ms)
+    Trial 3: ✓ (2657ms)
+  Avg Latency: 5340ms
+
+✓ PASS | minimax/minimax-m2.5 | single_multiple_002 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (8465ms)
+    Trial 2: ✓ (940ms)
+    Trial 3: ✓ (7893ms)
+  Avg Latency: 5766ms
+
+✗ FAIL | minimax/minimax-m2.5 | single_multiple_003 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (1899ms)
+    Trial 2: ✗ (1321ms)
+    Trial 3: ✗ (1394ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "cancel_order", "arguments": {"order_id": "ORD-67890", "reason": "I changed my mind"}}, got {"name": "cancel_order", "arguments": {"order_id": "ORD-67890", "reason": "Changed my mind"}}
+  Avg Latency: 1538ms
+
+✓ PASS | minimax/minimax-m2.5 | single_multiple_004 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (10103ms)
+    Trial 2: ✓ (2151ms)
+    Trial 3: ✓ (3382ms)
+  Avg Latency: 5212ms
+
+✓ PASS | minimax/minimax-m2.5 | single_parallel_001 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (14572ms)
+    Trial 2: ✓ (6854ms)
+    Trial 3: ✓ (12554ms)
+  Avg Latency: 11326ms
+
+✓ PASS | minimax/minimax-m2.5 | single_parallel_002 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (29978ms)
+    Trial 2: ✓ (1866ms)
+    Trial 3: ✓ (2958ms)
+  Avg Latency: 11600ms
+
+✓ PASS | minimax/minimax-m2.5 | single_parallel_003 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (5829ms)
+    Trial 2: ✓ (24704ms)
+    Trial 3: ✓ (21926ms)
+  Avg Latency: 17486ms
+
+✗ FAIL | minimax/minimax-m2.5 | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (8651ms)
+    Trial 2: ✗ (5925ms)
+    Trial 3: ✗ (7590ms)
+  Error: Failed 3/3 trials. Last error: Expected 2 call(s), got 1
+  Avg Latency: 7389ms
+
+✗ FAIL | minimax/minimax-m2.5 | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (11022ms)
+    Trial 2: ✗ (8390ms)
+    Trial 3: ✗ (9923ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "get_current_time", "arguments": {"timezone": "New York"}}, got {"name": "get_current_time", "arguments": {"timezone": "America/New_York"}}
+  Avg Latency: 9779ms
+
+✓ PASS | minimax/minimax-m2.5 | single_parallel_multi_003 | Reliability: 100%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✓ (30214ms)
+    Trial 2: ✓ (25891ms)
+    Trial 3: ✓ (14075ms)
+  Avg Latency: 23393ms
+
+✓ PASS | minimax/minimax-m2.5 | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (6521ms)
+    Trial 2: ✓ (3339ms)
+    Trial 3: ✓ (4252ms)
+  Avg Latency: 4704ms
+
+✓ PASS | minimax/minimax-m2.5 | single_relevance_002 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (8283ms)
+    Trial 2: ✓ (10353ms)
+    Trial 3: ✓ (4392ms)
+  Avg Latency: 7676ms
+
+✓ PASS | minimax/minimax-m2.5 | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (13372ms)
+    Trial 2: ✓ (23058ms)
+    Trial 3: ✓ (6782ms)
+  Avg Latency: 14404ms
+
+✓ PASS | minimax/minimax-m2.5 | single_relevance_004 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (2148ms)
+    Trial 2: ✓ (3929ms)
+    Trial 3: ✓ (2449ms)
+  Avg Latency: 2842ms
+
+✓ PASS | minimax/minimax-m2.5 | single_simple_001 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (18388ms)
+    Trial 2: ✓ (3829ms)
+    Trial 3: ✓ (2852ms)
+  Avg Latency: 8356ms
+
+✓ PASS | minimax/minimax-m2.5 | single_simple_002 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (9285ms)
+    Trial 2: ✓ (1581ms)
+    Trial 3: ✓ (17840ms)
+  Avg Latency: 9569ms
+
+✓ PASS | minimax/minimax-m2.5 | single_simple_003 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (11258ms)
+    Trial 2: ✓ (1526ms)
+    Trial 3: ✓ (976ms)
+  Avg Latency: 4587ms
+
+✓ PASS | minimax/minimax-m2.5 | single_simple_004 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (6046ms)
+    Trial 2: ✓ (2461ms)
+    Trial 3: ✓ (2885ms)
+  Avg Latency: 3797ms
+
+✗ FAIL | moonshotai/kimi-k2.5 | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (6201ms)
+    Trial 2: ✗ (11815ms)
+    Trial 3: ✗ (7344ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE created_at >= DATEADD(day, -30, GETDATE())"}}
+  Avg Latency: 8453ms
+
+✓ PASS | moonshotai/kimi-k2.5 | agentic_format_002 | Reliability: 100%
+  Category: agentic/format_sensitivity
+    Trial 1: ✓ (2840ms)
+    Trial 2: ✓ (3028ms)
+    Trial 3: ✓ (4026ms)
+  Avg Latency: 3298ms
+
+✓ PASS | moonshotai/kimi-k2.5 | agentic_memory_001 | Reliability: 67%
+  Category: agentic/memory
+    Trial 1: ✓ (3288ms)
+    Trial 2: ✓ (3603ms)
+    Trial 3: ✗ (9532ms)
+  Avg Latency: 5474ms
+
+✓ PASS | moonshotai/kimi-k2.5 | agentic_memory_002 | Reliability: 100%
+  Category: agentic/memory
+    Trial 1: ✓ (2840ms)
+    Trial 2: ✓ (2748ms)
+    Trial 3: ✓ (3324ms)
+  Avg Latency: 2971ms
+
+✓ PASS | moonshotai/kimi-k2.5 | agentic_web_001 | Reliability: 100%
+  Category: agentic/web_search
+    Trial 1: ✓ (2869ms)
+    Trial 2: ✓ (2223ms)
+    Trial 3: ✓ (2197ms)
+  Avg Latency: 2430ms
+
+✗ FAIL | moonshotai/kimi-k2.5 | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (4127ms)
+    Trial 2: ✗ (3810ms)
+    Trial 3: ✗ (3293ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "latest news artificial intelligence"}}, got {"name": "web_search", "arguments": {"query": "latest news artificial intelligence AI 2024"}}
+  Avg Latency: 3744ms
+
+✗ FAIL | moonshotai/kimi-k2.5 | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (14994ms)
+    Trial 2: ✗ (12107ms)
+    Trial 3: ✗ (72911ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 33338ms
+
+✗ FAIL | moonshotai/kimi-k2.5 | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (8917ms)
+    Trial 2: ✗ (11205ms)
+    Trial 3: ✗ (7520ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "JL002", "passenger_name": "Jane Smith"}}, got {"name": "book_flight", "arguments": {"flight_id": "JL0682", "passenger_name": "Jane Smith"}}
+  Avg Latency: 9214ms
+
+✓ PASS | moonshotai/kimi-k2.5 | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (4522ms)
+    Trial 2: ✓ (3338ms)
+    Trial 3: ✓ (3877ms)
+  Avg Latency: 3912ms
+
+✓ PASS | moonshotai/kimi-k2.5 | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (6750ms)
+    Trial 2: ✓ (6486ms)
+    Trial 3: ✓ (6032ms)
+  Avg Latency: 6422ms
+
+✓ PASS | moonshotai/kimi-k2.5 | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (6904ms)
+    Trial 2: ✓ (8228ms)
+    Trial 3: ✓ (6413ms)
+  Avg Latency: 7182ms
+
+✓ PASS | moonshotai/kimi-k2.5 | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (5110ms)
+    Trial 2: ✓ (4831ms)
+    Trial 3: ✓ (4833ms)
+  Avg Latency: 4925ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_multiple_001 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (4878ms)
+    Trial 2: ✓ (2636ms)
+    Trial 3: ✓ (3362ms)
+  Avg Latency: 3626ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_multiple_002 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (3886ms)
+    Trial 2: ✓ (3837ms)
+    Trial 3: ✓ (3201ms)
+  Avg Latency: 3641ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_multiple_003 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (4740ms)
+    Trial 2: ✓ (4017ms)
+    Trial 3: ✓ (3564ms)
+  Avg Latency: 4107ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_multiple_004 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (5157ms)
+    Trial 2: ✓ (3190ms)
+    Trial 3: ✓ (3703ms)
+  Avg Latency: 4017ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_parallel_001 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (6113ms)
+    Trial 2: ✓ (7494ms)
+    Trial 3: ✓ (3904ms)
+  Avg Latency: 5837ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_parallel_002 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (3711ms)
+    Trial 2: ✓ (6495ms)
+    Trial 3: ✓ (4612ms)
+  Avg Latency: 4939ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_parallel_003 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (5039ms)
+    Trial 2: ✓ (25046ms)
+    Trial 3: ✓ (5387ms)
+  Avg Latency: 11824ms
+
+✗ FAIL | moonshotai/kimi-k2.5 | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (8786ms)
+    Trial 2: ✗ (11706ms)
+    Trial 3: ✗ (22107ms)
+  Error: Failed 3/3 trials. Last error: Expected 2 call(s), got 1
+  Avg Latency: 14200ms
+
+✗ FAIL | moonshotai/kimi-k2.5 | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (5980ms)
+    Trial 2: ✗ (8954ms)
+    Trial 3: ✗ (10218ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "get_current_time", "arguments": {"timezone": "New York"}}, got {"name": "get_current_time", "arguments": {"timezone": "America/New_York"}}
+  Avg Latency: 8384ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_parallel_multi_003 | Reliability: 100%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✓ (5195ms)
+    Trial 2: ✓ (5192ms)
+    Trial 3: ✓ (5097ms)
+  Avg Latency: 5161ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (6019ms)
+    Trial 2: ✓ (8785ms)
+    Trial 3: ✓ (7520ms)
+  Avg Latency: 7441ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_relevance_002 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (3935ms)
+    Trial 2: ✓ (7249ms)
+    Trial 3: ✓ (3374ms)
+  Avg Latency: 4853ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (11932ms)
+    Trial 2: ✓ (7354ms)
+    Trial 3: ✓ (10989ms)
+  Avg Latency: 10091ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_relevance_004 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (4996ms)
+    Trial 2: ✓ (4757ms)
+    Trial 3: ✓ (5229ms)
+  Avg Latency: 4994ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_simple_001 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (3683ms)
+    Trial 2: ✓ (3069ms)
+    Trial 3: ✓ (3904ms)
+  Avg Latency: 3552ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_simple_002 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (3946ms)
+    Trial 2: ✓ (3497ms)
+    Trial 3: ✓ (3317ms)
+  Avg Latency: 3587ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_simple_003 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (3918ms)
+    Trial 2: ✓ (3495ms)
+    Trial 3: ✓ (5126ms)
+  Avg Latency: 4180ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_simple_004 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (5796ms)
+    Trial 2: ✓ (5188ms)
+    Trial 3: ✓ (4570ms)
+  Avg Latency: 5185ms
+
+✗ FAIL | qwen/qwen3.5-122b-a10b | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (3585ms)
+    Trial 2: ✗ (3908ms)
+    Trial 3: ✗ (3083ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(CURRENT_DATE, INTERVAL 30 DAY)"}}
+  Avg Latency: 3525ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | agentic_format_002 | Reliability: 100%
+  Category: agentic/format_sensitivity
+    Trial 1: ✓ (1723ms)
+    Trial 2: ✓ (1403ms)
+    Trial 3: ✓ (1819ms)
+  Avg Latency: 1648ms
+
+✗ FAIL | qwen/qwen3.5-122b-a10b | agentic_memory_001 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (1107ms)
+    Trial 2: ✗ (897ms)
+    Trial 3: ✗ (936ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "retrieve_memory", "arguments": {"key": "favorite color"}}
+  Avg Latency: 980ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | agentic_memory_002 | Reliability: 33%
+  Category: agentic/memory
+    Trial 1: ✗ (1156ms)
+    Trial 2: ✗ (858ms)
+    Trial 3: ✓ (1034ms)
+  Avg Latency: 1016ms
+
+✗ FAIL | qwen/qwen3.5-122b-a10b | agentic_web_001 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (1071ms)
+    Trial 2: ✗ (1009ms)
+    Trial 3: ✗ (893ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "Python programming language"}}, got {"name": "web_search", "arguments": {"query": "Python programming language information"}}
+  Avg Latency: 991ms
+
+✗ FAIL | qwen/qwen3.5-122b-a10b | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (1055ms)
+    Trial 2: ✗ (901ms)
+    Trial 3: ✗ (928ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "latest news artificial intelligence"}}, got {"name": "web_search", "arguments": {"query": "latest news about artificial intelligence 2024"}}
+  Avg Latency: 962ms
+
+✗ FAIL | qwen/qwen3.5-122b-a10b | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (2068ms)
+    Trial 2: ✗ (3677ms)
+    Trial 3: ✗ (1650ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "London", "date": "2024-12-25"}}
+  Avg Latency: 2465ms
+
+✗ FAIL | qwen/qwen3.5-122b-a10b | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (2443ms)
+    Trial 2: ✗ (1872ms)
+    Trial 3: ✗ (2024ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "JL002", "passenger_name": "Jane Smith"}}, got {"name": "search_flights", "arguments": {"origin": "LA", "destination": "Tokyo", "date": "2024-12-20"}}
+  Avg Latency: 2113ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (1876ms)
+    Trial 2: ✓ (1718ms)
+    Trial 3: ✓ (1901ms)
+  Avg Latency: 1832ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (1639ms)
+    Trial 2: ✓ (1664ms)
+    Trial 3: ✓ (1706ms)
+  Avg Latency: 1669ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (2973ms)
+    Trial 2: ✓ (2536ms)
+    Trial 3: ✓ (2300ms)
+  Avg Latency: 2603ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (1738ms)
+    Trial 2: ✓ (1796ms)
+    Trial 3: ✓ (1720ms)
+  Avg Latency: 1751ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_multiple_001 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1316ms)
+    Trial 2: ✓ (1383ms)
+    Trial 3: ✓ (1304ms)
+  Avg Latency: 1335ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_multiple_002 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1209ms)
+    Trial 2: ✓ (1184ms)
+    Trial 3: ✓ (1391ms)
+  Avg Latency: 1261ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_multiple_003 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1130ms)
+    Trial 2: ✓ (1148ms)
+    Trial 3: ✓ (1214ms)
+  Avg Latency: 1164ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_multiple_004 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1405ms)
+    Trial 2: ✓ (1258ms)
+    Trial 3: ✓ (927ms)
+  Avg Latency: 1197ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_parallel_001 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1702ms)
+    Trial 2: ✓ (1951ms)
+    Trial 3: ✓ (1750ms)
+  Avg Latency: 1801ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_parallel_002 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1417ms)
+    Trial 2: ✓ (1684ms)
+    Trial 3: ✓ (1709ms)
+  Avg Latency: 1603ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_parallel_003 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1673ms)
+    Trial 2: ✓ (2193ms)
+    Trial 3: ✓ (1977ms)
+  Avg Latency: 1948ms
+
+✗ FAIL | qwen/qwen3.5-122b-a10b | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (2638ms)
+    Trial 2: ✗ (2541ms)
+    Trial 3: ✗ (2356ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Information", "body": "Hello John,\n\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions or need to reschedule.\n\nBest regards"}}
+  Avg Latency: 2512ms
+
+✗ FAIL | qwen/qwen3.5-122b-a10b | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (2847ms)
+    Trial 2: ✗ (2955ms)
+    Trial 3: ✗ (2675ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "get_current_time", "arguments": {"timezone": "New York"}}, got {"name": "get_current_time", "arguments": {"timezone": "America/New_York"}}
+  Avg Latency: 2825ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_parallel_multi_003 | Reliability: 100%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✓ (2223ms)
+    Trial 2: ✓ (2268ms)
+    Trial 3: ✓ (2378ms)
+  Avg Latency: 2289ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1121ms)
+    Trial 2: ✓ (1679ms)
+    Trial 3: ✓ (1357ms)
+  Avg Latency: 1386ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_relevance_002 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1641ms)
+    Trial 2: ✓ (1649ms)
+    Trial 3: ✓ (1489ms)
+  Avg Latency: 1593ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (3602ms)
+    Trial 2: ✓ (2311ms)
+    Trial 3: ✓ (2337ms)
+  Avg Latency: 2750ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_relevance_004 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1328ms)
+    Trial 2: ✓ (1422ms)
+    Trial 3: ✓ (1319ms)
+  Avg Latency: 1356ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_simple_001 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1189ms)
+    Trial 2: ✓ (1394ms)
+    Trial 3: ✓ (951ms)
+  Avg Latency: 1178ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_simple_002 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1545ms)
+    Trial 2: ✓ (1162ms)
+    Trial 3: ✓ (1070ms)
+  Avg Latency: 1259ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_simple_003 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1134ms)
+    Trial 2: ✓ (1235ms)
+    Trial 3: ✓ (1207ms)
+  Avg Latency: 1192ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_simple_004 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1027ms)
+    Trial 2: ✓ (1060ms)
+    Trial 3: ✓ (1031ms)
+  Avg Latency: 1039ms
+
+✗ FAIL | qwen/qwen3.5-27b | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (3832ms)
+    Trial 2: ✗ (3514ms)
+    Trial 3: ✗ (4140ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= CURRENT_DATE - INTERVAL 30 DAY"}}
+  Avg Latency: 3829ms
+
+✓ PASS | qwen/qwen3.5-27b | agentic_format_002 | Reliability: 100%
+  Category: agentic/format_sensitivity
+    Trial 1: ✓ (2193ms)
+    Trial 2: ✓ (2225ms)
+    Trial 3: ✓ (2584ms)
+  Avg Latency: 2334ms
+
+✓ PASS | qwen/qwen3.5-27b | agentic_memory_001 | Reliability: 100%
+  Category: agentic/memory
+    Trial 1: ✓ (1179ms)
+    Trial 2: ✓ (1321ms)
+    Trial 3: ✓ (1416ms)
+  Avg Latency: 1305ms
+
+✓ PASS | qwen/qwen3.5-27b | agentic_memory_002 | Reliability: 100%
+  Category: agentic/memory
+    Trial 1: ✓ (1531ms)
+    Trial 2: ✓ (2390ms)
+    Trial 3: ✓ (1408ms)
+  Avg Latency: 1776ms
+
+✓ PASS | qwen/qwen3.5-27b | agentic_web_001 | Reliability: 100%
+  Category: agentic/web_search
+    Trial 1: ✓ (1432ms)
+    Trial 2: ✓ (1405ms)
+    Trial 3: ✓ (1348ms)
+  Avg Latency: 1395ms
+
+✗ FAIL | qwen/qwen3.5-27b | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (1230ms)
+    Trial 2: ✗ (1219ms)
+    Trial 3: ✗ (1240ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "latest news artificial intelligence"}}, got {"name": "web_search", "arguments": {"query": "latest artificial intelligence news 2025"}}
+  Avg Latency: 1230ms
+
+✗ FAIL | qwen/qwen3.5-27b | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (3808ms)
+    Trial 2: ✗ (4161ms)
+    Trial 3: ✗ (3890ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "London", "date": "2024-12-25"}}
+  Avg Latency: 3953ms
+
+✗ FAIL | qwen/qwen3.5-27b | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (4247ms)
+    Trial 2: ✗ (3897ms)
+    Trial 3: ✗ (3821ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "JL002", "passenger_name": "Jane Smith"}}, got {"name": "search_flights", "arguments": {"origin": "LA", "destination": "Tokyo", "date": "2024-12-20"}}
+  Avg Latency: 3989ms
+
+✓ PASS | qwen/qwen3.5-27b | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (3189ms)
+    Trial 2: ✓ (3649ms)
+    Trial 3: ✓ (3915ms)
+  Avg Latency: 3584ms
+
+✓ PASS | qwen/qwen3.5-27b | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (2859ms)
+    Trial 2: ✓ (3527ms)
+    Trial 3: ✓ (3745ms)
+  Avg Latency: 3377ms
+
+✓ PASS | qwen/qwen3.5-27b | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (5474ms)
+    Trial 2: ✓ (4779ms)
+    Trial 3: ✓ (3603ms)
+  Avg Latency: 4618ms
+
+✓ PASS | qwen/qwen3.5-27b | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (3685ms)
+    Trial 2: ✓ (3662ms)
+    Trial 3: ✓ (3730ms)
+  Avg Latency: 3693ms
+
+✓ PASS | qwen/qwen3.5-27b | single_multiple_001 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (2328ms)
+    Trial 2: ✓ (2302ms)
+    Trial 3: ✓ (2306ms)
+  Avg Latency: 2312ms
+
+✓ PASS | qwen/qwen3.5-27b | single_multiple_002 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (2260ms)
+    Trial 2: ✓ (2316ms)
+    Trial 3: ✓ (2292ms)
+  Avg Latency: 2289ms
+
+✓ PASS | qwen/qwen3.5-27b | single_multiple_003 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (2334ms)
+    Trial 2: ✓ (2297ms)
+    Trial 3: ✓ (2309ms)
+  Avg Latency: 2313ms
+
+✓ PASS | qwen/qwen3.5-27b | single_multiple_004 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (2287ms)
+    Trial 2: ✓ (2302ms)
+    Trial 3: ✓ (2304ms)
+  Avg Latency: 2298ms
+
+✓ PASS | qwen/qwen3.5-27b | single_parallel_001 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (4700ms)
+    Trial 2: ✓ (4793ms)
+    Trial 3: ✓ (3751ms)
+  Avg Latency: 4415ms
+
+✓ PASS | qwen/qwen3.5-27b | single_parallel_002 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (5070ms)
+    Trial 2: ✓ (3347ms)
+    Trial 3: ✓ (2720ms)
+  Avg Latency: 3712ms
+
+✓ PASS | qwen/qwen3.5-27b | single_parallel_003 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (6753ms)
+    Trial 2: ✓ (3977ms)
+    Trial 3: ✓ (3034ms)
+  Avg Latency: 4588ms
+
+✗ FAIL | qwen/qwen3.5-27b | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (3180ms)
+    Trial 2: ✗ (3324ms)
+    Trial 3: ✗ (3104ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Information", "body": "Hi John,\n\nI'm writing to inform you about an upcoming meeting. Please let me know if you have any questions or need additional details.\n\nBest regards"}}
+  Avg Latency: 3203ms
+
+✗ FAIL | qwen/qwen3.5-27b | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (3744ms)
+    Trial 2: ✗ (3524ms)
+    Trial 3: ✗ (3152ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "get_current_time", "arguments": {"timezone": "New York"}}, got {"name": "get_current_time", "arguments": {"timezone": "America/New_York"}}
+  Avg Latency: 3473ms
+
+✓ PASS | qwen/qwen3.5-27b | single_parallel_multi_003 | Reliability: 100%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✓ (2420ms)
+    Trial 2: ✓ (2739ms)
+    Trial 3: ✓ (2724ms)
+  Avg Latency: 2628ms
+
+✓ PASS | qwen/qwen3.5-27b | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (4903ms)
+    Trial 2: ✓ (3048ms)
+    Trial 3: ✓ (2962ms)
+  Avg Latency: 3638ms
+
+✓ PASS | qwen/qwen3.5-27b | single_relevance_002 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (2464ms)
+    Trial 2: ✓ (2812ms)
+    Trial 3: ✓ (1746ms)
+  Avg Latency: 2341ms
+
+✓ PASS | qwen/qwen3.5-27b | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (7767ms)
+    Trial 2: ✓ (5178ms)
+    Trial 3: ✓ (4669ms)
+  Avg Latency: 5871ms
+
+✓ PASS | qwen/qwen3.5-27b | single_relevance_004 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (4088ms)
+    Trial 2: ✓ (3214ms)
+    Trial 3: ✓ (2949ms)
+  Avg Latency: 3417ms
+
+✓ PASS | qwen/qwen3.5-27b | single_simple_001 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (2061ms)
+    Trial 2: ✓ (3108ms)
+    Trial 3: ✓ (3167ms)
+  Avg Latency: 2779ms
+
+✓ PASS | qwen/qwen3.5-27b | single_simple_002 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (2261ms)
+    Trial 2: ✓ (3075ms)
+    Trial 3: ✓ (3053ms)
+  Avg Latency: 2796ms
+
+✓ PASS | qwen/qwen3.5-27b | single_simple_003 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1970ms)
+    Trial 2: ✓ (2859ms)
+    Trial 3: ✓ (2768ms)
+  Avg Latency: 2532ms
+
+✓ PASS | qwen/qwen3.5-27b | single_simple_004 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1854ms)
+    Trial 2: ✓ (2966ms)
+    Trial 3: ✓ (3063ms)
+  Avg Latency: 2628ms
+
+✗ FAIL | qwen/qwen3.5-35b-a3b | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (1291ms)
+    Trial 2: ✗ (1277ms)
+    Trial 3: ✗ (1699ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY) ORDER BY signup_date DESC"}}
+  Avg Latency: 1422ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | agentic_format_002 | Reliability: 100%
+  Category: agentic/format_sensitivity
+    Trial 1: ✓ (901ms)
+    Trial 2: ✓ (983ms)
+    Trial 3: ✓ (1099ms)
+  Avg Latency: 995ms
+
+✗ FAIL | qwen/qwen3.5-35b-a3b | agentic_memory_001 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (771ms)
+    Trial 2: ✗ (752ms)
+    Trial 3: ✗ (789ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "retrieve_memory", "arguments": {"key": "favorite color"}}
+  Avg Latency: 771ms
+
+✗ FAIL | qwen/qwen3.5-35b-a3b | agentic_memory_002 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (844ms)
+    Trial 2: ✗ (866ms)
+    Trial 3: ✗ (792ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "phone_number"}}, got {"name": "retrieve_memory", "arguments": {"key": "phone number"}}
+  Avg Latency: 834ms
+
+✗ FAIL | qwen/qwen3.5-35b-a3b | agentic_web_001 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (1146ms)
+    Trial 2: ✗ (926ms)
+    Trial 3: ✗ (836ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "Python programming language"}}, got {"name": "web_search", "arguments": {"query": "Python programming language overview features history"}}
+  Avg Latency: 969ms
+
+✗ FAIL | qwen/qwen3.5-35b-a3b | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (780ms)
+    Trial 2: ✗ (1282ms)
+    Trial 3: ✗ (736ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "latest news artificial intelligence"}}, got {"name": "web_search", "arguments": {"query": "latest news artificial intelligence 2025 2026"}}
+  Avg Latency: 933ms
+
+✗ FAIL | qwen/qwen3.5-35b-a3b | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (3060ms)
+    Trial 2: ✗ (1732ms)
+    Trial 3: ✗ (1687ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 2160ms
+
+✗ FAIL | qwen/qwen3.5-35b-a3b | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (2028ms)
+    Trial 2: ✗ (2284ms)
+    Trial 3: ✗ (1395ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "JL002", "passenger_name": "Jane Smith"}}, got {"name": "search_flights", "arguments": {"origin": "LA", "destination": "Tokyo", "date": "2024-12-20"}}
+  Avg Latency: 1902ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (1753ms)
+    Trial 2: ✓ (1852ms)
+    Trial 3: ✓ (1720ms)
+  Avg Latency: 1775ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (1393ms)
+    Trial 2: ✓ (2181ms)
+    Trial 3: ✓ (1305ms)
+  Avg Latency: 1626ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (1930ms)
+    Trial 2: ✓ (2042ms)
+    Trial 3: ✓ (1880ms)
+  Avg Latency: 1951ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (1401ms)
+    Trial 2: ✓ (1486ms)
+    Trial 3: ✓ (1223ms)
+  Avg Latency: 1370ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_multiple_001 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1420ms)
+    Trial 2: ✓ (1056ms)
+    Trial 3: ✓ (1075ms)
+  Avg Latency: 1183ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_multiple_002 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1140ms)
+    Trial 2: ✓ (7297ms)
+    Trial 3: ✓ (929ms)
+  Avg Latency: 3122ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_multiple_003 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1321ms)
+    Trial 2: ✓ (1172ms)
+    Trial 3: ✓ (1110ms)
+  Avg Latency: 1201ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_multiple_004 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (872ms)
+    Trial 2: ✓ (1061ms)
+    Trial 3: ✓ (1025ms)
+  Avg Latency: 986ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_parallel_001 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1581ms)
+    Trial 2: ✓ (1764ms)
+    Trial 3: ✓ (1460ms)
+  Avg Latency: 1602ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_parallel_002 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1401ms)
+    Trial 2: ✓ (1972ms)
+    Trial 3: ✓ (1280ms)
+  Avg Latency: 1551ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_parallel_003 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1897ms)
+    Trial 2: ✓ (2233ms)
+    Trial 3: ✓ (1659ms)
+  Avg Latency: 1930ms
+
+✗ FAIL | qwen/qwen3.5-35b-a3b | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (2224ms)
+    Trial 2: ✗ (2121ms)
+    Trial 3: ✗ (2007ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Information", "body": "Hi John,\n\nThis is regarding our upcoming meeting. Please let me know if you have any questions or need to reschedule.\n\nBest regards"}}
+  Avg Latency: 2117ms
+
+✗ FAIL | qwen/qwen3.5-35b-a3b | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (1902ms)
+    Trial 2: ✗ (2037ms)
+    Trial 3: ✗ (1888ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "get_current_time", "arguments": {"timezone": "New York"}}, got {"name": "get_current_time", "arguments": {"timezone": "America/New_York"}}
+  Avg Latency: 1943ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_parallel_multi_003 | Reliability: 100%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✓ (1365ms)
+    Trial 2: ✓ (2047ms)
+    Trial 3: ✓ (1736ms)
+  Avg Latency: 1716ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1301ms)
+    Trial 2: ✓ (1551ms)
+    Trial 3: ✓ (1177ms)
+  Avg Latency: 1343ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_relevance_002 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1205ms)
+    Trial 2: ✓ (1295ms)
+    Trial 3: ✓ (1264ms)
+  Avg Latency: 1255ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (3186ms)
+    Trial 2: ✓ (2996ms)
+    Trial 3: ✓ (2949ms)
+  Avg Latency: 3044ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_relevance_004 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1236ms)
+    Trial 2: ✓ (1017ms)
+    Trial 3: ✓ (1018ms)
+  Avg Latency: 1090ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_simple_001 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (921ms)
+    Trial 2: ✓ (1466ms)
+    Trial 3: ✓ (4292ms)
+  Avg Latency: 2226ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_simple_002 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1740ms)
+    Trial 2: ✓ (2407ms)
+    Trial 3: ✓ (1231ms)
+  Avg Latency: 1793ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_simple_003 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1020ms)
+    Trial 2: ✓ (1163ms)
+    Trial 3: ✓ (1064ms)
+  Avg Latency: 1082ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_simple_004 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (6954ms)
+    Trial 2: ✓ (1391ms)
+    Trial 3: ✓ (1182ms)
+  Avg Latency: 3176ms
+
+✗ FAIL | qwen/qwen3.5-flash-02-23 | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (1691ms)
+    Trial 2: ✗ (1726ms)
+    Trial 3: ✗ (1395ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY) ORDER BY signup_date DESC"}}
+  Avg Latency: 1604ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | agentic_format_002 | Reliability: 100%
+  Category: agentic/format_sensitivity
+    Trial 1: ✓ (1121ms)
+    Trial 2: ✓ (1093ms)
+    Trial 3: ✓ (1182ms)
+  Avg Latency: 1132ms
+
+✗ FAIL | qwen/qwen3.5-flash-02-23 | agentic_memory_001 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (871ms)
+    Trial 2: ✗ (893ms)
+    Trial 3: ✗ (881ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "retrieve_memory", "arguments": {"key": "favorite color"}}
+  Avg Latency: 882ms
+
+✗ FAIL | qwen/qwen3.5-flash-02-23 | agentic_memory_002 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (865ms)
+    Trial 2: ✗ (915ms)
+    Trial 3: ✗ (874ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "phone_number"}}, got {"name": "retrieve_memory", "arguments": {"key": "phone number"}}
+  Avg Latency: 885ms
+
+✗ FAIL | qwen/qwen3.5-flash-02-23 | agentic_web_001 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (787ms)
+    Trial 2: ✗ (907ms)
+    Trial 3: ✗ (785ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "Python programming language"}}, got {"name": "web_search", "arguments": {"query": "Python programming language overview features history"}}
+  Avg Latency: 826ms
+
+✗ FAIL | qwen/qwen3.5-flash-02-23 | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (789ms)
+    Trial 2: ✗ (1297ms)
+    Trial 3: ✗ (728ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "latest news artificial intelligence"}}, got {"name": "web_search", "arguments": {"query": "latest news artificial intelligence 2025 2026"}}
+  Avg Latency: 938ms
+
+✗ FAIL | qwen/qwen3.5-flash-02-23 | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (1778ms)
+    Trial 2: ✗ (1073ms)
+    Trial 3: ✗ (1563ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 1471ms
+
+✗ FAIL | qwen/qwen3.5-flash-02-23 | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (1834ms)
+    Trial 2: ✗ (2112ms)
+    Trial 3: ✗ (1474ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "JL002", "passenger_name": "Jane Smith"}}, got {"name": "search_flights", "arguments": {"origin": "LA", "destination": "Tokyo", "date": "2024-12-20"}}
+  Avg Latency: 1807ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (1648ms)
+    Trial 2: ✓ (1431ms)
+    Trial 3: ✓ (1672ms)
+  Avg Latency: 1583ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (2212ms)
+    Trial 2: ✓ (1186ms)
+    Trial 3: ✓ (1200ms)
+  Avg Latency: 1533ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (2008ms)
+    Trial 2: ✓ (2280ms)
+    Trial 3: ✓ (2070ms)
+  Avg Latency: 2119ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (1361ms)
+    Trial 2: ✓ (1231ms)
+    Trial 3: ✓ (1262ms)
+  Avg Latency: 1285ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_multiple_001 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (992ms)
+    Trial 2: ✓ (996ms)
+    Trial 3: ✓ (1001ms)
+  Avg Latency: 996ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_multiple_002 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (925ms)
+    Trial 2: ✓ (938ms)
+    Trial 3: ✓ (806ms)
+  Avg Latency: 890ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_multiple_003 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1100ms)
+    Trial 2: ✓ (1125ms)
+    Trial 3: ✓ (973ms)
+  Avg Latency: 1066ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_multiple_004 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (843ms)
+    Trial 2: ✓ (792ms)
+    Trial 3: ✓ (776ms)
+  Avg Latency: 803ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_parallel_001 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1662ms)
+    Trial 2: ✓ (1499ms)
+    Trial 3: ✓ (1323ms)
+  Avg Latency: 1494ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_parallel_002 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1343ms)
+    Trial 2: ✓ (1304ms)
+    Trial 3: ✓ (1380ms)
+  Avg Latency: 1342ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_parallel_003 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (2250ms)
+    Trial 2: ✓ (1954ms)
+    Trial 3: ✓ (1428ms)
+  Avg Latency: 1877ms
+
+✗ FAIL | qwen/qwen3.5-flash-02-23 | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (1502ms)
+    Trial 2: ✗ (1603ms)
+    Trial 3: ✗ (1808ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Information", "body": "Hi John,\n\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions or need to reschedule.\n\nBest regards"}}
+  Avg Latency: 1638ms
+
+✗ FAIL | qwen/qwen3.5-flash-02-23 | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (1628ms)
+    Trial 2: ✗ (1720ms)
+    Trial 3: ✗ (1667ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "get_current_time", "arguments": {"timezone": "New York"}}, got {"name": "get_current_time", "arguments": {"timezone": "America/New_York"}}
+  Avg Latency: 1672ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_parallel_multi_003 | Reliability: 100%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✓ (1312ms)
+    Trial 2: ✓ (1344ms)
+    Trial 3: ✓ (1369ms)
+  Avg Latency: 1342ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1588ms)
+    Trial 2: ✓ (1308ms)
+    Trial 3: ✓ (1275ms)
+  Avg Latency: 1390ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_relevance_002 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1566ms)
+    Trial 2: ✓ (1325ms)
+    Trial 3: ✓ (1244ms)
+  Avg Latency: 1379ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (3129ms)
+    Trial 2: ✓ (2108ms)
+    Trial 3: ✓ (2480ms)
+  Avg Latency: 2572ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_relevance_004 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1507ms)
+    Trial 2: ✓ (1429ms)
+    Trial 3: ✓ (1033ms)
+  Avg Latency: 1323ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_simple_001 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1493ms)
+    Trial 2: ✓ (1444ms)
+    Trial 3: ✓ (3280ms)
+  Avg Latency: 2072ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_simple_002 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1122ms)
+    Trial 2: ✓ (1402ms)
+    Trial 3: ✓ (1392ms)
+  Avg Latency: 1305ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_simple_003 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (971ms)
+    Trial 2: ✓ (1269ms)
+    Trial 3: ✓ (1324ms)
+  Avg Latency: 1188ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_simple_004 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1207ms)
+    Trial 2: ✓ (1301ms)
+    Trial 3: ✓ (1494ms)
+  Avg Latency: 1334ms
+
+✗ FAIL | x-ai/grok-4.1-fast | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (8980ms)
+    Trial 2: ✗ (5121ms)
+    Trial 3: ✗ (4395ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE created_at >= NOW() - INTERVAL 30 DAY;"}}
+  Avg Latency: 6165ms
+
+✓ PASS | x-ai/grok-4.1-fast | agentic_format_002 | Reliability: 100%
+  Category: agentic/format_sensitivity
+    Trial 1: ✓ (4351ms)
+    Trial 2: ✓ (3631ms)
+    Trial 3: ✓ (3154ms)
+  Avg Latency: 3712ms
+
+✓ PASS | x-ai/grok-4.1-fast | agentic_memory_001 | Reliability: 100%
+  Category: agentic/memory
+    Trial 1: ✓ (6313ms)
+    Trial 2: ✓ (6187ms)
+    Trial 3: ✓ (7018ms)
+  Avg Latency: 6506ms
+
+✓ PASS | x-ai/grok-4.1-fast | agentic_memory_002 | Reliability: 100%
+  Category: agentic/memory
+    Trial 1: ✓ (9537ms)
+    Trial 2: ✓ (6140ms)
+    Trial 3: ✓ (4508ms)
+  Avg Latency: 6728ms
+
+✓ PASS | x-ai/grok-4.1-fast | agentic_web_001 | Reliability: 100%
+  Category: agentic/web_search
+    Trial 1: ✓ (4294ms)
+    Trial 2: ✓ (6233ms)
+    Trial 3: ✓ (2726ms)
+  Avg Latency: 4418ms
+
+✗ FAIL | x-ai/grok-4.1-fast | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (7780ms)
+    Trial 2: ✗ (3862ms)
+    Trial 3: ✗ (3254ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "latest news artificial intelligence"}}, got {"name": "web_search", "arguments": {"query": "latest news about artificial intelligence"}}
+  Avg Latency: 4966ms
+
+✗ FAIL | x-ai/grok-4.1-fast | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (35245ms)
+    Trial 2: ✗ (18448ms)
+    Trial 3: ✗ (28848ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "book_flight", "arguments": {"flight_id": "10:00", "passenger_name": "John Doe", "seat_class": "business"}}
+  Avg Latency: 27513ms
+
+✗ FAIL | x-ai/grok-4.1-fast | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (44564ms)
+    Trial 2: ✗ (28353ms)
+    Trial 3: ✗ (30331ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "JL002", "passenger_name": "Jane Smith"}}, got {"name": "book_flight", "arguments": {"flight_id": "16:00", "passenger_name": "Jane Smith"}}
+  Avg Latency: 34416ms
+
+✓ PASS | x-ai/grok-4.1-fast | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (4455ms)
+    Trial 2: ✓ (3045ms)
+    Trial 3: ✓ (3246ms)
+  Avg Latency: 3582ms
+
+✓ PASS | x-ai/grok-4.1-fast | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (4707ms)
+    Trial 2: ✓ (4056ms)
+    Trial 3: ✓ (4791ms)
+  Avg Latency: 4518ms
+
+✓ PASS | x-ai/grok-4.1-fast | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (6598ms)
+    Trial 2: ✓ (4173ms)
+    Trial 3: ✓ (4373ms)
+  Avg Latency: 5048ms
+
+✓ PASS | x-ai/grok-4.1-fast | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (3557ms)
+    Trial 2: ✓ (3613ms)
+    Trial 3: ✓ (3408ms)
+  Avg Latency: 3526ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_multiple_001 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (3449ms)
+    Trial 2: ✓ (2833ms)
+    Trial 3: ✓ (3070ms)
+  Avg Latency: 3117ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_multiple_002 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (4273ms)
+    Trial 2: ✓ (3015ms)
+    Trial 3: ✓ (2680ms)
+  Avg Latency: 3323ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_multiple_003 | Reliability: 67%
+  Category: single_turn/multiple
+    Trial 1: ✓ (3990ms)
+    Trial 2: ✗ (3091ms)
+    Trial 3: ✓ (3006ms)
+  Avg Latency: 3362ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_multiple_004 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (3877ms)
+    Trial 2: ✓ (2723ms)
+    Trial 3: ✓ (2573ms)
+  Avg Latency: 3058ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_parallel_001 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (4864ms)
+    Trial 2: ✓ (3223ms)
+    Trial 3: ✓ (2485ms)
+  Avg Latency: 3524ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_parallel_002 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (4049ms)
+    Trial 2: ✓ (2952ms)
+    Trial 3: ✓ (3175ms)
+  Avg Latency: 3392ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_parallel_003 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (6116ms)
+    Trial 2: ✓ (4185ms)
+    Trial 3: ✓ (4286ms)
+  Avg Latency: 4862ms
+
+✗ FAIL | x-ai/grok-4.1-fast | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (6861ms)
+    Trial 2: ✗ (7287ms)
+    Trial 3: ✗ (8446ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Reminder", "body": "Hi John, this is a reminder about our upcoming meeting. Please let me know if you need any additional details."}}
+  Avg Latency: 7531ms
+
+✗ FAIL | x-ai/grok-4.1-fast | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (6147ms)
+    Trial 2: ✗ (3844ms)
+    Trial 3: ✗ (3197ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "get_current_time", "arguments": {"timezone": "New York"}}, got {"name": "get_current_time", "arguments": {"timezone": "America/New_York"}}
+  Avg Latency: 4396ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_parallel_multi_003 | Reliability: 100%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✓ (6718ms)
+    Trial 2: ✓ (2916ms)
+    Trial 3: ✓ (3901ms)
+  Avg Latency: 4512ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (2637ms)
+    Trial 2: ✓ (1884ms)
+    Trial 3: ✓ (1941ms)
+  Avg Latency: 2154ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_relevance_002 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (3546ms)
+    Trial 2: ✓ (3516ms)
+    Trial 3: ✓ (3803ms)
+  Avg Latency: 3622ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (5708ms)
+    Trial 2: ✓ (5722ms)
+    Trial 3: ✓ (6955ms)
+  Avg Latency: 6129ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_relevance_004 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (6919ms)
+    Trial 2: ✓ (2990ms)
+    Trial 3: ✓ (3039ms)
+  Avg Latency: 4316ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_simple_001 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (5286ms)
+    Trial 2: ✓ (2796ms)
+    Trial 3: ✓ (3625ms)
+  Avg Latency: 3903ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_simple_002 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (3766ms)
+    Trial 2: ✓ (2505ms)
+    Trial 3: ✓ (3141ms)
+  Avg Latency: 3137ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_simple_003 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (3091ms)
+    Trial 2: ✓ (1881ms)
+    Trial 3: ✓ (2293ms)
+  Avg Latency: 2422ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_simple_004 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (4308ms)
+    Trial 2: ✓ (3764ms)
+    Trial 3: ✓ (4160ms)
+  Avg Latency: 4077ms
+
+✗ FAIL | x-ai/grok-4.20-beta | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (1694ms)
+    Trial 2: ✗ (1514ms)
+    Trial 3: ✗ (1570ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY);"}}
+  Avg Latency: 1593ms
+
+✓ PASS | x-ai/grok-4.20-beta | agentic_format_002 | Reliability: 100%
+  Category: agentic/format_sensitivity
+    Trial 1: ✓ (1641ms)
+    Trial 2: ✓ (1444ms)
+    Trial 3: ✓ (1473ms)
+  Avg Latency: 1520ms
+
+✓ PASS | x-ai/grok-4.20-beta | agentic_memory_001 | Reliability: 100%
+  Category: agentic/memory
+    Trial 1: ✓ (1459ms)
+    Trial 2: ✓ (1537ms)
+    Trial 3: ✓ (1428ms)
+  Avg Latency: 1475ms
+
+✓ PASS | x-ai/grok-4.20-beta | agentic_memory_002 | Reliability: 100%
+  Category: agentic/memory
+    Trial 1: ✓ (1691ms)
+    Trial 2: ✓ (2136ms)
+    Trial 3: ✓ (1389ms)
+  Avg Latency: 1739ms
+
+✓ PASS | x-ai/grok-4.20-beta | agentic_web_001 | Reliability: 100%
+  Category: agentic/web_search
+    Trial 1: ✓ (2415ms)
+    Trial 2: ✓ (2181ms)
+    Trial 3: ✓ (376ms)
+  Avg Latency: 1657ms
+
+✗ FAIL | x-ai/grok-4.20-beta | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (2230ms)
+    Trial 2: ✗ (531ms)
+    Trial 3: ✗ (1774ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "latest news artificial intelligence"}}, got {"name": "web_search", "arguments": {"query": "latest news about artificial intelligence"}}
+  Avg Latency: 1512ms
+
+✗ FAIL | x-ai/grok-4.20-beta | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (1507ms)
+    Trial 2: ✗ (1438ms)
+    Trial 3: ✗ (1398ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "book_flight", "arguments": {"flight_id": "10:00", "passenger_name": "John Doe", "seat_class": "business"}}
+  Avg Latency: 1448ms
+
+✗ FAIL | x-ai/grok-4.20-beta | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (445ms)
+    Trial 2: ✗ (1816ms)
+    Trial 3: ✗ (563ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "JL002", "passenger_name": "Jane Smith"}}, got {"name": "book_flight", "arguments": {"flight_id": "16:00", "passenger_name": "Jane Smith"}}
+  Avg Latency: 942ms
+
+✓ PASS | x-ai/grok-4.20-beta | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (1951ms)
+    Trial 2: ✓ (1750ms)
+    Trial 3: ✓ (1569ms)
+  Avg Latency: 1757ms
+
+✓ PASS | x-ai/grok-4.20-beta | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (2970ms)
+    Trial 2: ✓ (717ms)
+    Trial 3: ✓ (1904ms)
+  Avg Latency: 1863ms
+
+✓ PASS | x-ai/grok-4.20-beta | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (2358ms)
+    Trial 2: ✓ (2074ms)
+    Trial 3: ✓ (823ms)
+  Avg Latency: 1752ms
+
+✗ FAIL | x-ai/grok-4.20-beta | multi_mp_002 | Reliability: 0%
+  Category: multi_turn/missing_params
+    Trial 1: ✗ (1690ms)
+    Trial 2: ✗ (1689ms)
+    Trial 3: ✗ (423ms)
+  Error: Failed 3/3 trials. Last error: Expected no calls but got 1 call(s)
+  Avg Latency: 1267ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_multiple_001 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1834ms)
+    Trial 2: ✓ (1672ms)
+    Trial 3: ✓ (454ms)
+  Avg Latency: 1320ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_multiple_002 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1522ms)
+    Trial 2: ✓ (1672ms)
+    Trial 3: ✓ (1554ms)
+  Avg Latency: 1583ms
+
+✗ FAIL | x-ai/grok-4.20-beta | single_multiple_003 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (1993ms)
+    Trial 2: ✗ (974ms)
+    Trial 3: ✗ (1195ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "cancel_order", "arguments": {"order_id": "ORD-67890", "reason": "I changed my mind"}}, got {"name": "cancel_order", "arguments": {"order_id": "ORD-67890", "reason": "changed my mind"}}
+  Avg Latency: 1387ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_multiple_004 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1696ms)
+    Trial 2: ✓ (411ms)
+    Trial 3: ✓ (453ms)
+  Avg Latency: 853ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_parallel_001 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1699ms)
+    Trial 2: ✓ (1558ms)
+    Trial 3: ✓ (388ms)
+  Avg Latency: 1215ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_parallel_002 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1524ms)
+    Trial 2: ✓ (1542ms)
+    Trial 3: ✓ (428ms)
+  Avg Latency: 1165ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_parallel_003 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1779ms)
+    Trial 2: ✓ (878ms)
+    Trial 3: ✓ (1563ms)
+  Avg Latency: 1407ms
+
+✗ FAIL | x-ai/grok-4.20-beta | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (1626ms)
+    Trial 2: ✗ (1687ms)
+    Trial 3: ✗ (1599ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "This is a reminder about the upcoming meeting."}}
+  Avg Latency: 1637ms
+
+✗ FAIL | x-ai/grok-4.20-beta | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (1755ms)
+    Trial 2: ✗ (1944ms)
+    Trial 3: ✗ (1775ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "get_current_time", "arguments": {"timezone": "New York"}}, got {"name": "get_current_time", "arguments": {"timezone": "America/New_York"}}
+  Avg Latency: 1825ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_parallel_multi_003 | Reliability: 100%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✓ (2054ms)
+    Trial 2: ✓ (1667ms)
+    Trial 3: ✓ (434ms)
+  Avg Latency: 1385ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1631ms)
+    Trial 2: ✓ (1647ms)
+    Trial 3: ✓ (1441ms)
+  Avg Latency: 1573ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_relevance_002 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1521ms)
+    Trial 2: ✓ (1708ms)
+    Trial 3: ✓ (401ms)
+  Avg Latency: 1210ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (2232ms)
+    Trial 2: ✓ (2372ms)
+    Trial 3: ✓ (2421ms)
+  Avg Latency: 2342ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_relevance_004 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1615ms)
+    Trial 2: ✓ (1536ms)
+    Trial 3: ✓ (413ms)
+  Avg Latency: 1188ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_simple_001 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1392ms)
+    Trial 2: ✓ (1520ms)
+    Trial 3: ✓ (1561ms)
+  Avg Latency: 1491ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_simple_002 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1632ms)
+    Trial 2: ✓ (1491ms)
+    Trial 3: ✓ (1537ms)
+  Avg Latency: 1553ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_simple_003 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1614ms)
+    Trial 2: ✓ (1346ms)
+    Trial 3: ✓ (1471ms)
+  Avg Latency: 1477ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_simple_004 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1650ms)
+    Trial 2: ✓ (1483ms)
+    Trial 3: ✓ (1577ms)
+  Avg Latency: 1570ms
+
+====================================================================================================
+END OF REPORT
+====================================================================================================

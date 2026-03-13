@@ -1,0 +1,818 @@
+================================================================================
+FUNCTION CALLING EVALUATION REPORT
+================================================================================
+Generated: 2026-03-13 09:41:26
+Total Tests: 165
+Models Evaluated: 11
+
+--------------------------------------------------------------------------------
+OVERALL MODEL RANKINGS
+--------------------------------------------------------------------------------
+1. x-ai/grok-4.1-fast
+   Accuracy: 80.00% (12/15)
+   Avg Latency: 6628ms
+
+2. google/gemini-3.1-pro-preview-customtools
+   Accuracy: 73.33% (11/15)
+   Avg Latency: 4308ms
+
+3. moonshotai/kimi-k2.5
+   Accuracy: 73.33% (11/15)
+   Avg Latency: 4489ms
+
+4. qwen/qwen3.5-27b
+   Accuracy: 73.33% (11/15)
+   Avg Latency: 2447ms
+
+5. x-ai/grok-4.20-beta
+   Accuracy: 73.33% (11/15)
+   Avg Latency: 1644ms
+
+6. qwen/qwen3.5-122b-a10b
+   Accuracy: 66.67% (10/15)
+   Avg Latency: 1573ms
+
+7. google/gemini-3.1-flash-lite-preview
+   Accuracy: 60.00% (9/15)
+   Avg Latency: 1007ms
+
+8. minimax/minimax-m2.5
+   Accuracy: 60.00% (9/15)
+   Avg Latency: 6616ms
+
+9. nvidia/nemotron-3-super-120b-a12b:free
+   Accuracy: 60.00% (9/15)
+   Avg Latency: 11553ms
+
+10. qwen/qwen3.5-35b-a3b
+   Accuracy: 60.00% (9/15)
+   Avg Latency: 1296ms
+
+11. qwen/qwen3.5-flash-02-23
+   Accuracy: 60.00% (9/15)
+   Avg Latency: 1261ms
+
+--------------------------------------------------------------------------------
+CATEGORY BREAKDOWN
+--------------------------------------------------------------------------------
+
+AGENTIC:
+  google/gemini-3.1-flash-lite-preview: 0.00%
+  google/gemini-3.1-pro-preview-customtools: 33.33%
+  minimax/minimax-m2.5: 0.00%
+  moonshotai/kimi-k2.5: 33.33%
+  nvidia/nemotron-3-super-120b-a12b:free: 33.33%
+  qwen/qwen3.5-122b-a10b: 0.00%
+  qwen/qwen3.5-27b: 66.67%
+  qwen/qwen3.5-35b-a3b: 0.00%
+  qwen/qwen3.5-flash-02-23: 0.00%
+  x-ai/grok-4.1-fast: 66.67%
+  x-ai/grok-4.20-beta: 66.67%
+
+MULTI_TURN:
+  google/gemini-3.1-flash-lite-preview: 50.00%
+  google/gemini-3.1-pro-preview-customtools: 75.00%
+  minimax/minimax-m2.5: 50.00%
+  moonshotai/kimi-k2.5: 75.00%
+  nvidia/nemotron-3-super-120b-a12b:free: 50.00%
+  qwen/qwen3.5-122b-a10b: 75.00%
+  qwen/qwen3.5-27b: 50.00%
+  qwen/qwen3.5-35b-a3b: 50.00%
+  qwen/qwen3.5-flash-02-23: 50.00%
+  x-ai/grok-4.1-fast: 75.00%
+  x-ai/grok-4.20-beta: 50.00%
+
+SINGLE_TURN:
+  google/gemini-3.1-flash-lite-preview: 87.50%
+  google/gemini-3.1-pro-preview-customtools: 87.50%
+  minimax/minimax-m2.5: 87.50%
+  moonshotai/kimi-k2.5: 87.50%
+  nvidia/nemotron-3-super-120b-a12b:free: 75.00%
+  qwen/qwen3.5-122b-a10b: 87.50%
+  qwen/qwen3.5-27b: 87.50%
+  qwen/qwen3.5-35b-a3b: 87.50%
+  qwen/qwen3.5-flash-02-23: 87.50%
+  x-ai/grok-4.1-fast: 87.50%
+  x-ai/grok-4.20-beta: 87.50%
+
+--------------------------------------------------------------------------------
+DETAILED TEST RESULTS
+--------------------------------------------------------------------------------
+
+✗ FAIL | google/gemini-3.1-flash-lite-preview | agentic_format_001
+  Category: agentic/format_sensitivity
+  Error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= date('now', '-30 days');"}}
+  Latency: 953ms
+
+✗ FAIL | google/gemini-3.1-flash-lite-preview | agentic_memory_001
+  Category: agentic/memory
+  Error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "store_memory", "arguments": {"value": "blue", "key": "favorite_color"}}
+  Latency: 681ms
+
+✗ FAIL | google/gemini-3.1-flash-lite-preview | agentic_web_001
+  Category: agentic/web_search
+  Error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "Python programming language"}}, got {"name": "web_search", "arguments": {"query": "what is python programming language"}}
+  Latency: 819ms
+
+✗ FAIL | google/gemini-3.1-flash-lite-preview | multi_base_001
+  Category: multi_turn/base
+  Error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "search_flights", "arguments": {"destination": "London", "date": "2024-12-25", "origin": "NYC"}}
+  Latency: 1039ms
+
+✗ FAIL | google/gemini-3.1-flash-lite-preview | multi_lc_001
+  Category: multi_turn/long_context
+  Error: Call 1 mismatch: expected {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "Paris", "date": "2025-01-15"}}, got {"name": "search_flights", "arguments": {"origin": "New York", "date": "2025-01-15", "destination": "Paris"}}
+  Latency: 724ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | multi_mf_001
+  Category: multi_turn/missing_functions
+  Latency: 1234ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | multi_mp_001
+  Category: multi_turn/missing_params
+  Latency: 2014ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_multiple_001
+  Category: single_turn/multiple
+  Latency: 782ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_multiple_002
+  Category: single_turn/multiple
+  Latency: 1060ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_parallel_001
+  Category: single_turn/parallel
+  Latency: 1165ms
+
+✗ FAIL | google/gemini-3.1-flash-lite-preview | single_parallel_multi_001
+  Category: single_turn/parallel_multiple
+  Error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Follow-up", "body": "Hi John,\n\nI'm writing to follow up on our upcoming meeting. Looking forward to it.\n\nBest regards,"}}
+  Latency: 1096ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_relevance_001
+  Category: single_turn/relevance
+  Latency: 1186ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_relevance_002
+  Category: single_turn/relevance
+  Latency: 913ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_simple_001
+  Category: single_turn/simple
+  Latency: 831ms
+
+✓ PASS | google/gemini-3.1-flash-lite-preview | single_simple_002
+  Category: single_turn/simple
+  Latency: 599ms
+
+✗ FAIL | google/gemini-3.1-pro-preview-customtools | agentic_format_001
+  Category: agentic/format_sensitivity
+  Error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE created_at >= NOW() - INTERVAL 30 DAY;"}}
+  Latency: 7003ms
+
+✗ FAIL | google/gemini-3.1-pro-preview-customtools | agentic_memory_001
+  Category: agentic/memory
+  Error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "store_memory", "arguments": {"key": "favorite_color", "value": "blue"}}
+  Latency: 4671ms
+
+✓ PASS | google/gemini-3.1-pro-preview-customtools | agentic_web_001
+  Category: agentic/web_search
+  Latency: 4157ms
+
+✗ FAIL | google/gemini-3.1-pro-preview-customtools | multi_base_001
+  Category: multi_turn/base
+  Error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "London", "date": "2024-12-25"}}
+  Latency: 4061ms
+
+✓ PASS | google/gemini-3.1-pro-preview-customtools | multi_lc_001
+  Category: multi_turn/long_context
+  Latency: 4762ms
+
+✓ PASS | google/gemini-3.1-pro-preview-customtools | multi_mf_001
+  Category: multi_turn/missing_functions
+  Latency: 3915ms
+
+✓ PASS | google/gemini-3.1-pro-preview-customtools | multi_mp_001
+  Category: multi_turn/missing_params
+  Latency: 4014ms
+
+✓ PASS | google/gemini-3.1-pro-preview-customtools | single_multiple_001
+  Category: single_turn/multiple
+  Latency: 3563ms
+
+✓ PASS | google/gemini-3.1-pro-preview-customtools | single_multiple_002
+  Category: single_turn/multiple
+  Latency: 3896ms
+
+✓ PASS | google/gemini-3.1-pro-preview-customtools | single_parallel_001
+  Category: single_turn/parallel
+  Latency: 3536ms
+
+✗ FAIL | google/gemini-3.1-pro-preview-customtools | single_parallel_multi_001
+  Category: single_turn/parallel_multiple
+  Error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "Hi John, this is an email regarding our upcoming meeting. Let me know if you need any further details."}}
+  Latency: 4660ms
+
+✓ PASS | google/gemini-3.1-pro-preview-customtools | single_relevance_001
+  Category: single_turn/relevance
+  Latency: 5160ms
+
+✓ PASS | google/gemini-3.1-pro-preview-customtools | single_relevance_002
+  Category: single_turn/relevance
+  Latency: 3419ms
+
+✓ PASS | google/gemini-3.1-pro-preview-customtools | single_simple_001
+  Category: single_turn/simple
+  Latency: 3702ms
+
+✓ PASS | google/gemini-3.1-pro-preview-customtools | single_simple_002
+  Category: single_turn/simple
+  Latency: 4098ms
+
+✗ FAIL | minimax/minimax-m2.5 | agentic_format_001
+  Category: agentic/format_sensitivity
+  Error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY);"}}
+  Latency: 2614ms
+
+✗ FAIL | minimax/minimax-m2.5 | agentic_memory_001
+  Category: agentic/memory
+  Error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "store_memory", "arguments": {"key": "favorite_color", "value": "blue"}}
+  Latency: 5646ms
+
+✗ FAIL | minimax/minimax-m2.5 | agentic_web_001
+  Category: agentic/web_search
+  Error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "Python programming language"}}, got {"name": "web_search", "arguments": {"query": "Python programming language information"}}
+  Latency: 3262ms
+
+✗ FAIL | minimax/minimax-m2.5 | multi_base_001
+  Category: multi_turn/base
+  Error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "search_flights", "arguments": {"date": "2024-12-25", "destination": "London", "origin": "NYC"}}
+  Latency: 10767ms
+
+✗ FAIL | minimax/minimax-m2.5 | multi_lc_001
+  Category: multi_turn/long_context
+  Error: Call 1 mismatch: expected {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "Paris", "date": "2025-01-15"}}, got {"name": "search_flights", "arguments": {"date": "2025-01-15", "destination": "CDG", "origin": "JFK"}}
+  Latency: 8129ms
+
+✓ PASS | minimax/minimax-m2.5 | multi_mf_001
+  Category: multi_turn/missing_functions
+  Latency: 6276ms
+
+✓ PASS | minimax/minimax-m2.5 | multi_mp_001
+  Category: multi_turn/missing_params
+  Latency: 4394ms
+
+✓ PASS | minimax/minimax-m2.5 | single_multiple_001
+  Category: single_turn/multiple
+  Latency: 5624ms
+
+✓ PASS | minimax/minimax-m2.5 | single_multiple_002
+  Category: single_turn/multiple
+  Latency: 7785ms
+
+✓ PASS | minimax/minimax-m2.5 | single_parallel_001
+  Category: single_turn/parallel
+  Latency: 14529ms
+
+✗ FAIL | minimax/minimax-m2.5 | single_parallel_multi_001
+  Category: single_turn/parallel_multiple
+  Error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"body": "I would like to discuss the meeting details with you.", "subject": "Meeting", "to": "john@example.com"}}
+  Latency: 9545ms
+
+✓ PASS | minimax/minimax-m2.5 | single_relevance_001
+  Category: single_turn/relevance
+  Latency: 3699ms
+
+✓ PASS | minimax/minimax-m2.5 | single_relevance_002
+  Category: single_turn/relevance
+  Latency: 4278ms
+
+✓ PASS | minimax/minimax-m2.5 | single_simple_001
+  Category: single_turn/simple
+  Latency: 8925ms
+
+✓ PASS | minimax/minimax-m2.5 | single_simple_002
+  Category: single_turn/simple
+  Latency: 3763ms
+
+✗ FAIL | moonshotai/kimi-k2.5 | agentic_format_001
+  Category: agentic/format_sensitivity
+  Error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE created_at >= CURRENT_DATE - INTERVAL '30 days'", "done": false}}
+  Latency: 7891ms
+
+✗ FAIL | moonshotai/kimi-k2.5 | agentic_memory_001
+  Category: agentic/memory
+  Error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "store_memory", "arguments": {"key": "favorite_color", "value": "blue"}}
+  Latency: 1601ms
+
+✓ PASS | moonshotai/kimi-k2.5 | agentic_web_001
+  Category: agentic/web_search
+  Latency: 1732ms
+
+✗ FAIL | moonshotai/kimi-k2.5 | multi_base_001
+  Category: multi_turn/base
+  Error: Expected 1 call(s), got 0
+  Latency: 1855ms
+
+✓ PASS | moonshotai/kimi-k2.5 | multi_lc_001
+  Category: multi_turn/long_context
+  Latency: 7478ms
+
+✓ PASS | moonshotai/kimi-k2.5 | multi_mf_001
+  Category: multi_turn/missing_functions
+  Latency: 5601ms
+
+✓ PASS | moonshotai/kimi-k2.5 | multi_mp_001
+  Category: multi_turn/missing_params
+  Latency: 5156ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_multiple_001
+  Category: single_turn/multiple
+  Latency: 2670ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_multiple_002
+  Category: single_turn/multiple
+  Latency: 2642ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_parallel_001
+  Category: single_turn/parallel
+  Latency: 4342ms
+
+✗ FAIL | moonshotai/kimi-k2.5 | single_parallel_multi_001
+  Category: single_turn/parallel_multiple
+  Error: Expected 2 call(s), got 1
+  Latency: 7805ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_relevance_001
+  Category: single_turn/relevance
+  Latency: 6322ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_relevance_002
+  Category: single_turn/relevance
+  Latency: 4148ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_simple_001
+  Category: single_turn/simple
+  Latency: 3550ms
+
+✓ PASS | moonshotai/kimi-k2.5 | single_simple_002
+  Category: single_turn/simple
+  Latency: 4546ms
+
+✗ FAIL | nvidia/nemotron-3-super-120b-a12b:free | agentic_format_001
+  Category: agentic/format_sensitivity
+  Error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'"}}
+  Latency: 21515ms
+
+✗ FAIL | nvidia/nemotron-3-super-120b-a12b:free | agentic_memory_001
+  Category: agentic/memory
+  Error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "store_memory", "arguments": {"key": "favorite_color", "value": "blue"}}
+  Latency: 8669ms
+
+✓ PASS | nvidia/nemotron-3-super-120b-a12b:free | agentic_web_001
+  Category: agentic/web_search
+  Latency: 1133ms
+
+✗ FAIL | nvidia/nemotron-3-super-120b-a12b:free | multi_base_001
+  Category: multi_turn/base
+  Error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "London", "date": "2024-12-25"}}
+  Latency: 1398ms
+
+✗ FAIL | nvidia/nemotron-3-super-120b-a12b:free | multi_lc_001
+  Category: multi_turn/long_context
+  Error: Call 1 mismatch: expected {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "Paris", "date": "2025-01-15"}}, got {"name": "search_flights", "arguments": {"origin": "New York", "destination": "Paris", "date": "2025-01-15"}}
+  Latency: 4284ms
+
+✓ PASS | nvidia/nemotron-3-super-120b-a12b:free | multi_mf_001
+  Category: multi_turn/missing_functions
+  Latency: 50266ms
+
+✓ PASS | nvidia/nemotron-3-super-120b-a12b:free | multi_mp_001
+  Category: multi_turn/missing_params
+  Latency: 7341ms
+
+✓ PASS | nvidia/nemotron-3-super-120b-a12b:free | single_multiple_001
+  Category: single_turn/multiple
+  Latency: 4570ms
+
+✓ PASS | nvidia/nemotron-3-super-120b-a12b:free | single_multiple_002
+  Category: single_turn/multiple
+  Latency: 3081ms
+
+✗ FAIL | nvidia/nemotron-3-super-120b-a12b:free | single_parallel_001
+  Category: single_turn/parallel
+  Error: Expected 3 call(s), got 1
+  Latency: 6167ms
+
+✗ FAIL | nvidia/nemotron-3-super-120b-a12b:free | single_parallel_multi_001
+  Category: single_turn/parallel_multiple
+  Error: Expected 2 call(s), got 1
+  Latency: 7655ms
+
+✓ PASS | nvidia/nemotron-3-super-120b-a12b:free | single_relevance_001
+  Category: single_turn/relevance
+  Latency: 11390ms
+
+✓ PASS | nvidia/nemotron-3-super-120b-a12b:free | single_relevance_002
+  Category: single_turn/relevance
+  Latency: 12738ms
+
+✓ PASS | nvidia/nemotron-3-super-120b-a12b:free | single_simple_001
+  Category: single_turn/simple
+  Latency: 19376ms
+
+✓ PASS | nvidia/nemotron-3-super-120b-a12b:free | single_simple_002
+  Category: single_turn/simple
+  Latency: 13717ms
+
+✗ FAIL | qwen/qwen3.5-122b-a10b | agentic_format_001
+  Category: agentic/format_sensitivity
+  Error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= CURRENT_DATE - INTERVAL '30 days'"}}
+  Latency: 2141ms
+
+✗ FAIL | qwen/qwen3.5-122b-a10b | agentic_memory_001
+  Category: agentic/memory
+  Error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "retrieve_memory", "arguments": {"key": "favorite color"}}
+  Latency: 867ms
+
+✗ FAIL | qwen/qwen3.5-122b-a10b | agentic_web_001
+  Category: agentic/web_search
+  Error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "Python programming language"}}, got {"name": "web_search", "arguments": {"query": "Python programming language information"}}
+  Latency: 691ms
+
+✗ FAIL | qwen/qwen3.5-122b-a10b | multi_base_001
+  Category: multi_turn/base
+  Error: Expected 1 call(s), got 0
+  Latency: 3473ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | multi_lc_001
+  Category: multi_turn/long_context
+  Latency: 1830ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | multi_mf_001
+  Category: multi_turn/missing_functions
+  Latency: 1676ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | multi_mp_001
+  Category: multi_turn/missing_params
+  Latency: 2640ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_multiple_001
+  Category: single_turn/multiple
+  Latency: 1081ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_multiple_002
+  Category: single_turn/multiple
+  Latency: 986ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_parallel_001
+  Category: single_turn/parallel
+  Latency: 1506ms
+
+✗ FAIL | qwen/qwen3.5-122b-a10b | single_parallel_multi_001
+  Category: single_turn/parallel_multiple
+  Error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Information", "body": "Hello John,\n\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions or need to reschedule.\n\nBest regards"}}
+  Latency: 1581ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_relevance_001
+  Category: single_turn/relevance
+  Latency: 1459ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_relevance_002
+  Category: single_turn/relevance
+  Latency: 1174ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_simple_001
+  Category: single_turn/simple
+  Latency: 1123ms
+
+✓ PASS | qwen/qwen3.5-122b-a10b | single_simple_002
+  Category: single_turn/simple
+  Latency: 1362ms
+
+✗ FAIL | qwen/qwen3.5-27b | agentic_format_001
+  Category: agentic/format_sensitivity
+  Error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= CURRENT_DATE - INTERVAL 30 DAY"}}
+  Latency: 3472ms
+
+✓ PASS | qwen/qwen3.5-27b | agentic_memory_001
+  Category: agentic/memory
+  Latency: 1234ms
+
+✓ PASS | qwen/qwen3.5-27b | agentic_web_001
+  Category: agentic/web_search
+  Latency: 1110ms
+
+✗ FAIL | qwen/qwen3.5-27b | multi_base_001
+  Category: multi_turn/base
+  Error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "London", "date": "2024-12-25"}}
+  Latency: 3322ms
+
+✗ FAIL | qwen/qwen3.5-27b | multi_lc_001
+  Category: multi_turn/long_context
+  Error: Call 1 mismatch: expected {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "Paris", "date": "2025-01-15"}}, got {"name": "search_flights", "arguments": {"origin": "New York", "destination": "Paris", "date": "2025-01-15"}}
+  Latency: 4169ms
+
+✓ PASS | qwen/qwen3.5-27b | multi_mf_001
+  Category: multi_turn/missing_functions
+  Latency: 2949ms
+
+✓ PASS | qwen/qwen3.5-27b | multi_mp_001
+  Category: multi_turn/missing_params
+  Latency: 4065ms
+
+✓ PASS | qwen/qwen3.5-27b | single_multiple_001
+  Category: single_turn/multiple
+  Latency: 1673ms
+
+✓ PASS | qwen/qwen3.5-27b | single_multiple_002
+  Category: single_turn/multiple
+  Latency: 1599ms
+
+✓ PASS | qwen/qwen3.5-27b | single_parallel_001
+  Category: single_turn/parallel
+  Latency: 2892ms
+
+✗ FAIL | qwen/qwen3.5-27b | single_parallel_multi_001
+  Category: single_turn/parallel_multiple
+  Error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Information", "body": "Hi John,\n\nI'm writing to inform you about an upcoming meeting. Please let me know if you have any questions or need additional details.\n\nBest regards"}}
+  Latency: 2886ms
+
+✓ PASS | qwen/qwen3.5-27b | single_relevance_001
+  Category: single_turn/relevance
+  Latency: 2547ms
+
+✓ PASS | qwen/qwen3.5-27b | single_relevance_002
+  Category: single_turn/relevance
+  Latency: 1467ms
+
+✓ PASS | qwen/qwen3.5-27b | single_simple_001
+  Category: single_turn/simple
+  Latency: 1601ms
+
+✓ PASS | qwen/qwen3.5-27b | single_simple_002
+  Category: single_turn/simple
+  Latency: 1713ms
+
+✗ FAIL | qwen/qwen3.5-35b-a3b | agentic_format_001
+  Category: agentic/format_sensitivity
+  Error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY) ORDER BY signup_date DESC"}}
+  Latency: 1168ms
+
+✗ FAIL | qwen/qwen3.5-35b-a3b | agentic_memory_001
+  Category: agentic/memory
+  Error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "retrieve_memory", "arguments": {"key": "favorite color"}}
+  Latency: 894ms
+
+✗ FAIL | qwen/qwen3.5-35b-a3b | agentic_web_001
+  Category: agentic/web_search
+  Error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "Python programming language"}}, got {"name": "web_search", "arguments": {"query": "Python programming language overview features history"}}
+  Latency: 850ms
+
+✗ FAIL | qwen/qwen3.5-35b-a3b | multi_base_001
+  Category: multi_turn/base
+  Error: Expected 1 call(s), got 0
+  Latency: 1404ms
+
+✗ FAIL | qwen/qwen3.5-35b-a3b | multi_lc_001
+  Category: multi_turn/long_context
+  Error: Call 1 mismatch: expected {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "Paris", "date": "2025-01-15"}}, got {"name": "search_flights", "arguments": {"origin": "New York", "destination": "Paris", "date": "2025-01-15"}}
+  Latency: 2073ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | multi_mf_001
+  Category: multi_turn/missing_functions
+  Latency: 1649ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | multi_mp_001
+  Category: multi_turn/missing_params
+  Latency: 2117ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_multiple_001
+  Category: single_turn/multiple
+  Latency: 1287ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_multiple_002
+  Category: single_turn/multiple
+  Latency: 1053ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_parallel_001
+  Category: single_turn/parallel
+  Latency: 1222ms
+
+✗ FAIL | qwen/qwen3.5-35b-a3b | single_parallel_multi_001
+  Category: single_turn/parallel_multiple
+  Error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Update", "body": "Hi John, I wanted to send you a quick note about our upcoming meeting. Please let me know if you have any questions or need to reschedule."}}
+  Latency: 1709ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_relevance_001
+  Category: single_turn/relevance
+  Latency: 1042ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_relevance_002
+  Category: single_turn/relevance
+  Latency: 999ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_simple_001
+  Category: single_turn/simple
+  Latency: 1089ms
+
+✓ PASS | qwen/qwen3.5-35b-a3b | single_simple_002
+  Category: single_turn/simple
+  Latency: 879ms
+
+✗ FAIL | qwen/qwen3.5-flash-02-23 | agentic_format_001
+  Category: agentic/format_sensitivity
+  Error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY) ORDER BY signup_date DESC"}}
+  Latency: 1339ms
+
+✗ FAIL | qwen/qwen3.5-flash-02-23 | agentic_memory_001
+  Category: agentic/memory
+  Error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "retrieve_memory", "arguments": {"key": "favorite color"}}
+  Latency: 862ms
+
+✗ FAIL | qwen/qwen3.5-flash-02-23 | agentic_web_001
+  Category: agentic/web_search
+  Error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "Python programming language"}}, got {"name": "web_search", "arguments": {"query": "Python programming language overview features history"}}
+  Latency: 724ms
+
+✗ FAIL | qwen/qwen3.5-flash-02-23 | multi_base_001
+  Category: multi_turn/base
+  Error: Expected 1 call(s), got 0
+  Latency: 1536ms
+
+✗ FAIL | qwen/qwen3.5-flash-02-23 | multi_lc_001
+  Category: multi_turn/long_context
+  Error: Call 1 mismatch: expected {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "Paris", "date": "2025-01-15"}}, got {"name": "search_flights", "arguments": {"origin": "New York", "destination": "Paris", "date": "2025-01-15"}}
+  Latency: 1744ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | multi_mf_001
+  Category: multi_turn/missing_functions
+  Latency: 1865ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | multi_mp_001
+  Category: multi_turn/missing_params
+  Latency: 2085ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_multiple_001
+  Category: single_turn/multiple
+  Latency: 1163ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_multiple_002
+  Category: single_turn/multiple
+  Latency: 922ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_parallel_001
+  Category: single_turn/parallel
+  Latency: 1124ms
+
+✗ FAIL | qwen/qwen3.5-flash-02-23 | single_parallel_multi_001
+  Category: single_turn/parallel_multiple
+  Error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Information", "body": "Hi John,\n\nThis is regarding our upcoming meeting. Please let me know if you have any questions or need any additional information.\n\nBest regards"}}
+  Latency: 1826ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_relevance_001
+  Category: single_turn/relevance
+  Latency: 913ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_relevance_002
+  Category: single_turn/relevance
+  Latency: 938ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_simple_001
+  Category: single_turn/simple
+  Latency: 1019ms
+
+✓ PASS | qwen/qwen3.5-flash-02-23 | single_simple_002
+  Category: single_turn/simple
+  Latency: 863ms
+
+✗ FAIL | x-ai/grok-4.1-fast | agentic_format_001
+  Category: agentic/format_sensitivity
+  Error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE created_at >= NOW() - INTERVAL 30 DAY;"}}
+  Latency: 9175ms
+
+✓ PASS | x-ai/grok-4.1-fast | agentic_memory_001
+  Category: agentic/memory
+  Latency: 5742ms
+
+✓ PASS | x-ai/grok-4.1-fast | agentic_web_001
+  Category: agentic/web_search
+  Latency: 3050ms
+
+✗ FAIL | x-ai/grok-4.1-fast | multi_base_001
+  Category: multi_turn/base
+  Error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "book_flight", "arguments": {"flight_id": "10:00", "passenger_name": "John Doe", "seat_class": "business"}}
+  Latency: 36468ms
+
+✓ PASS | x-ai/grok-4.1-fast | multi_lc_001
+  Category: multi_turn/long_context
+  Latency: 8451ms
+
+✓ PASS | x-ai/grok-4.1-fast | multi_mf_001
+  Category: multi_turn/missing_functions
+  Latency: 3731ms
+
+✓ PASS | x-ai/grok-4.1-fast | multi_mp_001
+  Category: multi_turn/missing_params
+  Latency: 4685ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_multiple_001
+  Category: single_turn/multiple
+  Latency: 3197ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_multiple_002
+  Category: single_turn/multiple
+  Latency: 4047ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_parallel_001
+  Category: single_turn/parallel
+  Latency: 3540ms
+
+✗ FAIL | x-ai/grok-4.1-fast | single_parallel_multi_001
+  Category: single_turn/parallel_multiple
+  Error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Reminder", "body": "Hi John, this is a reminder about our upcoming meeting. Please let me know if you need any additional details."}}
+  Latency: 5332ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_relevance_001
+  Category: single_turn/relevance
+  Latency: 2676ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_relevance_002
+  Category: single_turn/relevance
+  Latency: 2606ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_simple_001
+  Category: single_turn/simple
+  Latency: 4087ms
+
+✓ PASS | x-ai/grok-4.1-fast | single_simple_002
+  Category: single_turn/simple
+  Latency: 2631ms
+
+✗ FAIL | x-ai/grok-4.20-beta | agentic_format_001
+  Category: agentic/format_sensitivity
+  Error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY);"}}
+  Latency: 1589ms
+
+✓ PASS | x-ai/grok-4.20-beta | agentic_memory_001
+  Category: agentic/memory
+  Latency: 1499ms
+
+✓ PASS | x-ai/grok-4.20-beta | agentic_web_001
+  Category: agentic/web_search
+  Latency: 1526ms
+
+✗ FAIL | x-ai/grok-4.20-beta | multi_base_001
+  Category: multi_turn/base
+  Error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "book_flight", "arguments": {"flight_id": "10:00", "passenger_name": "John Doe", "seat_class": "business"}}
+  Latency: 1635ms
+
+✗ FAIL | x-ai/grok-4.20-beta | multi_lc_001
+  Category: multi_turn/long_context
+  Error: Call 1 mismatch: expected {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "Paris", "date": "2025-01-15"}}, got {"name": "search_flights", "arguments": {"origin": "New York", "destination": "Paris", "date": "2025-01-15"}}
+  Latency: 1575ms
+
+✓ PASS | x-ai/grok-4.20-beta | multi_mf_001
+  Category: multi_turn/missing_functions
+  Latency: 1645ms
+
+✓ PASS | x-ai/grok-4.20-beta | multi_mp_001
+  Category: multi_turn/missing_params
+  Latency: 1942ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_multiple_001
+  Category: single_turn/multiple
+  Latency: 1723ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_multiple_002
+  Category: single_turn/multiple
+  Latency: 1662ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_parallel_001
+  Category: single_turn/parallel
+  Latency: 1863ms
+
+✗ FAIL | x-ai/grok-4.20-beta | single_parallel_multi_001
+  Category: single_turn/parallel_multiple
+  Error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "This is a reminder about the upcoming meeting."}}
+  Latency: 1746ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_relevance_001
+  Category: single_turn/relevance
+  Latency: 1375ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_relevance_002
+  Category: single_turn/relevance
+  Latency: 1486ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_simple_001
+  Category: single_turn/simple
+  Latency: 1570ms
+
+✓ PASS | x-ai/grok-4.20-beta | single_simple_002
+  Category: single_turn/simple
+  Latency: 1826ms
+
+================================================================================
+END OF REPORT
+================================================================================

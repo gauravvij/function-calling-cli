@@ -1,0 +1,2711 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-13T10:28:58.478802",
+    "total_tests": 30,
+    "models_evaluated": 2,
+    "trials_per_test": 3,
+    "evaluation_method": "Best of N (pass if at least one trial succeeds)"
+  },
+  "summary": {
+    "leaderboard": [
+      {
+        "rank": 1,
+        "model": "openai/gpt-4o",
+        "accuracy": 0.7667,
+        "reliability_percent": 76.67,
+        "passed_tests": 23,
+        "total_tests": 30,
+        "avg_latency_ms": 1248.14,
+        "total_tokens": 12072
+      },
+      {
+        "rank": 2,
+        "model": "google/gemini-2.0-flash-001",
+        "accuracy": 0.7,
+        "reliability_percent": 70.0,
+        "passed_tests": 21,
+        "total_tests": 30,
+        "avg_latency_ms": 681.81,
+        "total_tokens": 5898
+      }
+    ]
+  },
+  "model_scores": [
+    {
+      "model": "google/gemini-2.0-flash-001",
+      "overall_accuracy": 0.7,
+      "overall_reliability": 70.0,
+      "category_scores": {
+        "agentic": 0.3333333333333333,
+        "multi_turn": 0.6666666666666666,
+        "single_turn": 0.8333333333333334
+      },
+      "category_reliability": {
+        "agentic": 33.333333333333336,
+        "multi_turn": 66.66666666666667,
+        "single_turn": 83.33333333333333
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.5,
+        "memory": 0.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.3333333333333333,
+        "relevance": 0.75,
+        "simple": 1.0,
+        "web_search": 0.5
+      },
+      "subcategory_reliability": {
+        "base": 0.0,
+        "format_sensitivity": 50.0,
+        "memory": 0.0,
+        "missing_functions": 100.0,
+        "missing_params": 100.0,
+        "multiple": 100.0,
+        "parallel": 100.0,
+        "parallel_multiple": 33.333333333333336,
+        "relevance": 75.0,
+        "simple": 100.0,
+        "web_search": 50.0
+      },
+      "total_tests": 30,
+      "passed_tests": 21,
+      "avg_latency_ms": 681.8132082621256,
+      "total_tokens": 5898
+    },
+    {
+      "model": "openai/gpt-4o",
+      "overall_accuracy": 0.7666666666666667,
+      "overall_reliability": 76.66666666666667,
+      "category_scores": {
+        "agentic": 0.6666666666666666,
+        "multi_turn": 0.6666666666666666,
+        "single_turn": 0.8333333333333334
+      },
+      "category_reliability": {
+        "agentic": 66.66666666666667,
+        "multi_turn": 66.66666666666667,
+        "single_turn": 83.33333333333333
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.5,
+        "memory": 1.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 0.75,
+        "parallel": 1.0,
+        "parallel_multiple": 0.3333333333333333,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 0.5
+      },
+      "subcategory_reliability": {
+        "base": 0.0,
+        "format_sensitivity": 50.0,
+        "memory": 100.0,
+        "missing_functions": 100.0,
+        "missing_params": 100.0,
+        "multiple": 75.0,
+        "parallel": 100.0,
+        "parallel_multiple": 33.333333333333336,
+        "relevance": 100.0,
+        "simple": 100.0,
+        "web_search": 50.0
+      },
+      "total_tests": 30,
+      "passed_tests": 23,
+      "avg_latency_ms": 1248.1359852684868,
+      "total_tokens": 12072
+    }
+  ],
+  "detailed_results": [
+    {
+      "test_id": "single_simple_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 738.68,
+          "tokens_used": 34,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 428.23,
+          "tokens_used": 34,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 437.82,
+          "tokens_used": 34,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 534.91,
+      "total_tokens": 102
+    },
+    {
+      "test_id": "single_simple_004",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 965.48,
+          "tokens_used": 36,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 765.19,
+          "tokens_used": 36,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 615.19,
+          "tokens_used": 36,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "San Francisco"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 781.95,
+      "total_tokens": 108
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 965.0,
+          "tokens_used": 39,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 708.06,
+          "tokens_used": 39,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 740.59,
+          "tokens_used": 39,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London",
+            "unit": "celsius"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 804.55,
+      "total_tokens": 117
+    },
+    {
+      "test_id": "single_simple_003",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1470.02,
+          "tokens_used": 42,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 596.65,
+          "tokens_used": 42,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 675.05,
+          "tokens_used": 42,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "New York",
+            "unit": "fahrenheit"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 913.91,
+      "total_tokens": 126
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 631.86,
+          "tokens_used": 76,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 673.65,
+          "tokens_used": 76,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 489.55,
+          "tokens_used": 76,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "order_id": "ORD-12345"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 598.35,
+      "total_tokens": 228
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 571.85,
+          "tokens_used": 60,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 613.07,
+          "tokens_used": 60,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 489.08,
+          "tokens_used": 60,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "search_products",
+          "arguments": {
+            "query": "wireless headphones"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 558.0,
+      "total_tokens": 180
+    },
+    {
+      "test_id": "single_multiple_003",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 682.15,
+          "tokens_used": 81,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 718.42,
+          "tokens_used": 81,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 743.7,
+          "tokens_used": 81,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "cancel_order",
+          "arguments": {
+            "order_id": "ORD-67890",
+            "reason": "I changed my mind"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 714.76,
+      "total_tokens": 243
+    },
+    {
+      "test_id": "single_multiple_004",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 739.25,
+          "tokens_used": 64,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 785.54,
+          "tokens_used": 64,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 740.06,
+          "tokens_used": 64,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "search_products",
+          "arguments": {
+            "query": "laptops",
+            "category": "electronics"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 754.95,
+      "total_tokens": 192
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 622.57,
+          "tokens_used": 51,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 841.57,
+          "tokens_used": 51,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 626.69,
+          "tokens_used": 51,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "New York"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 696.94,
+      "total_tokens": 153
+    },
+    {
+      "test_id": "single_parallel_002",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 591.39,
+          "tokens_used": 41,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 989.8,
+          "tokens_used": 41,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 534.92,
+          "tokens_used": 41,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Paris"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Berlin"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 705.37,
+      "total_tokens": 123
+    },
+    {
+      "test_id": "single_parallel_003",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 684.86,
+          "tokens_used": 58,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 713.57,
+          "tokens_used": 58,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 739.19,
+          "tokens_used": 58,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Sydney"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Melbourne"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Brisbane"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Perth"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 712.54,
+      "total_tokens": 174
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 748.2,
+          "tokens_used": 75,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"body\": \"Regarding the meeting\", \"subject\": \"Meeting\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 788.09,
+          "tokens_used": 75,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"subject\": \"Meeting\", \"body\": \"Regarding the meeting\", \"to\": \"john@example.com\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 883.9,
+          "tokens_used": 75,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"Regarding the meeting\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "john@example.com",
+            "subject": "Meeting",
+            "body": "About the meeting"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "Tokyo"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"Regarding the meeting\"}}",
+      "avg_latency_ms": 806.73,
+      "total_tokens": 225
+    },
+    {
+      "test_id": "single_parallel_multi_002",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 753.83,
+          "tokens_used": 92,
+          "error": "Call 1 mismatch: expected {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"New York\"}}, got {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"America/New_York\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 766.15,
+          "tokens_used": 92,
+          "error": "Call 1 mismatch: expected {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"New York\"}}, got {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"America/New_York\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 729.85,
+          "tokens_used": 92,
+          "error": "Call 1 mismatch: expected {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"New York\"}}, got {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"America/New_York\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "New York"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "London"
+          }
+        },
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "admin@example.com",
+            "subject": "Report Ready",
+            "body": "The report is ready"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"New York\"}}, got {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"America/New_York\"}}",
+      "avg_latency_ms": 749.94,
+      "total_tokens": 276
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 414.66,
+          "tokens_used": 41,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 397.3,
+          "tokens_used": 41,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 361.4,
+          "tokens_used": 41,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 391.12,
+      "total_tokens": 123
+    },
+    {
+      "test_id": "single_parallel_multi_003",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 837.48,
+          "tokens_used": 72,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 776.6,
+          "tokens_used": 72,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 864.16,
+          "tokens_used": 72,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "hello@example.com",
+            "subject": "Hello",
+            "body": "World"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "UTC"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 826.08,
+      "total_tokens": 216
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 510.17,
+          "tokens_used": 34,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 575.33,
+          "tokens_used": 34,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 490.6,
+          "tokens_used": 34,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Paris"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 525.37,
+      "total_tokens": 102
+    },
+    {
+      "test_id": "single_relevance_004",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 669.26,
+          "tokens_used": 46,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 667.74,
+          "tokens_used": 46,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 577.56,
+          "tokens_used": 46,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Dubai"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 638.19,
+      "total_tokens": 138
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 632.86,
+          "tokens_used": 107,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 780.19,
+          "tokens_used": 133,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 629.64,
+          "tokens_used": 107,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "book_flight",
+          "arguments": {
+            "flight_id": "BA112",
+            "passenger_name": "John Doe",
+            "seat_class": "business"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 680.89,
+      "total_tokens": 347
+    },
+    {
+      "test_id": "multi_base_002",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 747.64,
+          "tokens_used": 117,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 630.06,
+          "tokens_used": 117,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 682.04,
+          "tokens_used": 117,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "book_flight",
+          "arguments": {
+            "flight_id": "JL002",
+            "passenger_name": "Jane Smith"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 686.58,
+      "total_tokens": 351
+    },
+    {
+      "test_id": "single_relevance_003",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1374.38,
+          "tokens_used": 125,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1327.62,
+          "tokens_used": 125,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1373.28,
+          "tokens_used": 125,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 1358.43,
+      "total_tokens": 375
+    },
+    {
+      "test_id": "multi_mp_002",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 401.42,
+          "tokens_used": 68,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 447.4,
+          "tokens_used": 68,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 462.72,
+          "tokens_used": 68,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 437.18,
+      "total_tokens": 204
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 803.94,
+          "tokens_used": 90,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 775.19,
+          "tokens_used": 90,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 664.29,
+          "tokens_used": 91,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 747.81,
+      "total_tokens": 271
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 584.17,
+          "tokens_used": 70,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 618.19,
+          "tokens_used": 70,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 520.58,
+          "tokens_used": 70,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 574.31,
+      "total_tokens": 210
+    },
+    {
+      "test_id": "multi_mf_002",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 477.11,
+          "tokens_used": 73,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 479.19,
+          "tokens_used": 73,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 444.75,
+          "tokens_used": 73,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 467.02,
+      "total_tokens": 219
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 625.57,
+          "tokens_used": 46,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 609.58,
+          "tokens_used": 46,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 618.95,
+          "tokens_used": 46,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "web_search",
+          "arguments": {
+            "query": "Python programming language"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 618.03,
+      "total_tokens": 138
+    },
+    {
+      "test_id": "agentic_web_002",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 685.22,
+          "tokens_used": 48,
+          "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news artificial intelligence\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news about artificial intelligence\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 664.28,
+          "tokens_used": 48,
+          "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news artificial intelligence\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news about artificial intelligence\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 661.76,
+          "tokens_used": 48,
+          "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news artificial intelligence\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news about artificial intelligence\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "web_search",
+          "arguments": {
+            "query": "latest news artificial intelligence"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news artificial intelligence\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news about artificial intelligence\"}}",
+      "avg_latency_ms": 670.42,
+      "total_tokens": 144
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 607.86,
+          "tokens_used": 48,
+          "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"value\": \"blue\", \"key\": \"favorite_color\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 488.17,
+          "tokens_used": 48,
+          "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"value\": \"blue\", \"key\": \"favorite_color\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 495.15,
+          "tokens_used": 48,
+          "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"value\": \"blue\", \"key\": \"favorite_color\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "retrieve_memory",
+          "arguments": {
+            "key": "favorite_color"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"value\": \"blue\", \"key\": \"favorite_color\"}}",
+      "avg_latency_ms": 530.39,
+      "total_tokens": 144
+    },
+    {
+      "test_id": "agentic_memory_002",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 745.76,
+          "tokens_used": 61,
+          "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"phone_number\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"key\": \"phone number\", \"value\": \"555-1234\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 728.7,
+          "tokens_used": 61,
+          "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"phone_number\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"value\": \"555-1234\", \"key\": \"phone number\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 771.4,
+          "tokens_used": 61,
+          "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"phone_number\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"key\": \"phone number\", \"value\": \"555-1234\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "retrieve_memory",
+          "arguments": {
+            "key": "phone_number"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"phone_number\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"key\": \"phone number\", \"value\": \"555-1234\"}}",
+      "avg_latency_ms": 748.62,
+      "total_tokens": 183
+    },
+    {
+      "test_id": "agentic_format_002",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 516.96,
+          "tokens_used": 67,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 609.76,
+          "tokens_used": 67,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 569.77,
+          "tokens_used": 67,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "call_rest_api",
+          "arguments": {
+            "url": "https://api.example.com/users",
+            "method": "GET"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 565.5,
+      "total_tokens": 201
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 605.0,
+          "tokens_used": 87,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 678.89,
+          "tokens_used": 99,
+          "error": "Expected 1 call(s), got 0"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 682.76,
+          "tokens_used": 99,
+          "error": "Expected 1 call(s), got 0"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "execute_sql",
+          "arguments": {
+            "query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Expected 1 call(s), got 0",
+      "avg_latency_ms": 655.55,
+      "total_tokens": 285
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 677.31,
+          "tokens_used": 79,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 557.49,
+          "tokens_used": 79,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 2320.55,
+          "tokens_used": 79,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1185.12,
+      "total_tokens": 237
+    },
+    {
+      "test_id": "single_simple_004",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 809.17,
+          "tokens_used": 81,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1392.01,
+          "tokens_used": 81,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 964.69,
+          "tokens_used": 81,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "San Francisco"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1055.29,
+      "total_tokens": 243
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 859.44,
+          "tokens_used": 87,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 2697.31,
+          "tokens_used": 87,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 850.18,
+          "tokens_used": 87,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London",
+            "unit": "celsius"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1468.98,
+      "total_tokens": 261
+    },
+    {
+      "test_id": "single_simple_003",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 2492.74,
+          "tokens_used": 89,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1278.83,
+          "tokens_used": 89,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 704.21,
+          "tokens_used": 89,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "New York",
+            "unit": "fahrenheit"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1491.93,
+      "total_tokens": 267
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 736.05,
+          "tokens_used": 121,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 682.19,
+          "tokens_used": 121,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 895.08,
+          "tokens_used": 121,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "order_id": "ORD-12345"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 771.11,
+      "total_tokens": 363
+    },
+    {
+      "test_id": "single_multiple_003",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 713.88,
+          "tokens_used": 128,
+          "error": "Call 1 mismatch: expected {\"name\": \"cancel_order\", \"arguments\": {\"order_id\": \"ORD-67890\", \"reason\": \"I changed my mind\"}}, got {\"name\": \"cancel_order\", \"arguments\": {\"order_id\": \"ORD-67890\", \"reason\": \"Changed my mind\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 638.96,
+          "tokens_used": 128,
+          "error": "Call 1 mismatch: expected {\"name\": \"cancel_order\", \"arguments\": {\"order_id\": \"ORD-67890\", \"reason\": \"I changed my mind\"}}, got {\"name\": \"cancel_order\", \"arguments\": {\"order_id\": \"ORD-67890\", \"reason\": \"Changed my mind\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 1025.8,
+          "tokens_used": 128,
+          "error": "Call 1 mismatch: expected {\"name\": \"cancel_order\", \"arguments\": {\"order_id\": \"ORD-67890\", \"reason\": \"I changed my mind\"}}, got {\"name\": \"cancel_order\", \"arguments\": {\"order_id\": \"ORD-67890\", \"reason\": \"Changed my mind\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "cancel_order",
+          "arguments": {
+            "order_id": "ORD-67890",
+            "reason": "I changed my mind"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"cancel_order\", \"arguments\": {\"order_id\": \"ORD-67890\", \"reason\": \"I changed my mind\"}}, got {\"name\": \"cancel_order\", \"arguments\": {\"order_id\": \"ORD-67890\", \"reason\": \"Changed my mind\"}}",
+      "avg_latency_ms": 792.88,
+      "total_tokens": 384
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1289.59,
+          "tokens_used": 114,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 689.75,
+          "tokens_used": 114,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 775.02,
+          "tokens_used": 114,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "search_products",
+          "arguments": {
+            "query": "wireless headphones"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 918.12,
+      "total_tokens": 342
+    },
+    {
+      "test_id": "single_multiple_004",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 794.84,
+          "tokens_used": 119,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 841.34,
+          "tokens_used": 119,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 692.72,
+          "tokens_used": 119,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "search_products",
+          "arguments": {
+            "query": "laptops",
+            "category": "electronics"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 776.3,
+      "total_tokens": 357
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1244.74,
+          "tokens_used": 130,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1061.86,
+          "tokens_used": 130,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1201.64,
+          "tokens_used": 130,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Tokyo"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "London"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "New York"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1169.41,
+      "total_tokens": 390
+    },
+    {
+      "test_id": "single_parallel_002",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 735.09,
+          "tokens_used": 111,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 955.44,
+          "tokens_used": 111,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1155.52,
+          "tokens_used": 111,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Paris"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Berlin"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 948.68,
+      "total_tokens": 333
+    },
+    {
+      "test_id": "single_parallel_003",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1677.83,
+          "tokens_used": 147,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1222.57,
+          "tokens_used": 147,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 956.79,
+          "tokens_used": 147,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Sydney"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Melbourne"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Brisbane"
+          }
+        },
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Perth"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1285.73,
+      "total_tokens": 441
+    },
+    {
+      "test_id": "single_parallel_multi_002",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 1504.07,
+          "tokens_used": 172,
+          "error": "Call 1 mismatch: expected {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"New York\"}}, got {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"America/New_York\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 1337.1,
+          "tokens_used": 172,
+          "error": "Call 1 mismatch: expected {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"New York\"}}, got {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"America/New_York\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 1363.42,
+          "tokens_used": 172,
+          "error": "Call 1 mismatch: expected {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"New York\"}}, got {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"America/New_York\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "New York"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "London"
+          }
+        },
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "admin@example.com",
+            "subject": "Report Ready",
+            "body": "The report is ready"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"New York\"}}, got {\"name\": \"get_current_time\", \"arguments\": {\"timezone\": \"America/New_York\"}}",
+      "avg_latency_ms": 1401.53,
+      "total_tokens": 516
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 1678.33,
+          "tokens_used": 196,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Details\", \"body\": \"Dear John,\\n\\nI hope this message finds you well. I wanted to remind you about the upcoming meeting. Please let me know if you have any questions or need further information.\\n\\nBest regards,\\n[Your Name]\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 2201.6,
+          "tokens_used": 196,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Details\", \"body\": \"Dear John,\\n\\nI hope this message finds you well. I wanted to remind you about the upcoming meeting. Please let me know if you have any questions or need further information.\\n\\nBest regards,\\n[Your Name]\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 1594.26,
+          "tokens_used": 192,
+          "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Details\", \"body\": \"Hi John,\\n\\nI hope this message finds you well. I wanted to remind you about the upcoming meeting. Please let me know if you have any questions.\\n\\nBest regards,\\n[Your Name]\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "john@example.com",
+            "subject": "Meeting",
+            "body": "About the meeting"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "Tokyo"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Details\", \"body\": \"Hi John,\\n\\nI hope this message finds you well. I wanted to remind you about the upcoming meeting. Please let me know if you have any questions.\\n\\nBest regards,\\n[Your Name]\"}}",
+      "avg_latency_ms": 1824.73,
+      "total_tokens": 584
+    },
+    {
+      "test_id": "single_parallel_multi_003",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1175.68,
+          "tokens_used": 145,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1136.72,
+          "tokens_used": 145,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1036.01,
+          "tokens_used": 145,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "send_email",
+          "arguments": {
+            "to": "hello@example.com",
+            "subject": "Hello",
+            "body": "World"
+          }
+        },
+        {
+          "name": "get_current_time",
+          "arguments": {
+            "timezone": "UTC"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 1116.14,
+      "total_tokens": 435
+    },
+    {
+      "test_id": "single_relevance_004",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 548.74,
+          "tokens_used": 86,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 682.73,
+          "tokens_used": 86,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 676.53,
+          "tokens_used": 86,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Dubai"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 636.0,
+      "total_tokens": 258
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1647.04,
+          "tokens_used": 79,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 672.52,
+          "tokens_used": 79,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 575.09,
+          "tokens_used": 79,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "get_weather",
+          "arguments": {
+            "location": "Paris"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 964.88,
+      "total_tokens": 237
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 769.8,
+          "tokens_used": 78,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 4577.97,
+          "tokens_used": 78,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 534.54,
+          "tokens_used": 78,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 1960.77,
+      "total_tokens": 234
+    },
+    {
+      "test_id": "multi_base_002",
+      "model": "openai/gpt-4o",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 831.19,
+          "tokens_used": 160,
+          "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"JL002\", \"passenger_name\": \"Jane Smith\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"LA\", \"destination\": \"Tokyo\", \"date\": \"2024-12-20\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 780.4,
+          "tokens_used": 160,
+          "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"JL002\", \"passenger_name\": \"Jane Smith\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"LA\", \"destination\": \"Tokyo\", \"date\": \"2024-12-20\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 841.01,
+          "tokens_used": 160,
+          "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"JL002\", \"passenger_name\": \"Jane Smith\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"LA\", \"destination\": \"Tokyo\", \"date\": \"2024-12-20\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "book_flight",
+          "arguments": {
+            "flight_id": "JL002",
+            "passenger_name": "Jane Smith"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"JL002\", \"passenger_name\": \"Jane Smith\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"LA\", \"destination\": \"Tokyo\", \"date\": \"2024-12-20\"}}",
+      "avg_latency_ms": 817.53,
+      "total_tokens": 480
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "openai/gpt-4o",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 995.78,
+          "tokens_used": 164,
+          "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"London\", \"date\": \"2024-12-25\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 1411.15,
+          "tokens_used": 164,
+          "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"London\", \"date\": \"2024-12-25\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 903.22,
+          "tokens_used": 164,
+          "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"London\", \"date\": \"2024-12-25\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "book_flight",
+          "arguments": {
+            "flight_id": "BA112",
+            "passenger_name": "John Doe",
+            "seat_class": "business"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"London\", \"date\": \"2024-12-25\"}}",
+      "avg_latency_ms": 1103.38,
+      "total_tokens": 492
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "openai/gpt-4o",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1587.37,
+          "tokens_used": 167,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 2261.96,
+          "tokens_used": 168,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1636.12,
+          "tokens_used": 165,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 1828.48,
+      "total_tokens": 500
+    },
+    {
+      "test_id": "multi_mp_002",
+      "model": "openai/gpt-4o",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1640.86,
+          "tokens_used": 158,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1075.74,
+          "tokens_used": 158,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1378.76,
+          "tokens_used": 164,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 1365.12,
+      "total_tokens": 480
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "openai/gpt-4o",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 1626.27,
+          "tokens_used": 173,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 1424.16,
+          "tokens_used": 166,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 1081.16,
+          "tokens_used": 150,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 1377.2,
+      "total_tokens": 489
+    },
+    {
+      "test_id": "single_relevance_003",
+      "model": "openai/gpt-4o",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 4517.44,
+          "tokens_used": 281,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 3917.68,
+          "tokens_used": 325,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 3969.56,
+          "tokens_used": 291,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 4134.9,
+      "total_tokens": 897
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "openai/gpt-4o",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 559.13,
+          "tokens_used": 98,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 582.02,
+          "tokens_used": 98,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 604.67,
+          "tokens_used": 98,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "web_search",
+          "arguments": {
+            "query": "Python programming language"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 581.94,
+      "total_tokens": 294
+    },
+    {
+      "test_id": "agentic_web_002",
+      "model": "openai/gpt-4o",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 881.77,
+          "tokens_used": 100,
+          "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news artificial intelligence\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news about artificial intelligence\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 701.27,
+          "tokens_used": 100,
+          "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news artificial intelligence\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news about artificial intelligence\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 829.45,
+          "tokens_used": 100,
+          "error": "Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news artificial intelligence\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news about artificial intelligence\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "web_search",
+          "arguments": {
+            "query": "latest news artificial intelligence"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news artificial intelligence\"}}, got {\"name\": \"web_search\", \"arguments\": {\"query\": \"latest news about artificial intelligence\"}}",
+      "avg_latency_ms": 804.16,
+      "total_tokens": 300
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "openai/gpt-4o",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 565.74,
+          "tokens_used": 101,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 660.63,
+          "tokens_used": 101,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 663.16,
+          "tokens_used": 101,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "retrieve_memory",
+          "arguments": {
+            "key": "favorite_color"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 629.84,
+      "total_tokens": 303
+    },
+    {
+      "test_id": "agentic_memory_002",
+      "model": "openai/gpt-4o",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 716.51,
+          "tokens_used": 104,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 648.82,
+          "tokens_used": 104,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 665.61,
+          "tokens_used": 104,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "retrieve_memory",
+          "arguments": {
+            "key": "phone_number"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 676.98,
+      "total_tokens": 312
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "openai/gpt-4o",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "reliability_percent": 0.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": false,
+          "latency_ms": 789.3,
+          "tokens_used": 127,
+          "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= CURDATE() - INTERVAL 30 DAY;\"}}"
+        },
+        {
+          "trial_number": 2,
+          "passed": false,
+          "latency_ms": 831.82,
+          "tokens_used": 127,
+          "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= CURDATE() - INTERVAL 30 DAY;\"}}"
+        },
+        {
+          "trial_number": 3,
+          "passed": false,
+          "latency_ms": 774.44,
+          "tokens_used": 127,
+          "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= CURDATE() - INTERVAL 30 DAY;\"}}"
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "execute_sql",
+          "arguments": {
+            "query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"
+          }
+        }
+      ],
+      "error": "Failed 3/3 trials. Last error: Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= CURDATE() - INTERVAL 30 DAY;\"}}",
+      "avg_latency_ms": 798.52,
+      "total_tokens": 381
+    },
+    {
+      "test_id": "agentic_format_002",
+      "model": "openai/gpt-4o",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 974.45,
+          "tokens_used": 116,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 685.05,
+          "tokens_used": 116,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 753.19,
+          "tokens_used": 116,
+          "error": null
+        }
+      ],
+      "expected_calls": [
+        {
+          "name": "call_rest_api",
+          "arguments": {
+            "url": "https://api.example.com/users",
+            "method": "GET"
+          }
+        }
+      ],
+      "error": null,
+      "avg_latency_ms": 804.23,
+      "total_tokens": 348
+    },
+    {
+      "test_id": "multi_mf_002",
+      "model": "openai/gpt-4o",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "reliability_percent": 100.0,
+      "trials": [
+        {
+          "trial_number": 1,
+          "passed": true,
+          "latency_ms": 2674.89,
+          "tokens_used": 296,
+          "error": null
+        },
+        {
+          "trial_number": 2,
+          "passed": true,
+          "latency_ms": 2658.68,
+          "tokens_used": 314,
+          "error": null
+        },
+        {
+          "trial_number": 3,
+          "passed": true,
+          "latency_ms": 2929.03,
+          "tokens_used": 304,
+          "error": null
+        }
+      ],
+      "expected_calls": [],
+      "error": null,
+      "avg_latency_ms": 2754.2,
+      "total_tokens": 914
+    }
+  ]
+}

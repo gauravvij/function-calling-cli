@@ -1,0 +1,523 @@
+====================================================================================================
+FUNCTION CALLING EVALUATION REPORT - Best of N Trials with Reliability Metrics
+====================================================================================================
+Generated: 2026-03-13 10:28:58
+Total Tests: 30
+Models Evaluated: 2
+Trials per Test: 3
+
+----------------------------------------------------------------------------------------------------
+LEADERBOARD (Ranked by Accuracy, with Reliability)
+----------------------------------------------------------------------------------------------------
+Rank   Model                                              Accuracy     Reliability  Tests     
+----------------------------------------------------------------------------------------------------
+1      openai/gpt-4o                                           76.7%        76.7%  23/30
+2      google/gemini-2.0-flash-001                             70.0%        70.0%  21/30
+
+----------------------------------------------------------------------------------------------------
+CATEGORY BREAKDOWN (Accuracy | Reliability)
+----------------------------------------------------------------------------------------------------
+
+AGENTIC:
+  openai/gpt-4o                                       66.7% |  66.7%
+  google/gemini-2.0-flash-001                         33.3% |  33.3%
+
+MULTI_TURN:
+  openai/gpt-4o                                       66.7% |  66.7%
+  google/gemini-2.0-flash-001                         66.7% |  66.7%
+
+SINGLE_TURN:
+  openai/gpt-4o                                       83.3% |  83.3%
+  google/gemini-2.0-flash-001                         83.3% |  83.3%
+
+----------------------------------------------------------------------------------------------------
+SUBCATEGORY BREAKDOWN
+----------------------------------------------------------------------------------------------------
+
+BASE:
+  openai/gpt-4o                                        0.0% |   0.0%
+  google/gemini-2.0-flash-001                          0.0% |   0.0%
+
+FORMAT_SENSITIVITY:
+  openai/gpt-4o                                       50.0% |  50.0%
+  google/gemini-2.0-flash-001                         50.0% |  50.0%
+
+MEMORY:
+  openai/gpt-4o                                      100.0% | 100.0%
+  google/gemini-2.0-flash-001                          0.0% |   0.0%
+
+MISSING_FUNCTIONS:
+  openai/gpt-4o                                      100.0% | 100.0%
+  google/gemini-2.0-flash-001                        100.0% | 100.0%
+
+MISSING_PARAMS:
+  openai/gpt-4o                                      100.0% | 100.0%
+  google/gemini-2.0-flash-001                        100.0% | 100.0%
+
+MULTIPLE:
+  openai/gpt-4o                                       75.0% |  75.0%
+  google/gemini-2.0-flash-001                        100.0% | 100.0%
+
+PARALLEL:
+  openai/gpt-4o                                      100.0% | 100.0%
+  google/gemini-2.0-flash-001                        100.0% | 100.0%
+
+PARALLEL_MULTIPLE:
+  openai/gpt-4o                                       33.3% |  33.3%
+  google/gemini-2.0-flash-001                         33.3% |  33.3%
+
+RELEVANCE:
+  openai/gpt-4o                                      100.0% | 100.0%
+  google/gemini-2.0-flash-001                         75.0% |  75.0%
+
+SIMPLE:
+  openai/gpt-4o                                      100.0% | 100.0%
+  google/gemini-2.0-flash-001                        100.0% | 100.0%
+
+WEB_SEARCH:
+  openai/gpt-4o                                       50.0% |  50.0%
+  google/gemini-2.0-flash-001                         50.0% |  50.0%
+
+----------------------------------------------------------------------------------------------------
+DETAILED TEST RESULTS (with Trial Breakdown)
+----------------------------------------------------------------------------------------------------
+
+✗ FAIL | google/gemini-2.0-flash-001 | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (605ms)
+    Trial 2: ✗ (679ms)
+    Trial 3: ✗ (683ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 656ms
+
+✓ PASS | google/gemini-2.0-flash-001 | agentic_format_002 | Reliability: 100%
+  Category: agentic/format_sensitivity
+    Trial 1: ✓ (517ms)
+    Trial 2: ✓ (610ms)
+    Trial 3: ✓ (570ms)
+  Avg Latency: 565ms
+
+✗ FAIL | google/gemini-2.0-flash-001 | agentic_memory_001 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (608ms)
+    Trial 2: ✗ (488ms)
+    Trial 3: ✗ (495ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "store_memory", "arguments": {"value": "blue", "key": "favorite_color"}}
+  Avg Latency: 530ms
+
+✗ FAIL | google/gemini-2.0-flash-001 | agentic_memory_002 | Reliability: 0%
+  Category: agentic/memory
+    Trial 1: ✗ (746ms)
+    Trial 2: ✗ (729ms)
+    Trial 3: ✗ (771ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "phone_number"}}, got {"name": "store_memory", "arguments": {"key": "phone number", "value": "555-1234"}}
+  Avg Latency: 749ms
+
+✓ PASS | google/gemini-2.0-flash-001 | agentic_web_001 | Reliability: 100%
+  Category: agentic/web_search
+    Trial 1: ✓ (626ms)
+    Trial 2: ✓ (610ms)
+    Trial 3: ✓ (619ms)
+  Avg Latency: 618ms
+
+✗ FAIL | google/gemini-2.0-flash-001 | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (685ms)
+    Trial 2: ✗ (664ms)
+    Trial 3: ✗ (662ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "latest news artificial intelligence"}}, got {"name": "web_search", "arguments": {"query": "latest news about artificial intelligence"}}
+  Avg Latency: 670ms
+
+✗ FAIL | google/gemini-2.0-flash-001 | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (633ms)
+    Trial 2: ✗ (780ms)
+    Trial 3: ✗ (630ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 681ms
+
+✗ FAIL | google/gemini-2.0-flash-001 | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (748ms)
+    Trial 2: ✗ (630ms)
+    Trial 3: ✗ (682ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 687ms
+
+✓ PASS | google/gemini-2.0-flash-001 | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (584ms)
+    Trial 2: ✓ (618ms)
+    Trial 3: ✓ (521ms)
+  Avg Latency: 574ms
+
+✓ PASS | google/gemini-2.0-flash-001 | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (477ms)
+    Trial 2: ✓ (479ms)
+    Trial 3: ✓ (445ms)
+  Avg Latency: 467ms
+
+✓ PASS | google/gemini-2.0-flash-001 | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (804ms)
+    Trial 2: ✓ (775ms)
+    Trial 3: ✓ (664ms)
+  Avg Latency: 748ms
+
+✓ PASS | google/gemini-2.0-flash-001 | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (401ms)
+    Trial 2: ✓ (447ms)
+    Trial 3: ✓ (463ms)
+  Avg Latency: 437ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_multiple_001 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (632ms)
+    Trial 2: ✓ (674ms)
+    Trial 3: ✓ (490ms)
+  Avg Latency: 598ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_multiple_002 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (572ms)
+    Trial 2: ✓ (613ms)
+    Trial 3: ✓ (489ms)
+  Avg Latency: 558ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_multiple_003 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (682ms)
+    Trial 2: ✓ (718ms)
+    Trial 3: ✓ (744ms)
+  Avg Latency: 715ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_multiple_004 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (739ms)
+    Trial 2: ✓ (786ms)
+    Trial 3: ✓ (740ms)
+  Avg Latency: 755ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_parallel_001 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (623ms)
+    Trial 2: ✓ (842ms)
+    Trial 3: ✓ (627ms)
+  Avg Latency: 697ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_parallel_002 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (591ms)
+    Trial 2: ✓ (990ms)
+    Trial 3: ✓ (535ms)
+  Avg Latency: 705ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_parallel_003 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (685ms)
+    Trial 2: ✓ (714ms)
+    Trial 3: ✓ (739ms)
+  Avg Latency: 713ms
+
+✗ FAIL | google/gemini-2.0-flash-001 | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (748ms)
+    Trial 2: ✗ (788ms)
+    Trial 3: ✗ (884ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "Regarding the meeting"}}
+  Avg Latency: 807ms
+
+✗ FAIL | google/gemini-2.0-flash-001 | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (754ms)
+    Trial 2: ✗ (766ms)
+    Trial 3: ✗ (730ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "get_current_time", "arguments": {"timezone": "New York"}}, got {"name": "get_current_time", "arguments": {"timezone": "America/New_York"}}
+  Avg Latency: 750ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_parallel_multi_003 | Reliability: 100%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✓ (837ms)
+    Trial 2: ✓ (777ms)
+    Trial 3: ✓ (864ms)
+  Avg Latency: 826ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (415ms)
+    Trial 2: ✓ (397ms)
+    Trial 3: ✓ (361ms)
+  Avg Latency: 391ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_relevance_002 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (510ms)
+    Trial 2: ✓ (575ms)
+    Trial 3: ✓ (491ms)
+  Avg Latency: 525ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1374ms)
+    Trial 2: ✓ (1328ms)
+    Trial 3: ✓ (1373ms)
+  Avg Latency: 1358ms
+
+✗ FAIL | google/gemini-2.0-flash-001 | single_relevance_004 | Reliability: 0%
+  Category: single_turn/relevance
+    Trial 1: ✗ (669ms)
+    Trial 2: ✗ (668ms)
+    Trial 3: ✗ (578ms)
+  Error: Failed 3/3 trials. Last error: Expected 1 call(s), got 0
+  Avg Latency: 638ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_simple_001 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (739ms)
+    Trial 2: ✓ (428ms)
+    Trial 3: ✓ (438ms)
+  Avg Latency: 535ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_simple_002 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (965ms)
+    Trial 2: ✓ (708ms)
+    Trial 3: ✓ (741ms)
+  Avg Latency: 805ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_simple_003 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (1470ms)
+    Trial 2: ✓ (597ms)
+    Trial 3: ✓ (675ms)
+  Avg Latency: 914ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_simple_004 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (965ms)
+    Trial 2: ✓ (765ms)
+    Trial 3: ✓ (615ms)
+  Avg Latency: 782ms
+
+✗ FAIL | openai/gpt-4o | agentic_format_001 | Reliability: 0%
+  Category: agentic/format_sensitivity
+    Trial 1: ✗ (789ms)
+    Trial 2: ✗ (832ms)
+    Trial 3: ✗ (774ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= CURDATE() - INTERVAL 30 DAY;"}}
+  Avg Latency: 799ms
+
+✓ PASS | openai/gpt-4o | agentic_format_002 | Reliability: 100%
+  Category: agentic/format_sensitivity
+    Trial 1: ✓ (974ms)
+    Trial 2: ✓ (685ms)
+    Trial 3: ✓ (753ms)
+  Avg Latency: 804ms
+
+✓ PASS | openai/gpt-4o | agentic_memory_001 | Reliability: 100%
+  Category: agentic/memory
+    Trial 1: ✓ (566ms)
+    Trial 2: ✓ (661ms)
+    Trial 3: ✓ (663ms)
+  Avg Latency: 630ms
+
+✓ PASS | openai/gpt-4o | agentic_memory_002 | Reliability: 100%
+  Category: agentic/memory
+    Trial 1: ✓ (717ms)
+    Trial 2: ✓ (649ms)
+    Trial 3: ✓ (666ms)
+  Avg Latency: 677ms
+
+✓ PASS | openai/gpt-4o | agentic_web_001 | Reliability: 100%
+  Category: agentic/web_search
+    Trial 1: ✓ (559ms)
+    Trial 2: ✓ (582ms)
+    Trial 3: ✓ (605ms)
+  Avg Latency: 582ms
+
+✗ FAIL | openai/gpt-4o | agentic_web_002 | Reliability: 0%
+  Category: agentic/web_search
+    Trial 1: ✗ (882ms)
+    Trial 2: ✗ (701ms)
+    Trial 3: ✗ (829ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "web_search", "arguments": {"query": "latest news artificial intelligence"}}, got {"name": "web_search", "arguments": {"query": "latest news about artificial intelligence"}}
+  Avg Latency: 804ms
+
+✗ FAIL | openai/gpt-4o | multi_base_001 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (996ms)
+    Trial 2: ✗ (1411ms)
+    Trial 3: ✗ (903ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "London", "date": "2024-12-25"}}
+  Avg Latency: 1103ms
+
+✗ FAIL | openai/gpt-4o | multi_base_002 | Reliability: 0%
+  Category: multi_turn/base
+    Trial 1: ✗ (831ms)
+    Trial 2: ✗ (780ms)
+    Trial 3: ✗ (841ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "JL002", "passenger_name": "Jane Smith"}}, got {"name": "search_flights", "arguments": {"origin": "LA", "destination": "Tokyo", "date": "2024-12-20"}}
+  Avg Latency: 818ms
+
+✓ PASS | openai/gpt-4o | multi_mf_001 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (1626ms)
+    Trial 2: ✓ (1424ms)
+    Trial 3: ✓ (1081ms)
+  Avg Latency: 1377ms
+
+✓ PASS | openai/gpt-4o | multi_mf_002 | Reliability: 100%
+  Category: multi_turn/missing_functions
+    Trial 1: ✓ (2675ms)
+    Trial 2: ✓ (2659ms)
+    Trial 3: ✓ (2929ms)
+  Avg Latency: 2754ms
+
+✓ PASS | openai/gpt-4o | multi_mp_001 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (1587ms)
+    Trial 2: ✓ (2262ms)
+    Trial 3: ✓ (1636ms)
+  Avg Latency: 1828ms
+
+✓ PASS | openai/gpt-4o | multi_mp_002 | Reliability: 100%
+  Category: multi_turn/missing_params
+    Trial 1: ✓ (1641ms)
+    Trial 2: ✓ (1076ms)
+    Trial 3: ✓ (1379ms)
+  Avg Latency: 1365ms
+
+✓ PASS | openai/gpt-4o | single_multiple_001 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (736ms)
+    Trial 2: ✓ (682ms)
+    Trial 3: ✓ (895ms)
+  Avg Latency: 771ms
+
+✓ PASS | openai/gpt-4o | single_multiple_002 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (1290ms)
+    Trial 2: ✓ (690ms)
+    Trial 3: ✓ (775ms)
+  Avg Latency: 918ms
+
+✗ FAIL | openai/gpt-4o | single_multiple_003 | Reliability: 0%
+  Category: single_turn/multiple
+    Trial 1: ✗ (714ms)
+    Trial 2: ✗ (639ms)
+    Trial 3: ✗ (1026ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "cancel_order", "arguments": {"order_id": "ORD-67890", "reason": "I changed my mind"}}, got {"name": "cancel_order", "arguments": {"order_id": "ORD-67890", "reason": "Changed my mind"}}
+  Avg Latency: 793ms
+
+✓ PASS | openai/gpt-4o | single_multiple_004 | Reliability: 100%
+  Category: single_turn/multiple
+    Trial 1: ✓ (795ms)
+    Trial 2: ✓ (841ms)
+    Trial 3: ✓ (693ms)
+  Avg Latency: 776ms
+
+✓ PASS | openai/gpt-4o | single_parallel_001 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1245ms)
+    Trial 2: ✓ (1062ms)
+    Trial 3: ✓ (1202ms)
+  Avg Latency: 1169ms
+
+✓ PASS | openai/gpt-4o | single_parallel_002 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (735ms)
+    Trial 2: ✓ (955ms)
+    Trial 3: ✓ (1156ms)
+  Avg Latency: 949ms
+
+✓ PASS | openai/gpt-4o | single_parallel_003 | Reliability: 100%
+  Category: single_turn/parallel
+    Trial 1: ✓ (1678ms)
+    Trial 2: ✓ (1223ms)
+    Trial 3: ✓ (957ms)
+  Avg Latency: 1286ms
+
+✗ FAIL | openai/gpt-4o | single_parallel_multi_001 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (1678ms)
+    Trial 2: ✗ (2202ms)
+    Trial 3: ✗ (1594ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Details", "body": "Hi John,\n\nI hope this message finds you well. I wanted to remind you about the upcoming meeting. Please let me know if you have any questions.\n\nBest regards,\n[Your Name]"}}
+  Avg Latency: 1825ms
+
+✗ FAIL | openai/gpt-4o | single_parallel_multi_002 | Reliability: 0%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✗ (1504ms)
+    Trial 2: ✗ (1337ms)
+    Trial 3: ✗ (1363ms)
+  Error: Failed 3/3 trials. Last error: Call 1 mismatch: expected {"name": "get_current_time", "arguments": {"timezone": "New York"}}, got {"name": "get_current_time", "arguments": {"timezone": "America/New_York"}}
+  Avg Latency: 1402ms
+
+✓ PASS | openai/gpt-4o | single_parallel_multi_003 | Reliability: 100%
+  Category: single_turn/parallel_multiple
+    Trial 1: ✓ (1176ms)
+    Trial 2: ✓ (1137ms)
+    Trial 3: ✓ (1036ms)
+  Avg Latency: 1116ms
+
+✓ PASS | openai/gpt-4o | single_relevance_001 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (770ms)
+    Trial 2: ✓ (4578ms)
+    Trial 3: ✓ (535ms)
+  Avg Latency: 1961ms
+
+✓ PASS | openai/gpt-4o | single_relevance_002 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (1647ms)
+    Trial 2: ✓ (673ms)
+    Trial 3: ✓ (575ms)
+  Avg Latency: 965ms
+
+✓ PASS | openai/gpt-4o | single_relevance_003 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (4517ms)
+    Trial 2: ✓ (3918ms)
+    Trial 3: ✓ (3970ms)
+  Avg Latency: 4135ms
+
+✓ PASS | openai/gpt-4o | single_relevance_004 | Reliability: 100%
+  Category: single_turn/relevance
+    Trial 1: ✓ (549ms)
+    Trial 2: ✓ (683ms)
+    Trial 3: ✓ (677ms)
+  Avg Latency: 636ms
+
+✓ PASS | openai/gpt-4o | single_simple_001 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (677ms)
+    Trial 2: ✓ (557ms)
+    Trial 3: ✓ (2321ms)
+  Avg Latency: 1185ms
+
+✓ PASS | openai/gpt-4o | single_simple_002 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (859ms)
+    Trial 2: ✓ (2697ms)
+    Trial 3: ✓ (850ms)
+  Avg Latency: 1469ms
+
+✓ PASS | openai/gpt-4o | single_simple_003 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (2493ms)
+    Trial 2: ✓ (1279ms)
+    Trial 3: ✓ (704ms)
+  Avg Latency: 1492ms
+
+✓ PASS | openai/gpt-4o | single_simple_004 | Reliability: 100%
+  Category: single_turn/simple
+    Trial 1: ✓ (809ms)
+    Trial 2: ✓ (1392ms)
+    Trial 3: ✓ (965ms)
+  Avg Latency: 1055ms
+
+====================================================================================================
+END OF REPORT
+====================================================================================================

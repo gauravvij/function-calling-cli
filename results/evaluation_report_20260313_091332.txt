@@ -1,0 +1,244 @@
+================================================================================
+FUNCTION CALLING EVALUATION REPORT
+================================================================================
+Generated: 2026-03-13 09:13:32
+Total Tests: 45
+Models Evaluated: 3
+
+--------------------------------------------------------------------------------
+OVERALL MODEL RANKINGS
+--------------------------------------------------------------------------------
+1. google/gemini-2.0-flash-001
+   Accuracy: 73.33% (11/15)
+   Avg Latency: 616ms
+
+2. openai/gpt-4o-mini
+   Accuracy: 73.33% (11/15)
+   Avg Latency: 1025ms
+
+3. anthropic/claude-3-haiku
+   Accuracy: 46.67% (7/15)
+   Avg Latency: 1471ms
+
+--------------------------------------------------------------------------------
+CATEGORY BREAKDOWN
+--------------------------------------------------------------------------------
+
+AGENTIC:
+  anthropic/claude-3-haiku: 33.33%
+  google/gemini-2.0-flash-001: 33.33%
+  openai/gpt-4o-mini: 66.67%
+
+MULTI_TURN:
+  anthropic/claude-3-haiku: 25.00%
+  google/gemini-2.0-flash-001: 75.00%
+  openai/gpt-4o-mini: 50.00%
+
+SINGLE_TURN:
+  anthropic/claude-3-haiku: 62.50%
+  google/gemini-2.0-flash-001: 87.50%
+  openai/gpt-4o-mini: 87.50%
+
+--------------------------------------------------------------------------------
+DETAILED TEST RESULTS
+--------------------------------------------------------------------------------
+
+✗ FAIL | anthropic/claude-3-haiku | agentic_format_001
+  Category: agentic/format_sensitivity
+  Error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT *\nFROM users\nWHERE created_at >= DATE_SUB(CURDATE(), INTERVAL 30 DAY);"}}
+  Latency: 1450ms
+
+✗ FAIL | anthropic/claude-3-haiku | agentic_memory_001
+  Category: agentic/memory
+  Error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "store_memory", "arguments": {"key": "favorite_color", "value": "blue"}}
+  Latency: 1260ms
+
+✓ PASS | anthropic/claude-3-haiku | agentic_web_001
+  Category: agentic/web_search
+  Latency: 848ms
+
+✗ FAIL | anthropic/claude-3-haiku | multi_base_001
+  Category: multi_turn/base
+  Error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "London", "date": "2024-12-25"}}
+  Latency: 1409ms
+
+✗ FAIL | anthropic/claude-3-haiku | multi_lc_001
+  Category: multi_turn/long_context
+  Error: Call 1 mismatch: expected {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "Paris", "date": "2025-01-15"}}, got {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "PAR", "date": "2025-01-15", "seat_class": "business"}}
+  Latency: 1543ms
+
+✓ PASS | anthropic/claude-3-haiku | multi_mf_001
+  Category: multi_turn/missing_functions
+  Latency: 1785ms
+
+✗ FAIL | anthropic/claude-3-haiku | multi_mp_001
+  Category: multi_turn/missing_params
+  Error: Expected no calls but got 1 call(s)
+  Latency: 1820ms
+
+✓ PASS | anthropic/claude-3-haiku | single_multiple_001
+  Category: single_turn/multiple
+  Latency: 1573ms
+
+✓ PASS | anthropic/claude-3-haiku | single_multiple_002
+  Category: single_turn/multiple
+  Latency: 1249ms
+
+✗ FAIL | anthropic/claude-3-haiku | single_parallel_001
+  Category: single_turn/parallel
+  Error: Expected 3 call(s), got 1
+  Latency: 1119ms
+
+✗ FAIL | anthropic/claude-3-haiku | single_parallel_multi_001
+  Category: single_turn/parallel_multiple
+  Error: Expected 2 call(s), got 1
+  Latency: 3699ms
+
+✗ FAIL | anthropic/claude-3-haiku | single_relevance_001
+  Category: single_turn/relevance
+  Error: Expected no calls but got 1 call(s)
+  Latency: 985ms
+
+✓ PASS | anthropic/claude-3-haiku | single_relevance_002
+  Category: single_turn/relevance
+  Latency: 1069ms
+
+✓ PASS | anthropic/claude-3-haiku | single_simple_001
+  Category: single_turn/simple
+  Latency: 1024ms
+
+✓ PASS | anthropic/claude-3-haiku | single_simple_002
+  Category: single_turn/simple
+  Latency: 1240ms
+
+✗ FAIL | google/gemini-2.0-flash-001 | agentic_format_001
+  Category: agentic/format_sensitivity
+  Error: Expected 1 call(s), got 0
+  Latency: 646ms
+
+✗ FAIL | google/gemini-2.0-flash-001 | agentic_memory_001
+  Category: agentic/memory
+  Error: Call 1 mismatch: expected {"name": "retrieve_memory", "arguments": {"key": "favorite_color"}}, got {"name": "store_memory", "arguments": {"key": "favorite_color", "value": "blue"}}
+  Latency: 463ms
+
+✓ PASS | google/gemini-2.0-flash-001 | agentic_web_001
+  Category: agentic/web_search
+  Latency: 667ms
+
+✗ FAIL | google/gemini-2.0-flash-001 | multi_base_001
+  Category: multi_turn/base
+  Error: Expected 1 call(s), got 0
+  Latency: 738ms
+
+✓ PASS | google/gemini-2.0-flash-001 | multi_lc_001
+  Category: multi_turn/long_context
+  Latency: 573ms
+
+✓ PASS | google/gemini-2.0-flash-001 | multi_mf_001
+  Category: multi_turn/missing_functions
+  Latency: 622ms
+
+✓ PASS | google/gemini-2.0-flash-001 | multi_mp_001
+  Category: multi_turn/missing_params
+  Latency: 753ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_multiple_001
+  Category: single_turn/multiple
+  Latency: 527ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_multiple_002
+  Category: single_turn/multiple
+  Latency: 528ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_parallel_001
+  Category: single_turn/parallel
+  Latency: 770ms
+
+✗ FAIL | google/gemini-2.0-flash-001 | single_parallel_multi_001
+  Category: single_turn/parallel_multiple
+  Error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"body": "Regarding the meeting", "to": "john@example.com", "subject": "Meeting"}}
+  Latency: 829ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_relevance_001
+  Category: single_turn/relevance
+  Latency: 421ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_relevance_002
+  Category: single_turn/relevance
+  Latency: 457ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_simple_001
+  Category: single_turn/simple
+  Latency: 499ms
+
+✓ PASS | google/gemini-2.0-flash-001 | single_simple_002
+  Category: single_turn/simple
+  Latency: 747ms
+
+✗ FAIL | openai/gpt-4o-mini | agentic_format_001
+  Category: agentic/format_sensitivity
+  Error: Call 1 mismatch: expected {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)"}}, got {"name": "execute_sql", "arguments": {"query": "SELECT * FROM users WHERE signup_date >= NOW() - INTERVAL 30 DAY;"}}
+  Latency: 852ms
+
+✓ PASS | openai/gpt-4o-mini | agentic_memory_001
+  Category: agentic/memory
+  Latency: 940ms
+
+✓ PASS | openai/gpt-4o-mini | agentic_web_001
+  Category: agentic/web_search
+  Latency: 764ms
+
+✗ FAIL | openai/gpt-4o-mini | multi_base_001
+  Category: multi_turn/base
+  Error: Call 1 mismatch: expected {"name": "book_flight", "arguments": {"flight_id": "BA112", "passenger_name": "John Doe", "seat_class": "business"}}, got {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "London", "date": "2024-12-25"}}
+  Latency: 1053ms
+
+✗ FAIL | openai/gpt-4o-mini | multi_lc_001
+  Category: multi_turn/long_context
+  Error: Call 1 mismatch: expected {"name": "search_flights", "arguments": {"origin": "NYC", "destination": "Paris", "date": "2025-01-15"}}, got {"name": "search_flights", "arguments": {"origin": "New York", "destination": "Paris", "date": "2025-01-15"}}
+  Latency: 950ms
+
+✓ PASS | openai/gpt-4o-mini | multi_mf_001
+  Category: multi_turn/missing_functions
+  Latency: 1174ms
+
+✓ PASS | openai/gpt-4o-mini | multi_mp_001
+  Category: multi_turn/missing_params
+  Latency: 1432ms
+
+✓ PASS | openai/gpt-4o-mini | single_multiple_001
+  Category: single_turn/multiple
+  Latency: 925ms
+
+✓ PASS | openai/gpt-4o-mini | single_multiple_002
+  Category: single_turn/multiple
+  Latency: 900ms
+
+✓ PASS | openai/gpt-4o-mini | single_parallel_001
+  Category: single_turn/parallel
+  Latency: 1248ms
+
+✗ FAIL | openai/gpt-4o-mini | single_parallel_multi_001
+  Category: single_turn/parallel_multiple
+  Error: Call 1 mismatch: expected {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting", "body": "About the meeting"}}, got {"name": "send_email", "arguments": {"to": "john@example.com", "subject": "Meeting Reminder", "body": "Hi John,\n\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions.\n\nBest regards,\n\n[Your Name]"}}
+  Latency: 2178ms
+
+✓ PASS | openai/gpt-4o-mini | single_relevance_001
+  Category: single_turn/relevance
+  Latency: 660ms
+
+✓ PASS | openai/gpt-4o-mini | single_relevance_002
+  Category: single_turn/relevance
+  Latency: 633ms
+
+✓ PASS | openai/gpt-4o-mini | single_simple_001
+  Category: single_turn/simple
+  Latency: 859ms
+
+✓ PASS | openai/gpt-4o-mini | single_simple_002
+  Category: single_turn/simple
+  Latency: 815ms
+
+================================================================================
+END OF REPORT
+================================================================================

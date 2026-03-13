@@ -1,0 +1,542 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-13T09:13:32.740961",
+    "total_tests": 15,
+    "models_evaluated": 3
+  },
+  "model_scores": [
+    {
+      "model": "anthropic/claude-3-haiku",
+      "overall_accuracy": 0.4666666666666667,
+      "category_scores": {
+        "agentic": 0.3333333333333333,
+        "multi_turn": 0.25,
+        "single_turn": 0.625
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 0.0,
+        "memory": 0.0,
+        "missing_functions": 1.0,
+        "missing_params": 0.0,
+        "multiple": 1.0,
+        "parallel": 0.0,
+        "parallel_multiple": 0.0,
+        "relevance": 0.5,
+        "simple": 1.0,
+        "web_search": 1.0
+      },
+      "total_tests": 15,
+      "passed_tests": 7,
+      "avg_latency_ms": 1471.4896043141682,
+      "total_tokens": 7744
+    },
+    {
+      "model": "google/gemini-2.0-flash-001",
+      "overall_accuracy": 0.7333333333333333,
+      "category_scores": {
+        "agentic": 0.3333333333333333,
+        "multi_turn": 0.75,
+        "single_turn": 0.875
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 1.0,
+        "memory": 0.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 1.0
+      },
+      "total_tests": 15,
+      "passed_tests": 11,
+      "avg_latency_ms": 615.982166926066,
+      "total_tokens": 1103
+    },
+    {
+      "model": "openai/gpt-4o-mini",
+      "overall_accuracy": 0.7333333333333333,
+      "category_scores": {
+        "agentic": 0.6666666666666666,
+        "multi_turn": 0.5,
+        "single_turn": 0.875
+      },
+      "subcategory_scores": {
+        "base": 0.0,
+        "format_sensitivity": 0.0,
+        "long_context": 0.0,
+        "memory": 1.0,
+        "missing_functions": 1.0,
+        "missing_params": 1.0,
+        "multiple": 1.0,
+        "parallel": 1.0,
+        "parallel_multiple": 0.0,
+        "relevance": 1.0,
+        "simple": 1.0,
+        "web_search": 1.0
+      },
+      "total_tests": 15,
+      "passed_tests": 11,
+      "avg_latency_ms": 1025.4883607228596,
+      "total_tokens": 1948
+    }
+  ],
+  "detailed_results": [
+    {
+      "test_id": "single_simple_002",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 814.7702217102051,
+      "tokens_used": 87
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 858.727216720581,
+      "tokens_used": 79
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 924.9377250671387,
+      "tokens_used": 121
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 899.9364376068115,
+      "tokens_used": 114
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1248.4803199768066,
+      "tokens_used": 130
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 659.6381664276123,
+      "tokens_used": 78
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 632.9605579376221,
+      "tokens_used": 79
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting Reminder\", \"body\": \"Hi John,\\n\\nThis is a reminder about our upcoming meeting. Please let me know if you have any questions.\\n\\nBest regards,\\n\\n[Your Name]\"}}",
+      "latency_ms": 2177.6061058044434,
+      "tokens_used": 184
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"London\", \"date\": \"2024-12-25\"}}",
+      "latency_ms": 1052.9744625091553,
+      "tokens_used": 164
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1431.7378997802734,
+      "tokens_used": 159
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1174.431562423706,
+      "tokens_used": 148
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"New York\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}",
+      "latency_ms": 949.7594833374023,
+      "tokens_used": 280
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": true,
+      "error": null,
+      "latency_ms": 764.0957832336426,
+      "tokens_used": 98
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": true,
+      "error": null,
+      "latency_ms": 940.3142929077148,
+      "tokens_used": 101
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "openai/gpt-4o-mini",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= NOW() - INTERVAL 30 DAY;\"}}",
+      "latency_ms": 851.9551753997803,
+      "tokens_used": 126
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "anthropic/claude-3-haiku",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1023.5509872436523,
+      "tokens_used": 429
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "anthropic/claude-3-haiku",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1239.912748336792,
+      "tokens_used": 431
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "anthropic/claude-3-haiku",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1573.0559825897217,
+      "tokens_used": 551
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "anthropic/claude-3-haiku",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1249.2353916168213,
+      "tokens_used": 537
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "anthropic/claude-3-haiku",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": false,
+      "error": "Expected 3 call(s), got 1",
+      "latency_ms": 1119.3153858184814,
+      "tokens_used": 448
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "anthropic/claude-3-haiku",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": false,
+      "error": "Expected no calls but got 1 call(s)",
+      "latency_ms": 985.0170612335205,
+      "tokens_used": 420
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "anthropic/claude-3-haiku",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1068.5124397277832,
+      "tokens_used": 429
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "anthropic/claude-3-haiku",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"book_flight\", \"arguments\": {\"flight_id\": \"BA112\", \"passenger_name\": \"John Doe\", \"seat_class\": \"business\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"London\", \"date\": \"2024-12-25\"}}",
+      "latency_ms": 1408.8654518127441,
+      "tokens_used": 590
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "anthropic/claude-3-haiku",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": false,
+      "error": "Expected no calls but got 1 call(s)",
+      "latency_ms": 1820.2097415924072,
+      "tokens_used": 575
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "anthropic/claude-3-haiku",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "error": "Expected 2 call(s), got 1",
+      "latency_ms": 3699.2640495300293,
+      "tokens_used": 533
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "anthropic/claude-3-haiku",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": true,
+      "error": null,
+      "latency_ms": 847.8267192840576,
+      "tokens_used": 457
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "anthropic/claude-3-haiku",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "error": null,
+      "latency_ms": 1784.9552631378174,
+      "tokens_used": 558
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "anthropic/claude-3-haiku",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"Paris\", \"date\": \"2025-01-15\"}}, got {\"name\": \"search_flights\", \"arguments\": {\"origin\": \"NYC\", \"destination\": \"PAR\", \"date\": \"2025-01-15\", \"seat_class\": \"business\"}}",
+      "latency_ms": 1543.304204940796,
+      "tokens_used": 751
+    },
+    {
+      "test_id": "single_simple_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 499.21393394470215,
+      "tokens_used": 34
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "anthropic/claude-3-haiku",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"key\": \"favorite_color\", \"value\": \"blue\"}}",
+      "latency_ms": 1259.5939636230469,
+      "tokens_used": 487
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "anthropic/claude-3-haiku",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT * FROM users WHERE signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)\"}}, got {\"name\": \"execute_sql\", \"arguments\": {\"query\": \"SELECT *\\nFROM users\\nWHERE created_at >= DATE_SUB(CURDATE(), INTERVAL 30 DAY);\"}}",
+      "latency_ms": 1449.7246742248535,
+      "tokens_used": 548
+    },
+    {
+      "test_id": "single_multiple_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 527.3802280426025,
+      "tokens_used": 76
+    },
+    {
+      "test_id": "single_simple_002",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "simple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 746.5133666992188,
+      "tokens_used": 39
+    },
+    {
+      "test_id": "single_multiple_002",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "multiple",
+      "passed": true,
+      "error": null,
+      "latency_ms": 527.693510055542,
+      "tokens_used": 60
+    },
+    {
+      "test_id": "single_relevance_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 421.2512969970703,
+      "tokens_used": 41
+    },
+    {
+      "test_id": "single_parallel_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "parallel",
+      "passed": true,
+      "error": null,
+      "latency_ms": 770.1716423034668,
+      "tokens_used": 51
+    },
+    {
+      "test_id": "single_parallel_multi_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "parallel_multiple",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"send_email\", \"arguments\": {\"to\": \"john@example.com\", \"subject\": \"Meeting\", \"body\": \"About the meeting\"}}, got {\"name\": \"send_email\", \"arguments\": {\"body\": \"Regarding the meeting\", \"to\": \"john@example.com\", \"subject\": \"Meeting\"}}",
+      "latency_ms": 829.3318748474121,
+      "tokens_used": 75
+    },
+    {
+      "test_id": "single_relevance_002",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "single_turn",
+      "subcategory": "relevance",
+      "passed": true,
+      "error": null,
+      "latency_ms": 457.2024345397949,
+      "tokens_used": 34
+    },
+    {
+      "test_id": "multi_base_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "multi_turn",
+      "subcategory": "base",
+      "passed": false,
+      "error": "Expected 1 call(s), got 0",
+      "latency_ms": 737.5257015228271,
+      "tokens_used": 133
+    },
+    {
+      "test_id": "multi_mp_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "multi_turn",
+      "subcategory": "missing_params",
+      "passed": true,
+      "error": null,
+      "latency_ms": 752.8791427612305,
+      "tokens_used": 90
+    },
+    {
+      "test_id": "multi_mf_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "multi_turn",
+      "subcategory": "missing_functions",
+      "passed": true,
+      "error": null,
+      "latency_ms": 621.6814517974854,
+      "tokens_used": 70
+    },
+    {
+      "test_id": "multi_lc_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "multi_turn",
+      "subcategory": "long_context",
+      "passed": true,
+      "error": null,
+      "latency_ms": 573.3003616333008,
+      "tokens_used": 219
+    },
+    {
+      "test_id": "agentic_memory_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "agentic",
+      "subcategory": "memory",
+      "passed": false,
+      "error": "Call 1 mismatch: expected {\"name\": \"retrieve_memory\", \"arguments\": {\"key\": \"favorite_color\"}}, got {\"name\": \"store_memory\", \"arguments\": {\"key\": \"favorite_color\", \"value\": \"blue\"}}",
+      "latency_ms": 463.37246894836426,
+      "tokens_used": 48
+    },
+    {
+      "test_id": "agentic_web_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "agentic",
+      "subcategory": "web_search",
+      "passed": true,
+      "error": null,
+      "latency_ms": 666.6092872619629,
+      "tokens_used": 46
+    },
+    {
+      "test_id": "agentic_format_001",
+      "model": "google/gemini-2.0-flash-001",
+      "category": "agentic",
+      "subcategory": "format_sensitivity",
+      "passed": false,
+      "error": "Expected 1 call(s), got 0",
+      "latency_ms": 645.6058025360107,
+      "tokens_used": 87
+    }
+  ]
+}
